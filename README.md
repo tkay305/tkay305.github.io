@@ -3,13 +3,13 @@
 
 
 ## 🚀 About Me
-I'm a data analytics professional, with experience in business intelligence reporting and business analytics.
+I'm a data business analyst, with 5+ years experience in business intelligence reporting, data and business analytics.
 
-I'm passionate about data-driven solutions and will use my portfolio to share interesting analytics projects throughout my learning journey
+I'm passionate about provding data-driven solutions and use this space share some interesting analytics projects I've done throughout my learning journey
 
 
 ## 🛠 Skills
-R, Python, Power BI, MS Excel, Jupyter Notebook
+SQL, Python, R, Power BI, Looker, MS Excel, Jupyter Notebook
 
 
 ## Authors
@@ -27,7 +27,7 @@ I've included below, my most recent work doing exploratory analysis in social me
 
 - Self-development
 - Data Exploration and Analysis
-- Business Process Analysis and Improvement
+- Business Process Analysis 
 - Projects around process improvement
 - Analytics Methods
 - Data Science
