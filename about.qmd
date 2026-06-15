@@ -1,0 +1,52 @@
+---
+title: "About"
+toc: false
+---
+
+::: {.grid}
+::: {.g-col-12 .g-col-md-8}
+
+## Background
+
+I'm an economist and data scientist based in Germany, with a BSc in
+Economics from University of Bristol. My work sits at the intersection of
+quantitative methods and real-world impact — from estimating
+causal effects of institutional quality on economic development, to
+simulating net-zero pathways for local government.
+
+I'm particularly interested in how data and evidence can support
+sustainability decision-making. My bachelor's thesis used instrumental
+variables to investigate the deep determinants of economic development,
+and I've since applied similar thinking to ESG-adjacent problems: how
+do we measure what matters, when the things that matter are hard to observe?
+
+## What I'm looking for
+
+Roles in:
+
+- **ESG Reporting & Analytics** — sustainability data pipelines,
+  reporting frameworks (TCFD, GRI, SFDR), emissions accounting
+- **Research & Policy Analysis** — applied econometrics,
+  causal inference, evidence synthesis
+- **Data Science** — ML pipelines, predictive modelling,
+  insight generation
+
+## Education
+
+**BSc Economics** · University of Bristol · 2015
+
+Thesis: *The Role of Human Capital on Economic Development:
+An Instrumental Variables Approach*
+
+Methods: 2SLS, Instrumental Variables, Cross-Country Data
+
+## Contact
+
+[natashakabuka@gmail.com](mailto:natashakabuka@gmail.com)
+
+[linkedin.com/in/natasha-kabuka/](https://linkedin.com/in/natasha-kabuka)
+
+[github.com/tkay305](https://github.com/tkay305)
+
+:::
+:::

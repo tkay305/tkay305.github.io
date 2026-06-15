@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Natasha"
+  description: "Economist · Data Scientist · ESG Analyst"
+
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Projects"
+        href: projects/index.qmd
+      - text: "About"
+        href: about.qmd
+    right:
+      - icon: github
+        href: https://github.com/tkay305
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://linkedin.com/in/natasha-kabuka/
+        aria-label: LinkedIn
+
+  page-footer:
+    left: "© 2025 Natasha Kabuka"
+    right: "Built with [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    code-tools: true
+    highlight-style: github
+
+

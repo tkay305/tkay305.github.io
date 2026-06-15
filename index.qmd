@@ -1,0 +1,123 @@
+---
+title: ""
+page-layout: full
+toc: false
+---
+
+::: {.hero}
+
+# Natasha
+
+::: {.tagline}
+Economist · Data Scientist · ESG Analyst · Based in Germany
+:::
+
+[natashakabuka@gmail.com](mailto:natashakabuka@gmail.com) &nbsp;|&nbsp;
+[LinkedIn](https://linkedin.com/in/natasha-kabuka/) &nbsp;|&nbsp;
+[GitHub](https://github.com/tkay305)
+
+[View Projects →](projects/index.qmd){.btn .btn-primary
+  style="background:#1B7A4A; border-color:#1B7A4A;"}
+&nbsp;
+[About Me](about.qmd){.btn .btn-outline-secondary}
+
+:::
+
+---
+
+## What I work on
+
+::: {.grid}
+::: {.g-col-12 .g-col-md-4}
+::: {.domain-card}
+### ESG Analytics
+Climate scenario modelling, net-zero simulation,
+supply chain risk, and sustainability data pipelines.
+:::
+:::
+::: {.g-col-12 .g-col-md-4}
+::: {.domain-card}
+### Econometric Research
+Causal inference with instrumental variables,
+cross-country growth analysis, institutional economics.
+:::
+:::
+::: {.g-col-12 .g-col-md-4}
+::: {.domain-card}
+### Data Science
+Supervised and unsupervised ML, predictive modelling,
+NLP, and statistical hypothesis testing.
+:::
+:::
+:::
+
+---
+
+## Featured Projects
+
+::: {.grid}
+::: {.g-col-12 .g-col-md-6}
+[**Institutions & Growth: IV Regression**](projects/iv-institutions.qmd){.project-card}
+
+3-endogenous-variable 2SLS replication of AJR (2001) and GLLS (2004).
+Human capital significant at p<0.01 across all specs.
+
+<span class="tag tag-research">Causal Inference</span>
+<span class="tag tag-method">2SLS · Python · Stata</span>
+:::
+::: {.g-col-12 .g-col-md-6}
+[**Net Zero Municipal Simulation**](projects/net-zero-sim.qmd){.project-card}
+
+Monte Carlo scenario modelling of climate target pathways
+for a German municipality.
+
+<span class="tag tag-esg">ESG</span>
+<span class="tag tag-method">Simulation · Python</span>
+:::
+::: {.g-col-12 .g-col-md-6}
+[**Predictive Modelling for Agriculture**](projects/agriculture.qmd){.project-card}
+
+ML pipeline predicting agricultural outcomes from
+environmental and soil features.
+
+<span class="tag tag-ds">Data Science</span>
+<span class="tag tag-method">Random Forest · XGBoost · Python</span>
+:::
+::: {.g-col-12 .g-col-md-6}
+[**Hypothesis Testing: Men vs Women's Football**](projects/hypothesis-soccer.qmd){.project-card}
+
+Frequentist inference on scoring differences
+in international football matches.
+
+<span class="tag tag-research">Statistics</span>
+<span class="tag tag-method">t-test · Python</span>
+:::
+:::
+
+[See all projects →](projects/index.qmd)
+
+---
+
+## Skills
+
+**Languages**
+
+::: {.skills-grid}
+[Python]{.skill-badge} [R]{.skill-badge} [Stata]{.skill-badge} [SQL]{.skill-badge}
+:::
+
+**Libraries**
+
+::: {.skills-grid}
+[pandas]{.skill-badge} [statsmodels]{.skill-badge} [linearmodels]{.skill-badge}
+[scikit-learn]{.skill-badge} [matplotlib]{.skill-badge} [seaborn]{.skill-badge}
+:::
+
+**Methods**
+
+::: {.skills-grid}
+[Instrumental Variables]{.skill-badge} [2SLS]{.skill-badge}
+[Machine Learning]{.skill-badge} [Clustering]{.skill-badge}
+[NLP]{.skill-badge} [Monte Carlo Simulation]{.skill-badge}
+[Hypothesis Testing]{.skill-badge}
+:::

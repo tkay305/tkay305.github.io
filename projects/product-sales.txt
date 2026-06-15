@@ -1,0 +1,35 @@
+---
+title: "Product Sales Analytics"
+description: "Sales trend analysis and forecasting pipeline."
+categories: [Data Science, Analytics]
+---
+
+## Overview
+
+This project analyses product-level sales data to identify
+[TRENDS / SEASONALITY / ANOMALIES] and build a forecasting
+pipeline for [REVENUE / UNITS SOLD] over [TIME HORIZON].
+
+## Methodology
+
+- **Exploratory analysis** — sales trends by [product / region /
+  channel], seasonal decomposition
+- **Forecasting** — [ARIMA / Prophet / regression-based] model
+  for [METRIC] over [N]-period horizon
+- **Evaluation** — [MAE / RMSE / MAPE] on held-out test period
+
+## Key Findings
+
+::: {.result-box}
+[KEY FINDING — e.g. "The forecasting model achieves [MAPE VALUE]%
+on the test period. [PRODUCT CATEGORY] shows strongest seasonality,
+peaking in [MONTH]."]
+:::
+
+- [Finding 1]
+- [Finding 2]
+- [Finding 3]
+
+## Code
+
+[Python Notebook](https://github.com/tkay305/Retail-Projects/blob/main/product_sales_analytics.ipynb)

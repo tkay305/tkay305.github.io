@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Applied econometrics, ESG analytics, and data science. Click any card to read the full methodology and results.\n\n\nESG & Sustainability\n\n\nNet Zero Municipal Simulation Monte Carlo simulation of net-zero pathways for a Bavarian municipality. ESG Simulation · Python\n\n\nJIT Supply Chain Analytics Just-in-time supply chain performance analysis and operational risk indicators. ESG Time Series · Python\n\n\n\n\n\nResearch & Econometrics\n\n\nInstitutions & Growth: IV Regression 3-endogenous-variable 2SLS. Human capital significant at p&lt;0.01. Research 2SLS · Python · Stata\n\n\nHypothesis Testing: Men vs Women’s Football Frequentist inference on international scoring differences. Statistics t-test · Python\n\n\n\n\n\nData Science & Machine Learning\n\n\nPredictive Modelling for Agriculture ML pipeline for agricultural outcome prediction. Data Science Random Forest · XGBoost · Python\n\n\nRetail Strategy Analytics Customer segmentation and demand analysis for retail strategy. Data Science Clustering · Python\n\n\nProduct Sales Analytics Sales trend analysis and forecasting pipeline. Data Science EDA · Forecasting · Python\n\n\nML Clustering: Penguin Species Unsupervised species classification using K-means and PCA. Data Science K-means · PCA · Python"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "index.html#what-i-work-on",
+    "href": "index.html#what-i-work-on",
+    "title": "",
+    "section": "What I work on",
+    "text": "What I work on\n\n\n\nESG Analytics\nClimate scenario modelling, net-zero simulation, supply chain risk, and sustainability data pipelines.\n\n\n\n\nEconometric Research\nCausal inference with instrumental variables, cross-country growth analysis, institutional economics.\n\n\n\n\nData Science\nSupervised and unsupervised ML, predictive modelling, NLP, and statistical hypothesis testing."
+  },
+  {
+    "objectID": "index.html#featured-projects",
+    "href": "index.html#featured-projects",
+    "title": "",
+    "section": "Featured Projects",
+    "text": "Featured Projects\n\n\nInstitutions & Growth: IV Regression\n3-endogenous-variable 2SLS replication of AJR (2001) and GLLS (2004). Human capital significant at p&lt;0.01 across all specs.\nCausal Inference 2SLS · Python · Stata\n\n\nNet Zero Municipal Simulation\nMonte Carlo scenario modelling of climate target pathways for a German municipality.\nESG Simulation · Python\n\n\nPredictive Modelling for Agriculture\nML pipeline predicting agricultural outcomes from environmental and soil features.\nData Science Random Forest · XGBoost · Python\n\n\nHypothesis Testing: Men vs Women’s Football\nFrequentist inference on scoring differences in international football matches.\nStatistics t-test · Python\n\n\nSee all projects →"
+  },
+  {
+    "objectID": "index.html#skills",
+    "href": "index.html#skills",
+    "title": "",
+    "section": "Skills",
+    "text": "Skills\nLanguages\n\nPython R Stata SQL\n\nLibraries\n\npandas statsmodels linearmodels scikit-learn matplotlib seaborn\n\nMethods\n\nInstrumental Variables 2SLS Machine Learning Clustering NLP Monte Carlo Simulation Hypothesis Testing"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I’m an economist and data scientist based in Germany, with a BSc in Economics from University of Bristol. My work sits at the intersection of quantitative methods and real-world impact — from estimating causal effects of institutional quality on economic development, to simulating net-zero pathways for local government.\nI’m particularly interested in how data and evidence can support sustainability decision-making. My bachelor’s thesis used instrumental variables to investigate the deep determinants of economic development, and I’ve since applied similar thinking to ESG-adjacent problems: how do we measure what matters, when the things that matter are hard to observe?\n\n\n\nRoles in:\n\nESG Reporting & Analytics — sustainability data pipelines, reporting frameworks (TCFD, GRI, SFDR), emissions accounting\nResearch & Policy Analysis — applied econometrics, causal inference, evidence synthesis\nData Science — ML pipelines, predictive modelling, insight generation\n\n\n\n\nBSc Economics · University of Bristol · 2015\nThesis: The Role of Human Capital on Economic Development: An Instrumental Variables Approach\nMethods: 2SLS, Instrumental Variables, Cross-Country Data\n\n\n\nnatashakabuka@gmail.com\nlinkedin.com/in/natasha-kabuka/\ngithub.com/tkay305"
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About",
+    "section": "",
+    "text": "I’m an economist and data scientist based in Germany, with a BSc in Economics from University of Bristol. My work sits at the intersection of quantitative methods and real-world impact — from estimating causal effects of institutional quality on economic development, to simulating net-zero pathways for local government.\nI’m particularly interested in how data and evidence can support sustainability decision-making. My bachelor’s thesis used instrumental variables to investigate the deep determinants of economic development, and I’ve since applied similar thinking to ESG-adjacent problems: how do we measure what matters, when the things that matter are hard to observe?"
+  },
+  {
+    "objectID": "about.html#what-im-looking-for",
+    "href": "about.html#what-im-looking-for",
+    "title": "About",
+    "section": "",
+    "text": "Roles in:\n\nESG Reporting & Analytics — sustainability data pipelines, reporting frameworks (TCFD, GRI, SFDR), emissions accounting\nResearch & Policy Analysis — applied econometrics, causal inference, evidence synthesis\nData Science — ML pipelines, predictive modelling, insight generation"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About",
+    "section": "",
+    "text": "BSc Economics · University of Bristol · 2015\nThesis: The Role of Human Capital on Economic Development: An Instrumental Variables Approach\nMethods: 2SLS, Instrumental Variables, Cross-Country Data"
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About",
+    "section": "",
+    "text": "natashakabuka@gmail.com\nlinkedin.com/in/natasha-kabuka/\ngithub.com/tkay305"
+  }
+]

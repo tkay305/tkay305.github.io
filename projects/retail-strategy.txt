@@ -1,0 +1,36 @@
+---
+title: "Retail Strategy Analytics"
+description: "Customer segmentation and demand analysis for retail strategy."
+categories: [Data Science, Analytics]
+---
+
+## Overview
+
+This project analyses [N] transactions across [N] customers to
+support retail strategy decisions around [PRICING / INVENTORY /
+CUSTOMER TARGETING].
+
+## Methodology
+
+- **Segmentation** — [K-means / RFM analysis] clustering customers
+  by [purchase frequency / basket size / recency]
+- **Demand analysis** — [regression / time series] modelling
+  of [sales volume / revenue] against [price / promotions / season]
+- **Strategy recommendations** — segment-level insight
+  for [pricing / marketing] decisions
+
+## Key Findings
+
+::: {.result-box}
+[KEY FINDING — e.g. "[N] distinct customer segments identified.
+Segment [X] accounts for [Y]% of revenue despite being [Z]%
+of customers."]
+:::
+
+- [Finding 1]
+- [Finding 2]
+- [Finding 3 — actionable recommendation]
+
+## Code
+
+[Python Notebook](https://github.com/tkay305/Retail-Projects/blob/main/retail_strategy_analytics.ipynb)

@@ -1,0 +1,76 @@
+---
+title: "Institutions & Growth: An IV Approach"
+description: "Does institutional quality cause economic growth?"
+categories: [Research, Econometrics, Causal Inference]
+---
+
+## Overview
+
+This bachelor's thesis investigates the "deep determinants" debate in
+development economics — why some countries are rich and others poor.
+The paper sits between two competing literatures:
+
+- **AJR / RST (institutions-first):** settler mortality IV shows
+  institutions drive income per capita
+- **GLLS (human capital-first):** human capital predates institutions;
+  Rule of Law proxies are endogenous outcome variables
+
+The contribution is a **3-endogenous-variable 2SLS** instrumenting
+institutions, trade, and human capital simultaneously.
+
+## Model
+
+```
+Log(Income) = α + δ·Institutions + η·Human Capital + φ·Trade + θ·Geography + ε
+```
+
+**Endogenous variables:** Institutions (ROLA / Democracy), Trade, Human Capital
+
+**Instruments:** Settler Mortality, Malaria Ecology, Constructed Trade, ENGFRAC, EURFRAC
+
+**Exogenous control:** Tropicar (% landmass in tropics)
+
+## Results
+
+::: {.result-box}
+Human capital (years of schooling) is the **only statistically significant
+variable** across all 2SLS specifications. Institutions lose significance
+once endogeneity is controlled for via IV.
+:::
+
+| Specification | N | HC Coef | Sig |
+|---|---|---|---|
+| ROLA · Full sample | 110 | 0.603 | * |
+| ROLA · Colonial subsample | 51 | 0.460 | ** |
+| Democracy · Full sample | 109 | 0.638 | ** |
+| Democracy · Colonial subsample | 50 | 0.630 | *** |
+
+*Colonial subsample: SettlerMortality > 0. Robust SE used.*
+
+A 1-year increase in average schooling → **46–64% increase in income
+per capita** (semi-elasticity, varies by specification).
+
+## Limitations
+
+Cragg-Donald statistic falls below all Stock-Yogo critical values
+(2SLS bias > 30%). Results are suggestive but not conclusive.
+LIML estimation confirms weak identification — consistent with GLLS
+(2004), which encounters the same problem.
+
+## Code & Data
+
+- [Python Notebook](https://github.com/tkay305/iv-regression-institutions-growth) —
+  `statsmodels` OLS + `linearmodels.IV2SLS`
+- [Stata .do files](https://github.com/tkay305/iv-regression-institutions-growth) —
+  original `ivregress 2sls`, Sargan, Cragg-Donald, LIML
+- [Full Report](https://github.com/tkay305/iv-regression-institutions-growth/blob/main/docs/thesis_report.docx)
+
+## Key References
+
+Acemoglu, D., Johnson, S. & Robinson, J. (2001). *The Colonial Origins
+of Comparative Development.* NBER WP 7771.
+
+Glaeser, E. et al. (2004). *Do Institutions Cause Growth?* NBER WP 10568.
+
+Rodrik, D., Subramanian, A. & Trebbi, F. (2004). *Institutions Rule.*
+Journal of Economic Growth, 9(2), 131–165.

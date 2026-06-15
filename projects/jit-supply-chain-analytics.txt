@@ -1,0 +1,46 @@
+---
+title: "JIT Supply Chain Analytics"
+description: "Just-in-time supply chain performance analysis and risk indicators."
+categories: [ESG, Analytics, Operations]
+---
+
+## Overview
+
+This project analyses a just-in-time supply chain dataset to
+evaluate operational performance, identify bottlenecks, and
+quantify supply chain risk — a key ESG consideration for
+companies reporting under TCFD and GRI supply chain standards.
+
+## Methodology
+
+- **KPI analysis** — [lead time / on-time delivery / inventory
+  turnover] across [N] suppliers and [N] SKUs
+- **Risk indicators** — supplier concentration, geographic
+  exposure, demand variability
+- **[TIME SERIES / REGRESSION] analysis** — modelling
+  [LEAD TIME / STOCKOUT RATE] as a function of
+  [ORDER VOLUME / SUPPLIER TIER / SEASON]
+
+## Key Findings
+
+::: {.result-box}
+[KEY FINDING — e.g. "[X]% of supply disruptions traced to
+[N] single-source suppliers. Diversification to dual-sourcing
+would reduce stockout risk by an estimated [Y]%."]
+:::
+
+- [Finding 1]
+- [Finding 2 — ESG/risk angle]
+- [Finding 3 — operational recommendation]
+
+## ESG Relevance
+
+Supply chain resilience is a material ESG risk under:
+
+- **GRI 204** — Procurement practices
+- **TCFD** — Physical and transition climate risk in supply chains
+- **CSRD** — Value chain due diligence
+
+## Code
+
+[Python Notebook](https://github.com/tkay305/Supply-Chain-Analytics/blob/main/just_in_time_supply_chain.ipynb)

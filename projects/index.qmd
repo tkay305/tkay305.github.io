@@ -1,0 +1,68 @@
+---
+title: "Projects"
+toc: false
+---
+
+Applied econometrics, ESG analytics, and data science.
+Click any card to read the full methodology and results.
+
+---
+
+### ESG & Sustainability
+
+::: {.grid}
+::: {.g-col-12 .g-col-md-6}
+[**Net Zero Municipal Simulation**](net-zero-sim.qmd){.project-card}
+Monte Carlo simulation of net-zero pathways for a Bavarian municipality.
+<span class="tag tag-esg">ESG</span> <span class="tag tag-method">Simulation · Python</span>
+:::
+::: {.g-col-12 .g-col-md-6}
+[**JIT Supply Chain Analytics**](supply-chain.qmd){.project-card}
+Just-in-time supply chain performance analysis and operational risk indicators.
+<span class="tag tag-esg">ESG</span> <span class="tag tag-method">Time Series · Python</span>
+:::
+:::
+
+---
+
+### Research & Econometrics
+
+::: {.grid}
+::: {.g-col-12 .g-col-md-6}
+[**Institutions & Growth: IV Regression**](iv-institutions.qmd){.project-card}
+3-endogenous-variable 2SLS. Human capital significant at p<0.01.
+<span class="tag tag-research">Research</span> <span class="tag tag-method">2SLS · Python · Stata</span>
+:::
+::: {.g-col-12 .g-col-md-6}
+[**Hypothesis Testing: Men vs Women's Football**](hypothesis-soccer.qmd){.project-card}
+Frequentist inference on international scoring differences.
+<span class="tag tag-research">Statistics</span> <span class="tag tag-method">t-test · Python</span>
+:::
+:::
+
+---
+
+### Data Science & Machine Learning
+
+::: {.grid}
+::: {.g-col-12 .g-col-md-6}
+[**Predictive Modelling for Agriculture**](agriculture.qmd){.project-card}
+ML pipeline for agricultural outcome prediction.
+<span class="tag tag-ds">Data Science</span> <span class="tag tag-method">Random Forest · XGBoost · Python</span>
+:::
+::: {.g-col-12 .g-col-md-6}
+[**Retail Strategy Analytics**](retail.qmd){.project-card}
+Customer segmentation and demand analysis for retail strategy.
+<span class="tag tag-ds">Data Science</span> <span class="tag tag-method">Clustering · Python</span>
+:::
+::: {.g-col-12 .g-col-md-6}
+[**Product Sales Analytics**](product-sales.qmd){.project-card}
+Sales trend analysis and forecasting pipeline.
+<span class="tag tag-ds">Data Science</span> <span class="tag tag-method">EDA · Forecasting · Python</span>
+:::
+::: {.g-col-12 .g-col-md-6}
+[**ML Clustering: Penguin Species**](clustering-ml.qmd){.project-card}
+Unsupervised species classification using K-means and PCA.
+<span class="tag tag-ds">Data Science</span> <span class="tag tag-method">K-means · PCA · Python</span>
+:::
+:::

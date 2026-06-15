@@ -1,0 +1,40 @@
+---
+title: "Predictive Modelling for Agriculture"
+description: "ML pipeline predicting agricultural outcomes from environmental features."
+categories: [Data Science, Machine Learning]
+---
+
+## Overview
+
+This project builds a supervised ML pipeline to predict
+[CROP YIELD / SOIL TYPE / HARVEST QUALITY] from environmental
+and agricultural input features across [N] observations.
+
+## Methodology
+
+**Pipeline:**
+
+1. Data cleaning and feature engineering
+2. EDA — distributions, correlations with target
+3. Baseline — OLS regression
+4. Model comparison — Random Forest vs XGBoost vs [OTHER]
+5. Hyperparameter tuning — [GridSearchCV / RandomizedSearchCV]
+6. Evaluation — [METRIC] on held-out test set (80/20 split)
+
+## Key Findings
+
+::: {.result-box}
+[BEST MODEL] achieved [METRIC VALUE] on the test set, outperforming
+the baseline by [X]%. Most important features: [FEATURE 1],
+[FEATURE 2], [FEATURE 3].
+:::
+
+| Model | [Metric] |
+|---|---|
+| Baseline OLS | [VALUE] |
+| Random Forest | [VALUE] |
+| XGBoost | [VALUE] |
+
+## Code
+
+[Python Notebook](https://github.com/tkay305/predictive-modeling-agriculture)
