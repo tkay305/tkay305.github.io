@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Customer segmentation and demand analysis for retail strategy.">
 
-<title>Natasha</title>
+<title>Retail Strategy Analytics – Natasha</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -61,23 +62,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-8dc15bc9c3943fa16cc112da73343fe6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-90945ab488583f659319cf763bc36933.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8dc15bc9c3943fa16cc112da73343fe6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-90945ab488583f659319cf763bc36933.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -117,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Natasha</span>
     </a>
   </div>
@@ -128,15 +129,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects/index.html"> 
+    <a class="nav-link" href="../projects/index.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -159,90 +160,78 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">Methodology</a></li>
+  <li><a href="#key-findings" id="toc-key-findings" class="nav-link" data-scroll-target="#key-findings">Key Findings</a></li>
+  <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code">Code</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7"></h1></header><div class="quarto-title-block"><div class="quarto-title-tools-only"><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">Retail Strategy Analytics</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+  <div class="quarto-categories">
+    <div class="quarto-category">Data Science</div>
+    <div class="quarto-category">Analytics</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Customer segmentation and demand analysis for retail strategy.
+  </div>
+</div>
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
-<section id="natasha" class="level1 hero">
-<h1>Natasha</h1>
-<div class="tagline">
-<p>Economist · Data Scientist · ESG Analyst · Based in Germany</p>
-</div>
-<p><a href="mailto:natashakabuka@gmail.com">natashakabuka@gmail.com</a> &nbsp;|&nbsp; <a href="https://linkedin.com/in/natasha-kabuka/">LinkedIn</a> &nbsp;|&nbsp; <a href="https://github.com/tkay305">GitHub</a></p>
-<p><a href="./projects/index.html" class="btn btn-primary" style="background:#1B7A4A; border-color:#1B7A4A;">View Projects →</a> &nbsp; <a href="./about.html" class="btn btn-outline-secondary">About Me</a></p>
+</header>
+
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>This project analyses [N] transactions across [N] customers to support retail strategy decisions around [PRICING / INVENTORY / CUSTOMER TARGETING].</p>
 </section>
-<hr>
-<section id="what-i-work-on" class="level2">
-<h2 class="anchored" data-anchor-id="what-i-work-on">What I work on</h2>
-<div class="grid">
-<div class="g-col-12 g-col-md-4">
-<section id="esg-analytics" class="level3 domain-card">
-<h3 class="anchored" data-anchor-id="esg-analytics">ESG Analytics</h3>
-<p>Climate scenario modelling, net-zero simulation, supply chain risk, and sustainability data pipelines.</p>
+<section id="methodology" class="level2">
+<h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
+<ul>
+<li><strong>Segmentation</strong> — [K-means / RFM analysis] clustering customers by [purchase frequency / basket size / recency]</li>
+<li><strong>Demand analysis</strong> — [regression / time series] modelling of [sales volume / revenue] against [price / promotions / season]</li>
+<li><strong>Strategy recommendations</strong> — segment-level insight for [pricing / marketing] decisions</li>
+</ul>
 </section>
+<section id="key-findings" class="level2">
+<h2 class="anchored" data-anchor-id="key-findings">Key Findings</h2>
+<div class="result-box">
+<p>[KEY FINDING — e.g.&nbsp;“[N] distinct customer segments identified. Segment [X] accounts for [Y]% of revenue despite being [Z]% of customers.”]</p>
 </div>
-<div class="g-col-12 g-col-md-4">
-<section id="econometric-research" class="level3 domain-card">
-<h3 class="anchored" data-anchor-id="econometric-research">Econometric Research</h3>
-<p>Causal inference with instrumental variables, cross-country growth analysis, institutional economics.</p>
+<ul>
+<li>[Finding 1]</li>
+<li>[Finding 2]</li>
+<li>[Finding 3 — actionable recommendation]</li>
+</ul>
 </section>
-</div>
-<div class="g-col-12 g-col-md-4">
-<section id="data-science" class="level3 domain-card">
-<h3 class="anchored" data-anchor-id="data-science">Data Science</h3>
-<p>Supervised and unsupervised ML, predictive modelling, NLP, and statistical hypothesis testing.</p>
-</section>
-</div>
-</div>
-<hr>
-</section>
-<section id="featured-projects" class="level2">
-<h2 class="anchored" data-anchor-id="featured-projects">Featured Projects</h2>
-<div class="grid">
-<div class="g-col-12 g-col-md-6">
-<p><a href="./projects/iv-institutions.html" class="project-card"><strong>Institutions &amp; Growth: IV Regression</strong></a></p>
-<p>3-endogenous-variable 2SLS replication of AJR (2001) and GLLS (2004). Human capital significant at p&lt;0.01 across all specs.</p>
-<p><span class="tag tag-research">Causal Inference</span> <span class="tag tag-method">2SLS · Python · Stata</span></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p><a href="projects/net-zero-sim.qmd" class="project-card"><strong>Net Zero Municipal Simulation</strong></a></p>
-<p>Monte Carlo scenario modelling of climate target pathways for a German municipality.</p>
-<p><span class="tag tag-esg">ESG</span> <span class="tag tag-method">Simulation · Python</span></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p><a href="projects/agriculture.qmd" class="project-card"><strong>Predictive Modelling for Agriculture</strong></a></p>
-<p>ML pipeline predicting agricultural outcomes from environmental and soil features.</p>
-<p><span class="tag tag-ds">Data Science</span> <span class="tag tag-method">Random Forest · XGBoost · Python</span></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p><a href="projects/hypothesis-soccer.qmd" class="project-card"><strong>Hypothesis Testing: Men vs Women’s Football</strong></a></p>
-<p>Frequentist inference on scoring differences in international football matches.</p>
-<p><span class="tag tag-research">Statistics</span> <span class="tag tag-method">t-test · Python</span></p>
-</div>
-</div>
-<p><a href="./projects/index.html">See all projects →</a></p>
-<hr>
-</section>
-<section id="skills" class="level2">
-<h2 class="anchored" data-anchor-id="skills">Skills</h2>
-<p><strong>Languages</strong></p>
-<div class="skills-grid">
-<p><span class="skill-badge">Python</span> <span class="skill-badge">R</span> <span class="skill-badge">Stata</span> <span class="skill-badge">SQL</span></p>
-</div>
-<p><strong>Libraries</strong></p>
-<div class="skills-grid">
-<p><span class="skill-badge">pandas</span> <span class="skill-badge">statsmodels</span> <span class="skill-badge">linearmodels</span> <span class="skill-badge">scikit-learn</span> <span class="skill-badge">matplotlib</span> <span class="skill-badge">seaborn</span></p>
-</div>
-<p><strong>Methods</strong></p>
-<div class="skills-grid">
-<p><span class="skill-badge">Instrumental Variables</span> <span class="skill-badge">2SLS</span> <span class="skill-badge">Machine Learning</span> <span class="skill-badge">Clustering</span> <span class="skill-badge">NLP</span> <span class="skill-badge">Monte Carlo Simulation</span> <span class="skill-badge">Hypothesis Testing</span></p>
-</div>
+<section id="code" class="level2">
+<h2 class="anchored" data-anchor-id="code">Code</h2>
+<p><a href="https://github.com/tkay305/Retail-Projects/blob/main/retail_strategy_analytics.ipynb">Python Notebook</a></p>
 
 
 <!-- -->
@@ -702,128 +691,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> ""</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">page-layout:</span><span class="co"> full</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> false</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Retail Strategy Analytics"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "Customer segmentation and demand analysis for retail strategy."</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [Data Science, Analytics]</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>::: {.hero}</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overview</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu"># Natasha</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>::: {.tagline}</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>Economist · Data Scientist · ESG Analyst · Based in Germany</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>This project analyses <span class="co">[</span><span class="ot">N</span><span class="co">]</span> transactions across <span class="co">[</span><span class="ot">N</span><span class="co">]</span> customers to</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>support retail strategy decisions around [PRICING / INVENTORY /</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>CUSTOMER TARGETING].</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">## Methodology</span></span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">natashakabuka@gmail.com</span><span class="co">](mailto:natashakabuka@gmail.com)</span> <span class="dv">&amp;nbsp;</span>|<span class="dv">&amp;nbsp;</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">LinkedIn</span><span class="co">](https://linkedin.com/in/natasha-kabuka/)</span> <span class="dv">&amp;nbsp;</span>|<span class="dv">&amp;nbsp;</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">GitHub</span><span class="co">](https://github.com/tkay305)</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">View Projects →</span><span class="co">](projects/index.qmd)</span>{.btn .btn-primary</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  style="background:#1B7A4A; border-color:#1B7A4A;"}</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="dv">&amp;nbsp;</span></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">About Me</span><span class="co">](about.qmd)</span>{.btn .btn-outline-secondary}</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Segmentation** — <span class="co">[</span><span class="ot">K-means / RFM analysis</span><span class="co">]</span> clustering customers</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  by <span class="co">[</span><span class="ot">purchase frequency / basket size / recency</span><span class="co">]</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Demand analysis** — <span class="co">[</span><span class="ot">regression / time series</span><span class="co">]</span> modelling</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  of <span class="co">[</span><span class="ot">sales volume / revenue</span><span class="co">]</span> against <span class="co">[</span><span class="ot">price / promotions / season</span><span class="co">]</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Strategy recommendations** — segment-level insight</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  for <span class="co">[</span><span class="ot">pricing / marketing</span><span class="co">]</span> decisions</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu">## Key Findings</span></span>
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="fu">## What I work on</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>::: {.result-box}</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">KEY FINDING — e.g. "[N</span><span class="co">]</span> distinct customer segments identified.</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>Segment <span class="co">[</span><span class="ot">X</span><span class="co">]</span> accounts for <span class="co">[</span><span class="ot">Y</span><span class="co">]</span>% of revenue despite being <span class="co">[</span><span class="ot">Z</span><span class="co">]</span>%</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>of customers."]</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>::: {.grid}</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>::: {.g-col-12 .g-col-md-4}</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>::: {.domain-card}</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="fu">### ESG Analytics</span></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>Climate scenario modelling, net-zero simulation,</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>supply chain risk, and sustainability data pipelines.</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>::: {.g-col-12 .g-col-md-4}</span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>::: {.domain-card}</span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="fu">### Econometric Research</span></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>Causal inference with instrumental variables,</span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>cross-country growth analysis, institutional economics.</span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>::: {.g-col-12 .g-col-md-4}</span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>::: {.domain-card}</span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="fu">### Data Science</span></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>Supervised and unsupervised ML, predictive modelling,</span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>NLP, and statistical hypothesis testing.</span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="fu">## Featured Projects</span></span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>::: {.grid}</span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>::: {.g-col-12 .g-col-md-6}</span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**Institutions &amp; Growth: IV Regression**</span><span class="co">](projects/iv-institutions.qmd)</span>{.project-card}</span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>3-endogenous-variable 2SLS replication of AJR (2001) and GLLS (2004).</span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>Human capital significant at p&lt;0.01 across all specs.</span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"tag tag-research"</span><span class="dt">&gt;</span>Causal Inference<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span></span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"tag tag-method"</span><span class="dt">&gt;</span>2SLS · Python · Stata<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>::: {.g-col-12 .g-col-md-6}</span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**Net Zero Municipal Simulation**</span><span class="co">](projects/net-zero-sim.qmd)</span>{.project-card}</span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>Monte Carlo scenario modelling of climate target pathways</span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>for a German municipality.</span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"tag tag-esg"</span><span class="dt">&gt;</span>ESG<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span></span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"tag tag-method"</span><span class="dt">&gt;</span>Simulation · Python<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span></span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>::: {.g-col-12 .g-col-md-6}</span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**Predictive Modelling for Agriculture**</span><span class="co">](projects/agriculture.qmd)</span>{.project-card}</span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>ML pipeline predicting agricultural outcomes from</span>
-<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>environmental and soil features.</span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"tag tag-ds"</span><span class="dt">&gt;</span>Data Science<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span></span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"tag tag-method"</span><span class="dt">&gt;</span>Random Forest · XGBoost · Python<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span></span>
-<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>::: {.g-col-12 .g-col-md-6}</span>
-<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**Hypothesis Testing: Men vs Women's Football**</span><span class="co">](projects/hypothesis-soccer.qmd)</span>{.project-card}</span>
-<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>Frequentist inference on scoring differences</span>
-<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>in international football matches.</span>
-<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"tag tag-research"</span><span class="dt">&gt;</span>Statistics<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span></span>
-<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"tag tag-method"</span><span class="dt">&gt;</span>t-test · Python<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span></span>
-<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">See all projects →</span><span class="co">](projects/index.qmd)</span></span>
-<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a><span class="fu">## Skills</span></span>
-<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a>**Languages**</span>
-<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a>::: {.skills-grid}</span>
-<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Python</span><span class="co">]</span>{.skill-badge} <span class="co">[</span><span class="ot">R</span><span class="co">]</span>{.skill-badge} <span class="co">[</span><span class="ot">Stata</span><span class="co">]</span>{.skill-badge} <span class="co">[</span><span class="ot">SQL</span><span class="co">]</span>{.skill-badge}</span>
-<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a>**Libraries**</span>
-<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>::: {.skills-grid}</span>
-<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">pandas</span><span class="co">]</span>{.skill-badge} <span class="co">[</span><span class="ot">statsmodels</span><span class="co">]</span>{.skill-badge} <span class="co">[</span><span class="ot">linearmodels</span><span class="co">]</span>{.skill-badge}</span>
-<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">scikit-learn</span><span class="co">]</span>{.skill-badge} <span class="co">[</span><span class="ot">matplotlib</span><span class="co">]</span>{.skill-badge} <span class="co">[</span><span class="ot">seaborn</span><span class="co">]</span>{.skill-badge}</span>
-<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>**Methods**</span>
-<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>::: {.skills-grid}</span>
-<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Instrumental Variables</span><span class="co">]</span>{.skill-badge} <span class="co">[</span><span class="ot">2SLS</span><span class="co">]</span>{.skill-badge}</span>
-<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Machine Learning</span><span class="co">]</span>{.skill-badge} <span class="co">[</span><span class="ot">Clustering</span><span class="co">]</span>{.skill-badge}</span>
-<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">NLP</span><span class="co">]</span>{.skill-badge} <span class="co">[</span><span class="ot">Monte Carlo Simulation</span><span class="co">]</span>{.skill-badge}</span>
-<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Hypothesis Testing</span><span class="co">]</span>{.skill-badge}</span>
-<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Finding 1</span><span class="co">]</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Finding 2</span><span class="co">]</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Finding 3 — actionable recommendation</span><span class="co">]</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="fu">## Code</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Python Notebook</span><span class="co">](https://github.com/tkay305/Retail-Projects/blob/main/retail_strategy_analytics.ipynb)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

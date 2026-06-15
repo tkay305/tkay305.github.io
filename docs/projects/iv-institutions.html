@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Does institutional quality cause economic growth?">
 
-<title>Projects – Natasha</title>
+<title>Institutions &amp; Growth: An IV Approach – Natasha</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -110,7 +111,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -132,7 +133,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../projects/index.html" aria-current="page"> 
+    <a class="nav-link" href="../projects/index.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
@@ -162,15 +163,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#model" id="toc-model" class="nav-link" data-scroll-target="#model">Model</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
+  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
+  <li><a href="#code-data" id="toc-code-data" class="nav-link" data-scroll-target="#code-data">Code &amp; Data</a></li>
+  <li><a href="#key-references" id="toc-key-references" class="nav-link" data-scroll-target="#key-references">Key References</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Projects</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
-</div>
+<div class="quarto-title-block"><div><h1 class="title">Institutions &amp; Growth: An IV Approach</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+  <div class="quarto-categories">
+    <div class="quarto-category">Research</div>
+    <div class="quarto-category">Econometrics</div>
+    <div class="quarto-category">Causal Inference</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Does institutional quality cause economic growth?
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -185,48 +209,83 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Applied econometrics, ESG analytics, and data science. Click any card to read the full methodology and results.</p>
-<hr>
-<section id="esg-sustainability" class="level3">
-<h3 class="anchored" data-anchor-id="esg-sustainability">ESG &amp; Sustainability</h3>
-<div class="grid">
-<div class="g-col-12 g-col-md-6">
-<p><a href="net-zero-sim.qmd" class="project-card"><strong>Net Zero Municipal Simulation</strong></a> Monte Carlo simulation of net-zero pathways for a Bavarian municipality. <span class="tag tag-esg">ESG</span> <span class="tag tag-method">Simulation · Python</span></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p><a href="supply-chain.qmd" class="project-card"><strong>JIT Supply Chain Analytics</strong></a> Just-in-time supply chain performance analysis and operational risk indicators. <span class="tag tag-esg">ESG</span> <span class="tag tag-method">Time Series · Python</span></p>
-</div>
-</div>
-<hr>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>This bachelor’s thesis investigates the “deep determinants” debate in development economics — why some countries are rich and others poor. The paper sits between two competing literatures:</p>
+<ul>
+<li><strong>AJR / RST (institutions-first):</strong> settler mortality IV shows institutions drive income per capita</li>
+<li><strong>GLLS (human capital-first):</strong> human capital predates institutions; Rule of Law proxies are endogenous outcome variables</li>
+</ul>
+<p>The contribution is a <strong>3-endogenous-variable 2SLS</strong> instrumenting institutions, trade, and human capital simultaneously.</p>
 </section>
-<section id="research-econometrics" class="level3">
-<h3 class="anchored" data-anchor-id="research-econometrics">Research &amp; Econometrics</h3>
-<div class="grid">
-<div class="g-col-12 g-col-md-6">
-<p><a href="../projects/iv-institutions.html" class="project-card"><strong>Institutions &amp; Growth: IV Regression</strong></a> 3-endogenous-variable 2SLS. Human capital significant at p&lt;0.01. <span class="tag tag-research">Research</span> <span class="tag tag-method">2SLS · Python · Stata</span></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p><a href="hypothesis-soccer.qmd" class="project-card"><strong>Hypothesis Testing: Men vs Women’s Football</strong></a> Frequentist inference on international scoring differences. <span class="tag tag-research">Statistics</span> <span class="tag tag-method">t-test · Python</span></p>
-</div>
-</div>
-<hr>
+<section id="model" class="level2">
+<h2 class="anchored" data-anchor-id="model">Model</h2>
+<pre><code>Log(Income) = α + δ·Institutions + η·Human Capital + φ·Trade + θ·Geography + ε</code></pre>
+<p><strong>Endogenous variables:</strong> Institutions (ROLA / Democracy), Trade, Human Capital</p>
+<p><strong>Instruments:</strong> Settler Mortality, Malaria Ecology, Constructed Trade, ENGFRAC, EURFRAC</p>
+<p><strong>Exogenous control:</strong> Tropicar (% landmass in tropics)</p>
 </section>
-<section id="data-science-machine-learning" class="level3">
-<h3 class="anchored" data-anchor-id="data-science-machine-learning">Data Science &amp; Machine Learning</h3>
-<div class="grid">
-<div class="g-col-12 g-col-md-6">
-<p><a href="agriculture.qmd" class="project-card"><strong>Predictive Modelling for Agriculture</strong></a> ML pipeline for agricultural outcome prediction. <span class="tag tag-ds">Data Science</span> <span class="tag tag-method">Random Forest · XGBoost · Python</span></p>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<div class="result-box">
+<p>Human capital (years of schooling) is the <strong>only statistically significant variable</strong> across all 2SLS specifications. Institutions lose significance once endogeneity is controlled for via IV.</p>
 </div>
-<div class="g-col-12 g-col-md-6">
-<p><a href="retail.qmd" class="project-card"><strong>Retail Strategy Analytics</strong></a> Customer segmentation and demand analysis for retail strategy. <span class="tag tag-ds">Data Science</span> <span class="tag tag-method">Clustering · Python</span></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p><a href="../projects/product-sales.html" class="project-card"><strong>Product Sales Analytics</strong></a> Sales trend analysis and forecasting pipeline. <span class="tag tag-ds">Data Science</span> <span class="tag tag-method">EDA · Forecasting · Python</span></p>
-</div>
-<div class="g-col-12 g-col-md-6">
-<p><a href="clustering-ml.qmd" class="project-card"><strong>ML Clustering: Penguin Species</strong></a> Unsupervised species classification using K-means and PCA. <span class="tag tag-ds">Data Science</span> <span class="tag tag-method">K-means · PCA · Python</span></p>
-</div>
-</div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Specification</th>
+<th>N</th>
+<th>HC Coef</th>
+<th>Sig</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ROLA · Full sample</td>
+<td>110</td>
+<td>0.603</td>
+<td>*</td>
+</tr>
+<tr class="even">
+<td>ROLA · Colonial subsample</td>
+<td>51</td>
+<td>0.460</td>
+<td>**</td>
+</tr>
+<tr class="odd">
+<td>Democracy · Full sample</td>
+<td>109</td>
+<td>0.638</td>
+<td>**</td>
+</tr>
+<tr class="even">
+<td>Democracy · Colonial subsample</td>
+<td>50</td>
+<td>0.630</td>
+<td>***</td>
+</tr>
+</tbody>
+</table>
+<p><em>Colonial subsample: SettlerMortality &gt; 0. Robust SE used.</em></p>
+<p>A 1-year increase in average schooling → <strong>46–64% increase in income per capita</strong> (semi-elasticity, varies by specification).</p>
+</section>
+<section id="limitations" class="level2">
+<h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
+<p>Cragg-Donald statistic falls below all Stock-Yogo critical values (2SLS bias &gt; 30%). Results are suggestive but not conclusive. LIML estimation confirms weak identification — consistent with GLLS (2004), which encounters the same problem.</p>
+</section>
+<section id="code-data" class="level2">
+<h2 class="anchored" data-anchor-id="code-data">Code &amp; Data</h2>
+<ul>
+<li><a href="https://github.com/tkay305/iv-regression-institutions-growth">Python Notebook</a> — <code>statsmodels</code> OLS + <code>linearmodels.IV2SLS</code></li>
+<li><a href="https://github.com/tkay305/iv-regression-institutions-growth">Stata .do files</a> — original <code>ivregress 2sls</code>, Sargan, Cragg-Donald, LIML</li>
+<li><a href="https://github.com/tkay305/iv-regression-institutions-growth/blob/main/docs/thesis_report.docx">Full Report</a></li>
+</ul>
+</section>
+<section id="key-references" class="level2">
+<h2 class="anchored" data-anchor-id="key-references">Key References</h2>
+<p>Acemoglu, D., Johnson, S. &amp; Robinson, J. (2001). <em>The Colonial Origins of Comparative Development.</em> NBER WP 7771.</p>
+<p>Glaeser, E. et al.&nbsp;(2004). <em>Do Institutions Cause Growth?</em> NBER WP 10568.</p>
+<p>Rodrik, D., Subramanian, A. &amp; Trebbi, F. (2004). <em>Institutions Rule.</em> Journal of Economic Growth, 9(2), 131–165.</p>
 
 
 <!-- -->
@@ -685,74 +744,82 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Projects"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> false</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>Applied econometrics, ESG analytics, and data science.</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Click any card to read the full methodology and results.</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">### ESG &amp; Sustainability</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>::: {.grid}</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>::: {.g-col-12 .g-col-md-6}</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**Net Zero Municipal Simulation**</span><span class="co">](net-zero-sim.qmd)</span>{.project-card}</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>Monte Carlo simulation of net-zero pathways for a Bavarian municipality.</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"tag tag-esg"</span><span class="dt">&gt;</span>ESG<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span> <span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"tag tag-method"</span><span class="dt">&gt;</span>Simulation · Python<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>::: {.g-col-12 .g-col-md-6}</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**JIT Supply Chain Analytics**</span><span class="co">](supply-chain.qmd)</span>{.project-card}</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>Just-in-time supply chain performance analysis and operational risk indicators.</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"tag tag-esg"</span><span class="dt">&gt;</span>ESG<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span> <span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"tag tag-method"</span><span class="dt">&gt;</span>Time Series · Python<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="fu">### Research &amp; Econometrics</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>::: {.grid}</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>::: {.g-col-12 .g-col-md-6}</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**Institutions &amp; Growth: IV Regression**</span><span class="co">](iv-institutions.qmd)</span>{.project-card}</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>3-endogenous-variable 2SLS. Human capital significant at p&lt;0.01.</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"tag tag-research"</span><span class="dt">&gt;</span>Research<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span> <span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"tag tag-method"</span><span class="dt">&gt;</span>2SLS · Python · Stata<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>::: {.g-col-12 .g-col-md-6}</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**Hypothesis Testing: Men vs Women's Football**</span><span class="co">](hypothesis-soccer.qmd)</span>{.project-card}</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>Frequentist inference on international scoring differences.</span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"tag tag-research"</span><span class="dt">&gt;</span>Statistics<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span> <span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"tag tag-method"</span><span class="dt">&gt;</span>t-test · Python<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="fu">### Data Science &amp; Machine Learning</span></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>::: {.grid}</span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>::: {.g-col-12 .g-col-md-6}</span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**Predictive Modelling for Agriculture**</span><span class="co">](agriculture.qmd)</span>{.project-card}</span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>ML pipeline for agricultural outcome prediction.</span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"tag tag-ds"</span><span class="dt">&gt;</span>Data Science<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span> <span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"tag tag-method"</span><span class="dt">&gt;</span>Random Forest · XGBoost · Python<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span></span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>::: {.g-col-12 .g-col-md-6}</span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**Retail Strategy Analytics**</span><span class="co">](retail.qmd)</span>{.project-card}</span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>Customer segmentation and demand analysis for retail strategy.</span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"tag tag-ds"</span><span class="dt">&gt;</span>Data Science<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span> <span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"tag tag-method"</span><span class="dt">&gt;</span>Clustering · Python<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span></span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>::: {.g-col-12 .g-col-md-6}</span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**Product Sales Analytics**</span><span class="co">](product-sales.qmd)</span>{.project-card}</span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>Sales trend analysis and forecasting pipeline.</span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"tag tag-ds"</span><span class="dt">&gt;</span>Data Science<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span> <span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"tag tag-method"</span><span class="dt">&gt;</span>EDA · Forecasting · Python<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span></span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>::: {.g-col-12 .g-col-md-6}</span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**ML Clustering: Penguin Species**</span><span class="co">](clustering-ml.qmd)</span>{.project-card}</span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>Unsupervised species classification using K-means and PCA.</span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"tag tag-ds"</span><span class="dt">&gt;</span>Data Science<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span> <span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> class</span><span class="op">=</span><span class="st">"tag tag-method"</span><span class="dt">&gt;</span>K-means · PCA · Python<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Institutions &amp; Growth: An IV Approach"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "Does institutional quality cause economic growth?"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [Research, Econometrics, Causal Inference]</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overview</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>This bachelor's thesis investigates the "deep determinants" debate in</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>development economics — why some countries are rich and others poor.</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>The paper sits between two competing literatures:</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**AJR / RST (institutions-first):** settler mortality IV shows</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  institutions drive income per capita</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**GLLS (human capital-first):** human capital predates institutions;</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  Rule of Law proxies are endogenous outcome variables</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>The contribution is a **3-endogenous-variable 2SLS** instrumenting</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>institutions, trade, and human capital simultaneously.</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="fu">## Model</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="in">Log(Income) = α + δ·Institutions + η·Human Capital + φ·Trade + θ·Geography + ε</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>**Endogenous variables:** Institutions (ROLA / Democracy), Trade, Human Capital</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>**Instruments:** Settler Mortality, Malaria Ecology, Constructed Trade, ENGFRAC, EURFRAC</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>**Exogenous control:** Tropicar (% landmass in tropics)</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a><span class="fu">## Results</span></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>::: {.result-box}</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>Human capital (years of schooling) is the **only statistically significant</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>variable** across all 2SLS specifications. Institutions lose significance</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>once endogeneity is controlled for via IV.</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Specification <span class="pp">|</span> N <span class="pp">|</span> HC Coef <span class="pp">|</span> Sig <span class="pp">|</span></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|---|</span></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> ROLA · Full sample <span class="pp">|</span> 110 <span class="pp">|</span> 0.603 <span class="pp">|</span> * <span class="pp">|</span></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> ROLA · Colonial subsample <span class="pp">|</span> 51 <span class="pp">|</span> 0.460 <span class="pp">|</span> ** <span class="pp">|</span></span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Democracy · Full sample <span class="pp">|</span> 109 <span class="pp">|</span> 0.638 <span class="pp">|</span> ** <span class="pp">|</span></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Democracy · Colonial subsample <span class="pp">|</span> 50 <span class="pp">|</span> 0.630 <span class="pp">|</span> *** <span class="pp">|</span></span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>*Colonial subsample: SettlerMortality &gt; 0. Robust SE used.*</span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>A 1-year increase in average schooling → **46–64% increase in income</span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>per capita** (semi-elasticity, varies by specification).</span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a><span class="fu">## Limitations</span></span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>Cragg-Donald statistic falls below all Stock-Yogo critical values</span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>(2SLS bias &gt; 30%). Results are suggestive but not conclusive.</span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a>LIML estimation confirms weak identification — consistent with GLLS</span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>(2004), which encounters the same problem.</span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a><span class="fu">## Code &amp; Data</span></span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Python Notebook</span><span class="co">](https://github.com/tkay305/iv-regression-institutions-growth)</span> —</span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a>  <span class="in">`statsmodels`</span> OLS + <span class="in">`linearmodels.IV2SLS`</span></span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Stata .do files</span><span class="co">](https://github.com/tkay305/iv-regression-institutions-growth)</span> —</span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>  original <span class="in">`ivregress 2sls`</span>, Sargan, Cragg-Donald, LIML</span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Full Report</span><span class="co">](https://github.com/tkay305/iv-regression-institutions-growth/blob/main/docs/thesis_report.docx)</span></span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a><span class="fu">## Key References</span></span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a>Acemoglu, D., Johnson, S. &amp; Robinson, J. (2001). *The Colonial Origins</span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a>of Comparative Development.* NBER WP 7771.</span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a>Glaeser, E. et al. (2004). *Do Institutions Cause Growth?* NBER WP 10568.</span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a>Rodrik, D., Subramanian, A. &amp; Trebbi, F. (2004). *Institutions Rule.*</span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a>Journal of Economic Growth, 9(2), 131–165.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

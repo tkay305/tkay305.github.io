@@ -1,38 +1,94 @@
 [
   {
+    "objectID": "projects/predictive-modeling.html",
+    "href": "projects/predictive-modeling.html",
+    "title": "Predictive Modelling for Agriculture",
+    "section": "",
+    "text": "This project builds a supervised ML pipeline to predict [CROP YIELD / SOIL TYPE / HARVEST QUALITY] from environmental and agricultural input features across [N] observations."
+  },
+  {
+    "objectID": "projects/predictive-modeling.html#overview",
+    "href": "projects/predictive-modeling.html#overview",
+    "title": "Predictive Modelling for Agriculture",
+    "section": "",
+    "text": "This project builds a supervised ML pipeline to predict [CROP YIELD / SOIL TYPE / HARVEST QUALITY] from environmental and agricultural input features across [N] observations."
+  },
+  {
+    "objectID": "projects/predictive-modeling.html#methodology",
+    "href": "projects/predictive-modeling.html#methodology",
+    "title": "Predictive Modelling for Agriculture",
+    "section": "Methodology",
+    "text": "Methodology\nPipeline:\n\nData cleaning and feature engineering\nEDA — distributions, correlations with target\nBaseline — OLS regression\nModel comparison — Random Forest vs XGBoost vs [OTHER]\nHyperparameter tuning — [GridSearchCV / RandomizedSearchCV]\nEvaluation — [METRIC] on held-out test set (80/20 split)"
+  },
+  {
+    "objectID": "projects/predictive-modeling.html#key-findings",
+    "href": "projects/predictive-modeling.html#key-findings",
+    "title": "Predictive Modelling for Agriculture",
+    "section": "Key Findings",
+    "text": "Key Findings\n\n[BEST MODEL] achieved [METRIC VALUE] on the test set, outperforming the baseline by [X]%. Most important features: [FEATURE 1], [FEATURE 2], [FEATURE 3].\n\n\n\n\nModel\n[Metric]\n\n\n\n\nBaseline OLS\n[VALUE]\n\n\nRandom Forest\n[VALUE]\n\n\nXGBoost\n[VALUE]"
+  },
+  {
+    "objectID": "projects/predictive-modeling.html#code",
+    "href": "projects/predictive-modeling.html#code",
+    "title": "Predictive Modelling for Agriculture",
+    "section": "Code",
+    "text": "Code\nPython Notebook"
+  },
+  {
+    "objectID": "projects/iv-institutions.html",
+    "href": "projects/iv-institutions.html",
+    "title": "Institutions & Growth: An IV Approach",
+    "section": "",
+    "text": "This bachelor’s thesis investigates the “deep determinants” debate in development economics — why some countries are rich and others poor. The paper sits between two competing literatures:\n\nAJR / RST (institutions-first): settler mortality IV shows institutions drive income per capita\nGLLS (human capital-first): human capital predates institutions; Rule of Law proxies are endogenous outcome variables\n\nThe contribution is a 3-endogenous-variable 2SLS instrumenting institutions, trade, and human capital simultaneously."
+  },
+  {
+    "objectID": "projects/iv-institutions.html#overview",
+    "href": "projects/iv-institutions.html#overview",
+    "title": "Institutions & Growth: An IV Approach",
+    "section": "",
+    "text": "This bachelor’s thesis investigates the “deep determinants” debate in development economics — why some countries are rich and others poor. The paper sits between two competing literatures:\n\nAJR / RST (institutions-first): settler mortality IV shows institutions drive income per capita\nGLLS (human capital-first): human capital predates institutions; Rule of Law proxies are endogenous outcome variables\n\nThe contribution is a 3-endogenous-variable 2SLS instrumenting institutions, trade, and human capital simultaneously."
+  },
+  {
+    "objectID": "projects/iv-institutions.html#model",
+    "href": "projects/iv-institutions.html#model",
+    "title": "Institutions & Growth: An IV Approach",
+    "section": "Model",
+    "text": "Model\nLog(Income) = α + δ·Institutions + η·Human Capital + φ·Trade + θ·Geography + ε\nEndogenous variables: Institutions (ROLA / Democracy), Trade, Human Capital\nInstruments: Settler Mortality, Malaria Ecology, Constructed Trade, ENGFRAC, EURFRAC\nExogenous control: Tropicar (% landmass in tropics)"
+  },
+  {
+    "objectID": "projects/iv-institutions.html#results",
+    "href": "projects/iv-institutions.html#results",
+    "title": "Institutions & Growth: An IV Approach",
+    "section": "Results",
+    "text": "Results\n\nHuman capital (years of schooling) is the only statistically significant variable across all 2SLS specifications. Institutions lose significance once endogeneity is controlled for via IV.\n\n\n\n\nSpecification\nN\nHC Coef\nSig\n\n\n\n\nROLA · Full sample\n110\n0.603\n*\n\n\nROLA · Colonial subsample\n51\n0.460\n**\n\n\nDemocracy · Full sample\n109\n0.638\n**\n\n\nDemocracy · Colonial subsample\n50\n0.630\n***\n\n\n\nColonial subsample: SettlerMortality &gt; 0. Robust SE used.\nA 1-year increase in average schooling → 46–64% increase in income per capita (semi-elasticity, varies by specification)."
+  },
+  {
+    "objectID": "projects/iv-institutions.html#limitations",
+    "href": "projects/iv-institutions.html#limitations",
+    "title": "Institutions & Growth: An IV Approach",
+    "section": "Limitations",
+    "text": "Limitations\nCragg-Donald statistic falls below all Stock-Yogo critical values (2SLS bias &gt; 30%). Results are suggestive but not conclusive. LIML estimation confirms weak identification — consistent with GLLS (2004), which encounters the same problem."
+  },
+  {
+    "objectID": "projects/iv-institutions.html#code-data",
+    "href": "projects/iv-institutions.html#code-data",
+    "title": "Institutions & Growth: An IV Approach",
+    "section": "Code & Data",
+    "text": "Code & Data\n\nPython Notebook — statsmodels OLS + linearmodels.IV2SLS\nStata .do files — original ivregress 2sls, Sargan, Cragg-Donald, LIML\nFull Report"
+  },
+  {
+    "objectID": "projects/iv-institutions.html#key-references",
+    "href": "projects/iv-institutions.html#key-references",
+    "title": "Institutions & Growth: An IV Approach",
+    "section": "Key References",
+    "text": "Key References\nAcemoglu, D., Johnson, S. & Robinson, J. (2001). The Colonial Origins of Comparative Development. NBER WP 7771.\nGlaeser, E. et al. (2004). Do Institutions Cause Growth? NBER WP 10568.\nRodrik, D., Subramanian, A. & Trebbi, F. (2004). Institutions Rule. Journal of Economic Growth, 9(2), 131–165."
+  },
+  {
     "objectID": "projects/index.html",
     "href": "projects/index.html",
     "title": "Projects",
     "section": "",
     "text": "Applied econometrics, ESG analytics, and data science. Click any card to read the full methodology and results.\n\n\nESG & Sustainability\n\n\nNet Zero Municipal Simulation Monte Carlo simulation of net-zero pathways for a Bavarian municipality. ESG Simulation · Python\n\n\nJIT Supply Chain Analytics Just-in-time supply chain performance analysis and operational risk indicators. ESG Time Series · Python\n\n\n\n\n\nResearch & Econometrics\n\n\nInstitutions & Growth: IV Regression 3-endogenous-variable 2SLS. Human capital significant at p&lt;0.01. Research 2SLS · Python · Stata\n\n\nHypothesis Testing: Men vs Women’s Football Frequentist inference on international scoring differences. Statistics t-test · Python\n\n\n\n\n\nData Science & Machine Learning\n\n\nPredictive Modelling for Agriculture ML pipeline for agricultural outcome prediction. Data Science Random Forest · XGBoost · Python\n\n\nRetail Strategy Analytics Customer segmentation and demand analysis for retail strategy. Data Science Clustering · Python\n\n\nProduct Sales Analytics Sales trend analysis and forecasting pipeline. Data Science EDA · Forecasting · Python\n\n\nML Clustering: Penguin Species Unsupervised species classification using K-means and PCA. Data Science K-means · PCA · Python"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "",
-    "section": "",
-    "text": "Code"
-  },
-  {
-    "objectID": "index.html#what-i-work-on",
-    "href": "index.html#what-i-work-on",
-    "title": "",
-    "section": "What I work on",
-    "text": "What I work on\n\n\n\nESG Analytics\nClimate scenario modelling, net-zero simulation, supply chain risk, and sustainability data pipelines.\n\n\n\n\nEconometric Research\nCausal inference with instrumental variables, cross-country growth analysis, institutional economics.\n\n\n\n\nData Science\nSupervised and unsupervised ML, predictive modelling, NLP, and statistical hypothesis testing."
-  },
-  {
-    "objectID": "index.html#featured-projects",
-    "href": "index.html#featured-projects",
-    "title": "",
-    "section": "Featured Projects",
-    "text": "Featured Projects\n\n\nInstitutions & Growth: IV Regression\n3-endogenous-variable 2SLS replication of AJR (2001) and GLLS (2004). Human capital significant at p&lt;0.01 across all specs.\nCausal Inference 2SLS · Python · Stata\n\n\nNet Zero Municipal Simulation\nMonte Carlo scenario modelling of climate target pathways for a German municipality.\nESG Simulation · Python\n\n\nPredictive Modelling for Agriculture\nML pipeline predicting agricultural outcomes from environmental and soil features.\nData Science Random Forest · XGBoost · Python\n\n\nHypothesis Testing: Men vs Women’s Football\nFrequentist inference on scoring differences in international football matches.\nStatistics t-test · Python\n\n\nSee all projects →"
-  },
-  {
-    "objectID": "index.html#skills",
-    "href": "index.html#skills",
-    "title": "",
-    "section": "Skills",
-    "text": "Skills\nLanguages\n\nPython R Stata SQL\n\nLibraries\n\npandas statsmodels linearmodels scikit-learn matplotlib seaborn\n\nMethods\n\nInstrumental Variables 2SLS Machine Learning Clustering NLP Monte Carlo Simulation Hypothesis Testing"
   },
   {
     "objectID": "about.html",
@@ -68,5 +124,145 @@
     "title": "About",
     "section": "",
     "text": "natashakabuka@gmail.com\nlinkedin.com/in/natasha-kabuka/\ngithub.com/tkay305"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "index.html#what-i-work-on",
+    "href": "index.html#what-i-work-on",
+    "title": "",
+    "section": "What I work on",
+    "text": "What I work on\n\n\n\nESG Analytics\nClimate scenario modelling, net-zero simulation, supply chain risk, and sustainability data pipelines.\n\n\n\n\nEconometric Research\nCausal inference with instrumental variables, cross-country growth analysis, institutional economics.\n\n\n\n\nData Science\nSupervised and unsupervised ML, predictive modelling, NLP, and statistical hypothesis testing."
+  },
+  {
+    "objectID": "index.html#featured-projects",
+    "href": "index.html#featured-projects",
+    "title": "",
+    "section": "Featured Projects",
+    "text": "Featured Projects\n\n\nInstitutions & Growth: IV Regression\n3-endogenous-variable 2SLS replication of AJR (2001) and GLLS (2004). Human capital significant at p&lt;0.01 across all specs.\nCausal Inference 2SLS · Python · Stata\n\n\nNet Zero Municipal Simulation\nMonte Carlo scenario modelling of climate target pathways for a German municipality.\nESG Simulation · Python\n\n\nPredictive Modelling for Agriculture\nML pipeline predicting agricultural outcomes from environmental and soil features.\nData Science Random Forest · XGBoost · Python\n\n\nHypothesis Testing: Men vs Women’s Football\nFrequentist inference on scoring differences in international football matches.\nStatistics t-test · Python\n\n\nSee all projects →"
+  },
+  {
+    "objectID": "index.html#skills",
+    "href": "index.html#skills",
+    "title": "",
+    "section": "Skills",
+    "text": "Skills\nLanguages\n\nPython R Stata SQL\n\nLibraries\n\npandas statsmodels linearmodels scikit-learn matplotlib seaborn\n\nMethods\n\nInstrumental Variables 2SLS Machine Learning Clustering NLP Monte Carlo Simulation Hypothesis Testing"
+  },
+  {
+    "objectID": "projects/product-sales.html",
+    "href": "projects/product-sales.html",
+    "title": "Product Sales Analytics",
+    "section": "",
+    "text": "This project analyses product-level sales data to identify [TRENDS / SEASONALITY / ANOMALIES] and build a forecasting pipeline for [REVENUE / UNITS SOLD] over [TIME HORIZON]."
+  },
+  {
+    "objectID": "projects/product-sales.html#overview",
+    "href": "projects/product-sales.html#overview",
+    "title": "Product Sales Analytics",
+    "section": "",
+    "text": "This project analyses product-level sales data to identify [TRENDS / SEASONALITY / ANOMALIES] and build a forecasting pipeline for [REVENUE / UNITS SOLD] over [TIME HORIZON]."
+  },
+  {
+    "objectID": "projects/product-sales.html#methodology",
+    "href": "projects/product-sales.html#methodology",
+    "title": "Product Sales Analytics",
+    "section": "Methodology",
+    "text": "Methodology\n\nExploratory analysis — sales trends by [product / region / channel], seasonal decomposition\nForecasting — [ARIMA / Prophet / regression-based] model for [METRIC] over [N]-period horizon\nEvaluation — [MAE / RMSE / MAPE] on held-out test period"
+  },
+  {
+    "objectID": "projects/product-sales.html#key-findings",
+    "href": "projects/product-sales.html#key-findings",
+    "title": "Product Sales Analytics",
+    "section": "Key Findings",
+    "text": "Key Findings\n\n[KEY FINDING — e.g. “The forecasting model achieves [MAPE VALUE]% on the test period. [PRODUCT CATEGORY] shows strongest seasonality, peaking in [MONTH].”]\n\n\n[Finding 1]\n[Finding 2]\n[Finding 3]"
+  },
+  {
+    "objectID": "projects/product-sales.html#code",
+    "href": "projects/product-sales.html#code",
+    "title": "Product Sales Analytics",
+    "section": "Code",
+    "text": "Code\nPython Notebook"
+  },
+  {
+    "objectID": "projects/retail-strategy.html",
+    "href": "projects/retail-strategy.html",
+    "title": "Retail Strategy Analytics",
+    "section": "",
+    "text": "This project analyses [N] transactions across [N] customers to support retail strategy decisions around [PRICING / INVENTORY / CUSTOMER TARGETING]."
+  },
+  {
+    "objectID": "projects/retail-strategy.html#overview",
+    "href": "projects/retail-strategy.html#overview",
+    "title": "Retail Strategy Analytics",
+    "section": "",
+    "text": "This project analyses [N] transactions across [N] customers to support retail strategy decisions around [PRICING / INVENTORY / CUSTOMER TARGETING]."
+  },
+  {
+    "objectID": "projects/retail-strategy.html#methodology",
+    "href": "projects/retail-strategy.html#methodology",
+    "title": "Retail Strategy Analytics",
+    "section": "Methodology",
+    "text": "Methodology\n\nSegmentation — [K-means / RFM analysis] clustering customers by [purchase frequency / basket size / recency]\nDemand analysis — [regression / time series] modelling of [sales volume / revenue] against [price / promotions / season]\nStrategy recommendations — segment-level insight for [pricing / marketing] decisions"
+  },
+  {
+    "objectID": "projects/retail-strategy.html#key-findings",
+    "href": "projects/retail-strategy.html#key-findings",
+    "title": "Retail Strategy Analytics",
+    "section": "Key Findings",
+    "text": "Key Findings\n\n[KEY FINDING — e.g. “[N] distinct customer segments identified. Segment [X] accounts for [Y]% of revenue despite being [Z]% of customers.”]\n\n\n[Finding 1]\n[Finding 2]\n[Finding 3 — actionable recommendation]"
+  },
+  {
+    "objectID": "projects/retail-strategy.html#code",
+    "href": "projects/retail-strategy.html#code",
+    "title": "Retail Strategy Analytics",
+    "section": "Code",
+    "text": "Code\nPython Notebook"
+  },
+  {
+    "objectID": "projects/jit-supply-chain-analytics.html",
+    "href": "projects/jit-supply-chain-analytics.html",
+    "title": "JIT Supply Chain Analytics",
+    "section": "",
+    "text": "This project analyses a just-in-time supply chain dataset to evaluate operational performance, identify bottlenecks, and quantify supply chain risk — a key ESG consideration for companies reporting under TCFD and GRI supply chain standards."
+  },
+  {
+    "objectID": "projects/jit-supply-chain-analytics.html#overview",
+    "href": "projects/jit-supply-chain-analytics.html#overview",
+    "title": "JIT Supply Chain Analytics",
+    "section": "",
+    "text": "This project analyses a just-in-time supply chain dataset to evaluate operational performance, identify bottlenecks, and quantify supply chain risk — a key ESG consideration for companies reporting under TCFD and GRI supply chain standards."
+  },
+  {
+    "objectID": "projects/jit-supply-chain-analytics.html#methodology",
+    "href": "projects/jit-supply-chain-analytics.html#methodology",
+    "title": "JIT Supply Chain Analytics",
+    "section": "Methodology",
+    "text": "Methodology\n\nKPI analysis — [lead time / on-time delivery / inventory turnover] across [N] suppliers and [N] SKUs\nRisk indicators — supplier concentration, geographic exposure, demand variability\n[TIME SERIES / REGRESSION] analysis — modelling [LEAD TIME / STOCKOUT RATE] as a function of [ORDER VOLUME / SUPPLIER TIER / SEASON]"
+  },
+  {
+    "objectID": "projects/jit-supply-chain-analytics.html#key-findings",
+    "href": "projects/jit-supply-chain-analytics.html#key-findings",
+    "title": "JIT Supply Chain Analytics",
+    "section": "Key Findings",
+    "text": "Key Findings\n\n[KEY FINDING — e.g. “[X]% of supply disruptions traced to [N] single-source suppliers. Diversification to dual-sourcing would reduce stockout risk by an estimated [Y]%.”]\n\n\n[Finding 1]\n[Finding 2 — ESG/risk angle]\n[Finding 3 — operational recommendation]"
+  },
+  {
+    "objectID": "projects/jit-supply-chain-analytics.html#esg-relevance",
+    "href": "projects/jit-supply-chain-analytics.html#esg-relevance",
+    "title": "JIT Supply Chain Analytics",
+    "section": "ESG Relevance",
+    "text": "ESG Relevance\nSupply chain resilience is a material ESG risk under:\n\nGRI 204 — Procurement practices\nTCFD — Physical and transition climate risk in supply chains\nCSRD — Value chain due diligence"
+  },
+  {
+    "objectID": "projects/jit-supply-chain-analytics.html#code",
+    "href": "projects/jit-supply-chain-analytics.html#code",
+    "title": "JIT Supply Chain Analytics",
+    "section": "Code",
+    "text": "Code\nPython Notebook"
   }
 ]
