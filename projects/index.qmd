@@ -17,7 +17,7 @@ Monte Carlo simulation of net-zero pathways for a Bavarian municipality.
 <span class="tag tag-esg">ESG</span> <span class="tag tag-method">Simulation · Python</span>
 :::
 ::: {.g-col-12 .g-col-md-6}
-[**JIT Supply Chain Analytics**](supply-chain.qmd){.project-card}
+[**JIT Supply Chain Analytics**](jit-supply-chain-analytics.qmd){.project-card}
 Just-in-time supply chain performance analysis and operational risk indicators.
 <span class="tag tag-esg">ESG</span> <span class="tag tag-method">Time Series · Python</span>
 :::
@@ -46,12 +46,12 @@ Frequentist inference on international scoring differences.
 
 ::: {.grid}
 ::: {.g-col-12 .g-col-md-6}
-[**Predictive Modelling for Agriculture**](agriculture.qmd){.project-card}
+[**Predictive Modelling for Agriculture**](predictive-modeling.qmd){.project-card}
 ML pipeline for agricultural outcome prediction.
 <span class="tag tag-ds">Data Science</span> <span class="tag tag-method">Random Forest · XGBoost · Python</span>
 :::
 ::: {.g-col-12 .g-col-md-6}
-[**Retail Strategy Analytics**](retail.qmd){.project-card}
+[**Retail Strategy Analytics**](retail-strategy.qmd){.project-card}
 Customer segmentation and demand analysis for retail strategy.
 <span class="tag tag-ds">Data Science</span> <span class="tag tag-method">Clustering · Python</span>
 :::
