@@ -24,6 +24,12 @@ or reconstructed its reputation within the same structural conditions that enabl
 <span class="tag tag-research">Research</span>
 <span class="tag tag-method">Analysis · ESG Research</span>
 :::
+::: {.g-col-12 .g-col-md-6}
+[**From Bean to Cup: A Lifecycle and Equity Analysis of Coffee Sustainability**](coffee_sustainability.qmd){.project-card}
+LCA methodology, value chain inequity, and the limits of voluntary certification in the coffee supply chain.
+<span class="tag tag-research">Research</span>
+<span class="tag tag-method">Analysis · ESG Research</span>
+:::
 :::
 ---
 

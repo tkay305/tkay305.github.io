@@ -151,7 +151,7 @@
     "href": "projects/nestle_esg_analysis.html#kpi-scorecard-target-vs.-actual",
     "title": "Sustainability Reporting vs. Structural Reality",
     "section": "2. KPI Scorecard: Target vs. Actual",
-    "text": "2. KPI Scorecard: Target vs. Actual\nThe following analysis tracks eight headline commitments from Nestlé’s 2025 sustainability targets, using data drawn directly from the company’s Creating Shared Value reports for 2022, 2023, 2024 and 2025.\n\n2.1 Performance at a Glance\n\n\n\n\n/tmp/ipykernel_153017/2532130646.py:90: UserWarning:\n\nFigureCanvasAgg is non-interactive, and thus cannot be shown\n\n\n\n\nFigure 1\n\n\n\n\n\n2.2 Target Trajectories\n\n\n\n\n/tmp/ipykernel_153017/1917696126.py:82: UserWarning:\n\nFigureCanvasAgg is non-interactive, and thus cannot be shown\n\n\n\n\nFigure 2\n\n\n\n\n\n2.3 Notable findings\nGHG reduction: The headline 20.7% reduction against the 2018 baseline meets the SBTi milestone. However, the reported figure is a net reduction, incorporating 3.31 million metric tonnes of carbon removals in 2025. Gross Scope 1, 2, and 3 emissions declined by 18.05 MtCO2e — a substantial improvement, but short of the headline figure before removals are applied. The inclusion of removals in an SBTi milestone warrants transparency.\nDeforestation-free supply chains: The cocoa figure deserves specific attention. Cocoa-specific deforestation assessments showed 42.3% coverage in 2023, rising to 91.7% in 2025 — an unusually large jump in a single reporting cycle. Nestlé attributes this to improved traceability methodologies. The metric definition also expanded in 2023 to include cocoa and coffee, making pre-2023 and post-2023 figures non-comparable.\nWater reduction: The original 2021–2023 cumulative target of 6 million m³ was met, with a total of 7.68 million m³ reduced over the period. After 2023, Nestlé retired this target and replaced it with annual factory-level reduction targets. The transition makes longitudinal tracking difficult and warrants scrutiny as a reporting practice.\nWaste generation: No reduction target was set for total factory waste, which increased by 17.5% between 2023 and 2025, reaching 1.839 million metric tonnes. The absence of a target in an area of deteriorating performance is itself an analytical finding."
+    "text": "2. KPI Scorecard: Target vs. Actual\nThe following analysis tracks eight headline commitments from Nestlé’s 2025 sustainability targets, using data drawn directly from the company’s Creating Shared Value reports for 2022, 2023, 2024 and 2025.\n\n2.1 Performance at a Glance\n\n\n\n\n/tmp/ipykernel_190502/2532130646.py:90: UserWarning:\n\nFigureCanvasAgg is non-interactive, and thus cannot be shown\n\n\n\n\nFigure 1\n\n\n\n\n\n2.2 Target Trajectories\n\n\n\n\n/tmp/ipykernel_190502/1917696126.py:82: UserWarning:\n\nFigureCanvasAgg is non-interactive, and thus cannot be shown\n\n\n\n\nFigure 2\n\n\n\n\n\n2.3 Notable findings\nGHG reduction: The headline 20.7% reduction against the 2018 baseline meets the SBTi milestone. However, the reported figure is a net reduction, incorporating 3.31 million metric tonnes of carbon removals in 2025. Gross Scope 1, 2, and 3 emissions declined by 18.05 MtCO2e — a substantial improvement, but short of the headline figure before removals are applied. The inclusion of removals in an SBTi milestone warrants transparency.\nDeforestation-free supply chains: The cocoa figure deserves specific attention. Cocoa-specific deforestation assessments showed 42.3% coverage in 2023, rising to 91.7% in 2025 — an unusually large jump in a single reporting cycle. Nestlé attributes this to improved traceability methodologies. The metric definition also expanded in 2023 to include cocoa and coffee, making pre-2023 and post-2023 figures non-comparable.\nWater reduction: The original 2021–2023 cumulative target of 6 million m³ was met, with a total of 7.68 million m³ reduced over the period. After 2023, Nestlé retired this target and replaced it with annual factory-level reduction targets. The transition makes longitudinal tracking difficult and warrants scrutiny as a reporting practice.\nWaste generation: No reduction target was set for total factory waste, which increased by 17.5% between 2023 and 2025, reaching 1.839 million metric tonnes. The absence of a target in an area of deteriorating performance is itself an analytical finding."
   },
   {
     "objectID": "projects/nestle_esg_analysis.html#metric-quality-audit",
@@ -196,11 +196,144 @@
     "text": "Bibliography\nCompany sources\nNestlé. (2023). Creating Shared Value and Sustainability Report 2022. Nestlé S.A.\nNestlé. (2024). Creating Shared Value and Sustainability Report 2023. Nestlé S.A. https://www.nestle.com/sites/default/files/2024-02/creating-shared-value-sustainability-report-2023-en.pdf\nNestlé. (2025a). Creating Shared Value and Sustainability Report 2024. Nestlé S.A.\nNestlé. (2025b). Sustainability Performance Data 2025. Nestlé S.A.\nNestlé. (2025c). Full Year Results Investor Presentation 2024. Nestlé S.A. https://www.nestle.com/sites/default/files/2025-02/full-year-results-investor-presentation-2024.pdf\nNestlé Cocoa Plan. (2025). Nestlé Cocoa Plan Progress Report 2024. https://www.nestlecocoaplan.com/sites/default/files/2025-07/Nestlé%20Cocoa%20Plan%20Progress%20Report%202024.pdf\nNestlé UK & Ireland. (2021). Why did KitKat move to Rainforest Alliance? https://www.nestle.co.uk/en-gb/ask-nestle/products-brands/answers/kitkat-moves-rainforest-alliance\nIndependent evaluations and NGO reports\nPublic Eye. (2024). Instant Sustainability: Why the Nescafé Plan Fails to Benefit Farmers. Public Eye, Zurich. ISBN 978-3-907383-14-8. https://www.publiceye.ch/fileadmin/doc/Agrarrohstoffe/Rapport_cafe/PE_Report-Kaffee_3-24_E_def.pdf\nOxfam International. (2013). Behind the Brands: Food Justice and the ‘Big 10’ Food and Beverage Companies. Oxfam Briefing Paper 166. https://www.oxfam.org/en/research/behind-brands\nKIT Institute. (2024). Nestlé Income Accelerator Program Progress Report: Impact on Cocoa Farm Incomes and Resilience. KIT Royal Tropical Institute, Amsterdam.\nFairtrade Foundation. (2020). Statement on Nestlé KitKat Fairtrade Exit. Fairtrade Foundation.\nCo-operative News. (2020, June). Nestlé ceases sourcing Fairtrade cocoa and sugar for KitKats. https://www.thenews.coop/nestle-ceases-sourcing-fairtrade-cocoa-and-sugar-for-kitkats/\nBenchmarks and databases\nKnowTheChain. (2020). Food and Beverage Benchmark 2020. KnowTheChain / Business and Human Rights Resource Centre.\nKnowTheChain. (2023). Food and Beverage Benchmark 2023. KnowTheChain / Business and Human Rights Resource Centre.\nKnowTheChain. (2026). Food and Beverage Benchmark 2026. KnowTheChain / Business and Human Rights Resource Centre. https://www.business-humanrights.org/en/from-us/knowthechain/food-and-beverage-benchmark/\nBusiness and Human Rights Resource Centre. (2025). Nestlé Company Profile and Issue Tracker. https://www.business-humanrights.org/en/companies/nestle/\nMarket and academic sources\nFood and Agriculture Organization of the United Nations (FAO). (2024). Farmgate price share and value distribution in cocoa supply chains. FAO Investment Support. https://www.fao.org/support-to-investment/news/detail/es/c/1681079/\nJust Food. (2024, May 1). Nestlé cocoa income accelerator boosts pay but has not closed living wage gap, says report. https://www.just-food.com/news/nestle-cocoa-income-accelerator-boosts-pay-but-hasnt-closed-living-wage-gap-says-report/\nEthical Consumer. (2020). KitKat cuts ties with Fairtrade. https://www.ethicalconsumer.org/node/76/kitkat-cuts-ties-fairtrade"
   },
   {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
+    "objectID": "projects/coffee_sustainability.html",
+    "href": "projects/coffee_sustainability.html",
+    "title": "From Bean to Cup: A Lifecycle and Equity Analysis of Coffee Sustainability",
     "section": "",
-    "text": "Applied econometrics, ESG analytics, and data science. Click any card to read the full methodology and results.\n\n\nESG & Sustainability\n\n\nNestle ESG Analysis An Independent ESG Verification of Nestlé’s 2025 Commitments. ESG Analysis · Python\n\n\nEngineering Accountability: Audi AG’s Post-Dieselgate CSR Transformation (2015–2024) After systematic deception at an industrial scale, has Audi built a genuinely transformed ethical architecture, or reconstructed its reputation within the same structural conditions that enabled the scandal. Research Analysis · ESG Research\n\n\n\n\n\nResearch & Econometrics\n\n\nInstitutions & Growth: IV Regression 3-endogenous-variable 2SLS. Human capital significant at p&lt;0.01. Research 2SLS · Python · Stata\n\n\nHypothesis Testing: Men vs Women’s Football Frequentist inference on international scoring differences. Statistics t-test · Python\n\n\n\n\n\nData Science & Machine Learning\n\n\nPredictive Modelling for Agriculture ML pipeline for agricultural outcome prediction. Data Science Random Forest · XGBoost · Python\n\n\nRetail Strategy Analytics Customer segmentation and demand analysis for retail strategy. Data Science Clustering · Python\n\n\nProduct Sales Analytics Sales trend analysis and forecasting pipeline. Data Science EDA · Forecasting · Python\n\n\nML Clustering: Penguin Species Unsupervised species classification using K-means and PCA. Data Science K-means · PCA · Python"
+    "text": "Coffee is the world’s second most traded commodity, with global production exceeding 10 billion kilograms annually and European consumption driven by Germany’s per capita intake of 164 litres per year. This paper applies a lifecycle assessment (LCA) framework to evaluate coffee production and consumption through three sustainability pillars: environmental, economic, and social. Using a functional unit of 1 kg of green coffee beans, it compares conventional and sustainable farming practices across cultivation, processing, distribution, and consumption stages, identifying environmental hotspots and structural equity gaps.\nThe central finding is that voluntary certification schemes (VCS) improve farming practices at the margin without addressing the pricing architecture that determines what farmers actually earn. All three of the sector’s largest companies — Nestlé, Starbucks, and JDE Peet’s — have expanded certified sourcing coverage while maintaining no binding minimum price or living income commitment for farmers, who receive approximately 10% of final retail value. Starbucks’ absolute GHG emissions are 3% above its 2019 baseline despite a 2030 target of 50% reduction; Nestlé’s factory waste increased 17.5% in two years with no reduction target set. The evidence suggests that VCS architecture manages supply chain risk and reputational exposure without resolving the distributional problem at the root of coffee’s sustainability failures."
+  },
+  {
+    "objectID": "projects/coffee_sustainability.html#abstract",
+    "href": "projects/coffee_sustainability.html#abstract",
+    "title": "From Bean to Cup: A Lifecycle and Equity Analysis of Coffee Sustainability",
+    "section": "",
+    "text": "Coffee is the world’s second most traded commodity, with global production exceeding 10 billion kilograms annually and European consumption driven by Germany’s per capita intake of 164 litres per year. This paper applies a lifecycle assessment (LCA) framework to evaluate coffee production and consumption through three sustainability pillars: environmental, economic, and social. Using a functional unit of 1 kg of green coffee beans, it compares conventional and sustainable farming practices across cultivation, processing, distribution, and consumption stages, identifying environmental hotspots and structural equity gaps.\nThe central finding is that voluntary certification schemes (VCS) improve farming practices at the margin without addressing the pricing architecture that determines what farmers actually earn. All three of the sector’s largest companies — Nestlé, Starbucks, and JDE Peet’s — have expanded certified sourcing coverage while maintaining no binding minimum price or living income commitment for farmers, who receive approximately 10% of final retail value. Starbucks’ absolute GHG emissions are 3% above its 2019 baseline despite a 2030 target of 50% reduction; Nestlé’s factory waste increased 17.5% in two years with no reduction target set. The evidence suggests that VCS architecture manages supply chain risk and reputational exposure without resolving the distributional problem at the root of coffee’s sustainability failures."
+  },
+  {
+    "objectID": "projects/coffee_sustainability.html#why-lifecycle-assessment",
+    "href": "projects/coffee_sustainability.html#why-lifecycle-assessment",
+    "title": "From Bean to Cup: A Lifecycle and Equity Analysis of Coffee Sustainability",
+    "section": "1. Why Lifecycle Assessment",
+    "text": "1. Why Lifecycle Assessment\nCoffee’s sustainability is often assessed through company-level ESG ratings or voluntary certification labels. Both approaches have structural limits. ESG ratings evaluate performance at the firm level using opaque, aggregated methodologies that can obscure product-level impact variation. Certification labels (Fairtrade, Rainforest Alliance, 4C) assess compliance with scheme-specific standards but do not provide quantitative lifecycle data or transparent comparability across schemes.\nLifecycle assessment offers something different: a process-based, stage-by-stage quantification of environmental impacts per functional unit, from agricultural inputs through to end-of-life disposal. This transparency makes it possible to identify exactly where emissions are concentrated, how different farming practices alter that distribution, and where interventions would produce the largest reductions.\nThe chosen functional unit for this analysis is 1 kg of green coffee beans. Per-cup consumption data (110 ml lungo, sourced from the Nestlé-Nespresso LCA by Quantis, 2024) is included as a supplementary lens on European consumer-stage impacts, though it is not directly comparable to upstream figures. The system boundary follows a cradle-to-grave model: cultivation through end-of-life waste."
+  },
+  {
+    "objectID": "projects/coffee_sustainability.html#environmental-analysis",
+    "href": "projects/coffee_sustainability.html#environmental-analysis",
+    "title": "From Bean to Cup: A Lifecycle and Equity Analysis of Coffee Sustainability",
+    "section": "2. Environmental Analysis",
+    "text": "2. Environmental Analysis\n\n2.1 GHG Emissions by Lifecycle Stage\nThe emissions data below are drawn from Hasan, Roy and Abassi (2024), with transport figures from Nab and Maslin (2020). All figures are in kg CO2-equivalent per kg of green coffee under conventional practices.\n\n\n\n\n/tmp/ipykernel_190433/685455959.py:44: UserWarning:\n\nFigureCanvasAgg is non-interactive, and thus cannot be shown\n\n\n\n\nFigure 1\n\n\n\nRoasting (3.5–4.3 kg CO2-eq) and drying (2.1–2.8 kg CO2-eq) dominate the processing stage, driven by fossil fuel dependency in industrial drying systems and natural gas use in roasting. This finding challenges a consumer-level assumption: buying certified coffee addresses cultivation-stage impacts but leaves processing emissions largely unchanged, since certification schemes do not typically govern energy sources at roasting facilities.\nThe transport mode comparison is instructive. Sea freight produces 0.9–1.1 kg CO2-eq/kg; air freight exceeds 10 kg CO2-eq/kg — an order-of-magnitude difference that makes transport mode one of the highest-leverage interventions available in the distribution stage.\n\n\n2.2 Conventional vs. Sustainable Practices\n\n\n\n\n/tmp/ipykernel_190433/2669183985.py:41: UserWarning:\n\nFigureCanvasAgg is non-interactive, and thus cannot be shown\n\n\n\n\nFigure 2\n\n\n\nSustainable and organic practices reduce GHG emissions by approximately 42% at the cultivation stage, processing energy by 46%, and water footprint by 48%. These are not marginal improvements — they represent a fundamentally different production system. The case for investment in sustainable farming practices is strong on environmental grounds. The distributional problem, examined in Section 3, is that the decision to adopt these practices rests with farmers who capture only a small fraction of the value that sustainable certification commands downstream."
+  },
+  {
+    "objectID": "projects/coffee_sustainability.html#the-economics-of-coffee-a-value-chain-equity-problem",
+    "href": "projects/coffee_sustainability.html#the-economics-of-coffee-a-value-chain-equity-problem",
+    "title": "From Bean to Cup: A Lifecycle and Equity Analysis of Coffee Sustainability",
+    "section": "3. The Economics of Coffee: A Value Chain Equity Problem",
+    "text": "3. The Economics of Coffee: A Value Chain Equity Problem\n\n3.1 Who captures value?\n\n\n\n\n/tmp/ipykernel_190433/821954503.py:42: UserWarning:\n\nFigureCanvasAgg is non-interactive, and thus cannot be shown\n\n\n\n\nFigure 3\n\n\n\nThe global coffee market was valued at over $130 billion in 2023 (ICO, 2023). Farmers — the 12.5 million smallholders who grow the crop — receive approximately 10% of the retail value that crop eventually commands. Roasters and retailers capture roughly 70%. Certification premiums — where they exist — operate within this structure, adding a modest increment to farmgate prices without altering the underlying distribution.\nThe structural consequence is visible in the data: in eight of the ten largest producing countries, farmgate prices periodically fall below the cost of production (ICO, 2023; Nestlé, 2024). When that happens, the farmer bears the loss. When prices rise, the gains accrue disproportionately downstream. Certification schemes do not change this structure; they improve practice within it."
+  },
+  {
+    "objectID": "projects/coffee_sustainability.html#company-scorecard-claims-vs.-verifiable-outcomes",
+    "href": "projects/coffee_sustainability.html#company-scorecard-claims-vs.-verifiable-outcomes",
+    "title": "From Bean to Cup: A Lifecycle and Equity Analysis of Coffee Sustainability",
+    "section": "4. Company Scorecard: Claims vs. Verifiable Outcomes",
+    "text": "4. Company Scorecard: Claims vs. Verifiable Outcomes\nThe three largest coffee companies — Nestlé, Starbucks, and JDE Peet’s — collectively account for a substantial share of global roasted coffee volume and are the most visible proponents of certified sustainable sourcing. The scorecard below compares their stated commitments against independently verifiable outcomes from 2023–2024 reporting.\n\n\n\n\n/tmp/ipykernel_190433/1989626407.py:98: UserWarning:\n\nFigureCanvasAgg is non-interactive, and thus cannot be shown\n\n\n\n\nFigure 4\n\n\n\nThree patterns emerge across all three companies. First, “responsibly sourced” is defined by industry-managed certification schemes — C.A.F.E. Practices (Starbucks-owned), Rainforest Alliance, and 4C — none of which set minimum prices for farmers. Second, absolute emissions and waste are either rising or moving in the wrong direction despite expanding certified coverage. Third, no company has made a binding commitment to farmer living income or minimum purchase prices.\nJDE Peet’s demonstrates the strongest GHG trajectory and is the only company on track with its core Scope 1 and 2 reduction targets. Starbucks’ absolute emissions are above its 2019 baseline despite a 2030 target of 50% reduction — a gap that would require unprecedented annual reductions to close. Nestlé’s factory waste increased 17.5% in two years with no reduction target set for this metric."
+  },
+  {
+    "objectID": "projects/coffee_sustainability.html#why-certification-schemes-cannot-solve-this",
+    "href": "projects/coffee_sustainability.html#why-certification-schemes-cannot-solve-this",
+    "title": "From Bean to Cup: A Lifecycle and Equity Analysis of Coffee Sustainability",
+    "section": "5. Why Certification Schemes Cannot Solve This",
+    "text": "5. Why Certification Schemes Cannot Solve This\nVoluntary certification schemes represent the coffee sector’s primary market-based response to its sustainability failures. Fairtrade, Rainforest Alliance, Organic, and 4C are the most widely used, covering progressively broader shares of global supply. The evidence presented in this paper suggests that the structural constraint of VCS is not their design quality — it is what they are not designed to do.\nVCS operate at the level of farming practice: they certify whether shade-grown methods are used, whether agrochemicals are applied responsibly, whether workers have access to training. These are genuine and measurable improvements. Hasan et al. (2024) confirm that certified farms perform better across nearly all environmental impact categories compared to conventional equivalents. The Rubio-Jovel (2022) analysis similarly finds that certified farmers report marginally better incomes and training opportunities than non-certified peers.\nThe structural problem is that these improvements occur within a price architecture that VCS do not govern. With the exception of Fairtrade — which sets a minimum floor price and a verified premium paid directly to producer cooperatives — no major certification scheme commits the buyer to a minimum purchase price. The buyer pays the market price (or a discretionary premium) for certified coffee and absorbs the reputational benefit of the certification label. The farmer absorbs the cost of meeting certification requirements: infrastructure investment, documentation practices, cooperative membership, and ongoing compliance — costs that can be prohibitive without external support, and that provide no income guarantee if market prices fall below production cost (Hasan et al., 2024).\nThe Coffee Brew Index and the Coffee Barometer (2023) both document a consistent gap between corporate sustainability claims and measurable systemic progress. Major companies set ambitious 2030 targets while absolute emissions, waste volumes, and farmgate price instability persist. The growing sophistication of sustainability reporting — more detailed disclosures, more SDG references, more programme descriptions — has not been accompanied by commensurate improvement in the outcomes those reports are intended to address.\nThis pattern has a name in sustainability governance literature: it is the displacement of structural intervention by risk management. Companies invest in certification coverage, farmer training programmes, and reporting infrastructure to manage regulatory exposure, reputational risk, and supply chain continuity. These investments are not insincere — they produce real improvements at the margin. But their architecture is designed to be compatible with continued growth in purchasing volume, which drives absolute impacts upward even as intensity metrics improve. Starbucks’ 3% absolute emissions increase above its 2019 baseline, against a 2030 target of 50% reduction, while 99.75% of its coffee is C.A.F.E. certified, is the most direct illustration of this dynamic.\nFairtrade’s exit from Nestlé’s KitKat supply chain in 2020 — the one scheme that did set a price floor and a verified premium, costing farmers in Côte d’Ivoire £2 million in annual premiums — and its replacement with Rainforest Alliance (no price floor, no verified premium) illustrates where the sector’s structural orientation lies. The certifications that persist are those compatible with the buyer’s pricing power. The one that was not compatible with it was removed.\nClosing the living income gap documented by the KIT Institute, the farmgate share problem identified by the ICO, and the persistent labor rights violations noted by the ILO would require interventions that operate at the price level: minimum purchase price commitments, mandatory living income procurement policies, or regulatory price floors enforced at the import stage. The EU Deforestation Regulation represents a step toward regulatory intervention in supply chain standards, though its mechanism targets land use rather than income distribution. CSRD’s double materiality framework will eventually require companies to disclose impacts on farmer livelihoods in quantified terms, creating accountability pressure for the outcome dimension that self-reported certification coverage currently avoids."
+  },
+  {
+    "objectID": "projects/coffee_sustainability.html#sdg-alignment-systemic-gap",
+    "href": "projects/coffee_sustainability.html#sdg-alignment-systemic-gap",
+    "title": "From Bean to Cup: A Lifecycle and Equity Analysis of Coffee Sustainability",
+    "section": "6. SDG Alignment: Systemic Gap",
+    "text": "6. SDG Alignment: Systemic Gap\n\n\n\n\n/tmp/ipykernel_190433/878037116.py:29: UserWarning:\n\nFigureCanvasAgg is non-interactive, and thus cannot be shown\n\n\n\n\nFigure 5\n\n\n\nThe SDG alignment matrix surfaces the systemic character of coffee’s sustainability gap. Violations are documented across 11 of 12 relevant SDGs; evidenced progress exists in only 4, and in each case that progress is partial and contested. SDG 17 (Partnerships) is the most significant absence: the governance gap between Global North consumption and Global South production — the structural asymmetry at the core of this analysis — is precisely what a genuine partnership framework would need to address."
+  },
+  {
+    "objectID": "projects/coffee_sustainability.html#eu-consumption-and-demand-side-responsibility",
+    "href": "projects/coffee_sustainability.html#eu-consumption-and-demand-side-responsibility",
+    "title": "From Bean to Cup: A Lifecycle and Equity Analysis of Coffee Sustainability",
+    "section": "7. EU Consumption and Demand-Side Responsibility",
+    "text": "7. EU Consumption and Demand-Side Responsibility\nGermany’s per capita coffee consumption of 164 litres annually (ICO, 2022–2023) places it among the world’s highest-consuming markets. European consumption patterns amplify the impacts identified in this analysis: single-serve pods, takeaway culture, and plastic-lined disposable cups contribute disproportionately to the waste and emissions concentrated in the consumption stage.\nThe EU Deforestation Regulation, effective from 2025, requires proof of deforestation-free supply chains for key commodities including coffee. This represents a meaningful regulatory intervention in supply chain standards but targets land use rather than income distribution. Its principal risk — documented by the Coffee Barometer (2023) — is that compliance pressure may cause large buyers to withdraw from high-risk smallholder regions, marginalising the farmers most in need of market access.\nThe ICO Circular Economy Report (2022–2023) identifies a practical roadmap for demand-side intervention: regenerative agriculture incentives, waste valorisation (spent grounds into bioenergy or compost), packaging redesign under R9 circular economy principles, localised roasting and distribution to reduce transport emissions, and consumer education campaigns targeting high-impact behaviours such as pod use and dairy choice. These interventions are available and technically feasible. Their implementation requires the kind of regulatory and pricing commitment that voluntary action has not produced."
+  },
+  {
+    "objectID": "projects/coffee_sustainability.html#conclusions",
+    "href": "projects/coffee_sustainability.html#conclusions",
+    "title": "From Bean to Cup: A Lifecycle and Equity Analysis of Coffee Sustainability",
+    "section": "8. Conclusions",
+    "text": "8. Conclusions\nCoffee is a case study in the limits of market-led sustainability. The environmental evidence is clear: sustainable farming practices reduce cultivation-stage GHG emissions by 42%, water use by 48%, and processing energy by 46%. The interventions exist. The economics explain why they are not adopted at scale: farmers who bear the cost of sustainable certification receive approximately 10% of the retail value their crop commands, with no guarantee that certification premiums will cover their investment.\nThe company scorecard reveals a consistent pattern across the sector’s three largest players. Certified sourcing coverage is expanding. Absolute emissions and waste volumes are rising or stalled. No binding minimum price or living income commitment exists in any company’s sustainability architecture. Starbucks’ FY24 GHG emissions are 3% above the 2019 baseline it committed to halving by 2030. The gap between reporting sophistication and structural outcome is the central finding.\nVoluntary certification schemes improve farming practices within a price structure they are not designed to change. The one scheme that did intervene at the price level — Fairtrade — was exited by Nestlé in 2020 and replaced with a proprietary programme that does not constrain purchase prices. The pattern suggests that the sustainability architecture preferred by the sector’s largest buyers is one they can control, and that the interventions most likely to alter the distributional problem — minimum price commitments, mandatory living income procurement, and EU-level price floor regulation — are precisely those absent from current corporate and regulatory frameworks."
+  },
+  {
+    "objectID": "projects/coffee_sustainability.html#references",
+    "href": "projects/coffee_sustainability.html#references",
+    "title": "From Bean to Cup: A Lifecycle and Equity Analysis of Coffee Sustainability",
+    "section": "References",
+    "text": "References\nChapagain, A.K. and Hoekstra, A.Y. (2007). “The Water Footprint of Coffee and Tea Consumption in the Netherlands.” Ecological Economics 64(1): 109–118. https://doi.org/10.1016/j.ecolecon.2007.02.022\nCoffee Barometer (2023). Coffee Barometer 2023. https://coffeebarometer.org\nHasan, Y., Roy, P. and Abassi, B. (2024). “Comparative Life Cycle Assessment (LCA) in the Agri-Food Industry, Focusing on Organic and Conventional Coffee.” Sustainability 16(24): 10819. https://www.mdpi.com/2071-1050/16/24/10819\nICO — International Coffee Organization (2022–2023). ICO Coffee Circular Economy Report. https://hdl.handle.net/10568/131997\nICO — International Coffee Organization (2023). Coffee Development Report 2022–23. https://ico.org/coffee-development-report-2/\nJDE Peet’s (2024). Full-Year Results 2023. https://www.jdepeets.com/news-container/jde-peets-reports-full-year-results-2023-2832441/\nKarma Wallet (2024). “Starbucks Sustainability: The Good & The Bad.” https://karmawallet.io/blog/2024/07/starbucks-sustainability-the-good-the-bad/\nKlim (2024). “Overcoming Challenges in Insetting Projects.” https://www.klim.eco/en/blog/herausforderungen-in-insetting-projekten-ueberwinden\nNab, H. and Maslin, M. (2020). How Bad Are Bananas? The Carbon Footprint of Everything. London: Profile Books.\nNestlé (2024). Creating Shared Value and Sustainability Report 2023. https://www.nestle.com/sites/default/files/2024-02/creating-shared-value-sustainability-report-2023-en.pdf\nNestlé (2025). Sustainability Performance Data 2024. Nestlé S.A.\nNestlé Nespresso (2023). EU LCA Infographic. https://nestle-nespresso.com/sites/site.prod.nestle-nespresso.com/files/NN_EU_LCA_Infographic_Jan%202023_1.pdf\nRubio-Jovel, R. (2022). “Voluntary Sustainability Standards in Coffee: Progress, Limitations and Trade Impacts.” International Journal of Development Policy and Practice 6(4): 82–99.\nStarbucks (2025). Fiscal 2024 Global Impact Report. https://about.starbucks.com/uploads/2025/05/Starbucks-Fiscal-2024-Global-Impact-Report.pdf\nStarbucks (2025). Fiscal 2024 Global Impact Report — Data Tables. https://about.starbucks.com/uploads/2025/05/Starbucks-Fiscal-2024-Global-Impact-Report-Data-Tables.pdf\nTracenable (2024). Starbucks GHG Emissions Data. https://tracenable.com/company/starbucks/ghg-emissions"
+  },
+  {
+    "objectID": "projects/product-sales.html",
+    "href": "projects/product-sales.html",
+    "title": "Product Sales Analytics",
+    "section": "",
+    "text": "This project analyses product-level sales data to identify [TRENDS / SEASONALITY / ANOMALIES] and build a forecasting pipeline for [REVENUE / UNITS SOLD] over [TIME HORIZON]."
+  },
+  {
+    "objectID": "projects/product-sales.html#overview",
+    "href": "projects/product-sales.html#overview",
+    "title": "Product Sales Analytics",
+    "section": "",
+    "text": "This project analyses product-level sales data to identify [TRENDS / SEASONALITY / ANOMALIES] and build a forecasting pipeline for [REVENUE / UNITS SOLD] over [TIME HORIZON]."
+  },
+  {
+    "objectID": "projects/product-sales.html#methodology",
+    "href": "projects/product-sales.html#methodology",
+    "title": "Product Sales Analytics",
+    "section": "Methodology",
+    "text": "Methodology\n\nExploratory analysis — sales trends by [product / region / channel], seasonal decomposition\nForecasting — [ARIMA / Prophet / regression-based] model for [METRIC] over [N]-period horizon\nEvaluation — [MAE / RMSE / MAPE] on held-out test period"
+  },
+  {
+    "objectID": "projects/product-sales.html#key-findings",
+    "href": "projects/product-sales.html#key-findings",
+    "title": "Product Sales Analytics",
+    "section": "Key Findings",
+    "text": "Key Findings\n\n[KEY FINDING — e.g. “The forecasting model achieves [MAPE VALUE]% on the test period. [PRODUCT CATEGORY] shows strongest seasonality, peaking in [MONTH].”]\n\n\n[Finding 1]\n[Finding 2]\n[Finding 3]"
+  },
+  {
+    "objectID": "projects/product-sales.html#code",
+    "href": "projects/product-sales.html#code",
+    "title": "Product Sales Analytics",
+    "section": "Code",
+    "text": "Code\nPython Notebook"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "index.html#what-i-work-on",
+    "href": "index.html#what-i-work-on",
+    "title": "",
+    "section": "What I work on",
+    "text": "What I work on\n\n\n\nESG Analytics\nClimate scenario modelling, ESG Research and Analysis, supply chain risk, and sustainability data pipelines.\n\n\n\n\nEconometric Research\nCausal inference with instrumental variables, cross-country growth analysis, institutional economics.\n\n\n\n\nData Science\nSupervised and unsupervised ML, predictive modelling, NLP, and statistical hypothesis testing."
+  },
+  {
+    "objectID": "index.html#featured-projects",
+    "href": "index.html#featured-projects",
+    "title": "",
+    "section": "Featured Projects",
+    "text": "Featured Projects\n\n\nInstitutions & Growth: IV Regression\n3-endogenous-variable 2SLS replication of AJR (2001) and GLLS (2004). Human capital significant at p&lt;0.01 across all specs.\nCausal Inference 2SLS · Python · Stata\n\n\nNestle ESG Analysis\nAn Independent ESG Verification of Nestlé’s 2025 Commitments.\nESG  Analysis · Python\n\n\nPredictive Modelling for Agriculture\nML pipeline predicting agricultural outcomes from environmental and soil features.\nData Science Random Forest · XGBoost · Python\n\n\nHypothesis Testing: Men vs Women’s Football\nFrequentist inference on scoring differences in international football matches.\nStatistics t-test · Python\n\n\nSee all projects →"
+  },
+  {
+    "objectID": "index.html#skills",
+    "href": "index.html#skills",
+    "title": "",
+    "section": "Skills",
+    "text": "Skills\nLanguages\n\nPython R Stata SQL\n\nLibraries\n\npandas statsmodels linearmodels scikit-learn matplotlib seaborn\n\nMethods\n\nInstrumental Variables 2SLS Machine Learning Clustering NLP Monte Carlo Simulation Hypothesis Testing"
   },
   {
     "objectID": "about.html",
@@ -238,67 +371,11 @@
     "text": "natashakabuka@gmail.com\nlinkedin.com/in/natasha-kabuka/\ngithub.com/tkay305"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "",
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
     "section": "",
-    "text": "Code"
-  },
-  {
-    "objectID": "index.html#what-i-work-on",
-    "href": "index.html#what-i-work-on",
-    "title": "",
-    "section": "What I work on",
-    "text": "What I work on\n\n\n\nESG Analytics\nClimate scenario modelling, ESG Research and Analysis, supply chain risk, and sustainability data pipelines.\n\n\n\n\nEconometric Research\nCausal inference with instrumental variables, cross-country growth analysis, institutional economics.\n\n\n\n\nData Science\nSupervised and unsupervised ML, predictive modelling, NLP, and statistical hypothesis testing."
-  },
-  {
-    "objectID": "index.html#featured-projects",
-    "href": "index.html#featured-projects",
-    "title": "",
-    "section": "Featured Projects",
-    "text": "Featured Projects\n\n\nInstitutions & Growth: IV Regression\n3-endogenous-variable 2SLS replication of AJR (2001) and GLLS (2004). Human capital significant at p&lt;0.01 across all specs.\nCausal Inference 2SLS · Python · Stata\n\n\nNestle ESG Analysis\nAn Independent ESG Verification of Nestlé’s 2025 Commitments.\nESG  Analysis · Python\n\n\nPredictive Modelling for Agriculture\nML pipeline predicting agricultural outcomes from environmental and soil features.\nData Science Random Forest · XGBoost · Python\n\n\nHypothesis Testing: Men vs Women’s Football\nFrequentist inference on scoring differences in international football matches.\nStatistics t-test · Python\n\n\nSee all projects →"
-  },
-  {
-    "objectID": "index.html#skills",
-    "href": "index.html#skills",
-    "title": "",
-    "section": "Skills",
-    "text": "Skills\nLanguages\n\nPython R Stata SQL\n\nLibraries\n\npandas statsmodels linearmodels scikit-learn matplotlib seaborn\n\nMethods\n\nInstrumental Variables 2SLS Machine Learning Clustering NLP Monte Carlo Simulation Hypothesis Testing"
-  },
-  {
-    "objectID": "projects/product-sales.html",
-    "href": "projects/product-sales.html",
-    "title": "Product Sales Analytics",
-    "section": "",
-    "text": "This project analyses product-level sales data to identify [TRENDS / SEASONALITY / ANOMALIES] and build a forecasting pipeline for [REVENUE / UNITS SOLD] over [TIME HORIZON]."
-  },
-  {
-    "objectID": "projects/product-sales.html#overview",
-    "href": "projects/product-sales.html#overview",
-    "title": "Product Sales Analytics",
-    "section": "",
-    "text": "This project analyses product-level sales data to identify [TRENDS / SEASONALITY / ANOMALIES] and build a forecasting pipeline for [REVENUE / UNITS SOLD] over [TIME HORIZON]."
-  },
-  {
-    "objectID": "projects/product-sales.html#methodology",
-    "href": "projects/product-sales.html#methodology",
-    "title": "Product Sales Analytics",
-    "section": "Methodology",
-    "text": "Methodology\n\nExploratory analysis — sales trends by [product / region / channel], seasonal decomposition\nForecasting — [ARIMA / Prophet / regression-based] model for [METRIC] over [N]-period horizon\nEvaluation — [MAE / RMSE / MAPE] on held-out test period"
-  },
-  {
-    "objectID": "projects/product-sales.html#key-findings",
-    "href": "projects/product-sales.html#key-findings",
-    "title": "Product Sales Analytics",
-    "section": "Key Findings",
-    "text": "Key Findings\n\n[KEY FINDING — e.g. “The forecasting model achieves [MAPE VALUE]% on the test period. [PRODUCT CATEGORY] shows strongest seasonality, peaking in [MONTH].”]\n\n\n[Finding 1]\n[Finding 2]\n[Finding 3]"
-  },
-  {
-    "objectID": "projects/product-sales.html#code",
-    "href": "projects/product-sales.html#code",
-    "title": "Product Sales Analytics",
-    "section": "Code",
-    "text": "Code\nPython Notebook"
+    "text": "Applied econometrics, ESG analytics, and data science. Click any card to read the full methodology and results.\n\n\nESG & Sustainability\n\n\nNestle ESG Analysis An Independent ESG Verification of Nestlé’s 2025 Commitments. ESG Analysis · Python\n\n\nEngineering Accountability: Audi AG’s Post-Dieselgate CSR Transformation (2015–2024) After systematic deception at an industrial scale, has Audi built a genuinely transformed ethical architecture, or reconstructed its reputation within the same structural conditions that enabled the scandal. Research Analysis · ESG Research\n\n\nFrom Bean to Cup: A Lifecycle and Equity Analysis of Coffee Sustainability LCA methodology, value chain inequity, and the limits of voluntary certification in the coffee supply chain. Research Analysis · ESG Research\n\n\n\n\n\nResearch & Econometrics\n\n\nInstitutions & Growth: IV Regression 3-endogenous-variable 2SLS. Human capital significant at p&lt;0.01. Research 2SLS · Python · Stata\n\n\nHypothesis Testing: Men vs Women’s Football Frequentist inference on international scoring differences. Statistics t-test · Python\n\n\n\n\n\nData Science & Machine Learning\n\n\nPredictive Modelling for Agriculture ML pipeline for agricultural outcome prediction. Data Science Random Forest · XGBoost · Python\n\n\nRetail Strategy Analytics Customer segmentation and demand analysis for retail strategy. Data Science Clustering · Python\n\n\nProduct Sales Analytics Sales trend analysis and forecasting pipeline. Data Science EDA · Forecasting · Python\n\n\nML Clustering: Penguin Species Unsupervised species classification using K-means and PCA. Data Science K-means · PCA · Python"
   },
   {
     "objectID": "projects/retail-strategy.html",

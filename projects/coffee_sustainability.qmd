@@ -1,0 +1,433 @@
+---
+title: "From Bean to Cup: A Lifecycle and Equity Analysis of Coffee Sustainability"
+subtitle: "LCA methodology, value chain inequity, and the limits of voluntary certification"
+author: "Natasha Kabuka"
+date: "2025"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-title: "Contents"
+    theme: cosmo
+    code-fold: true
+    fig-align: center
+    page-layout: full
+categories: [LCA, ESG, Supply Chain, Sustainability, Coffee, Value Chain]
+image: coffee_value_chain_equity.png
+---
+
+## Abstract
+
+Coffee is the world's second most traded commodity, with global production exceeding 10 billion kilograms annually and European consumption driven by Germany's per capita intake of 164 litres per year. This paper applies a lifecycle assessment (LCA) framework to evaluate coffee production and consumption through three sustainability pillars: environmental, economic, and social. Using a functional unit of 1 kg of green coffee beans, it compares conventional and sustainable farming practices across cultivation, processing, distribution, and consumption stages, identifying environmental hotspots and structural equity gaps.
+
+The central finding is that voluntary certification schemes (VCS) improve farming practices at the margin without addressing the pricing architecture that determines what farmers actually earn. All three of the sector's largest companies — Nestlé, Starbucks, and JDE Peet's — have expanded certified sourcing coverage while maintaining no binding minimum price or living income commitment for farmers, who receive approximately 10% of final retail value. Starbucks' absolute GHG emissions are 3% above its 2019 baseline despite a 2030 target of 50% reduction; Nestlé's factory waste increased 17.5% in two years with no reduction target set. The evidence suggests that VCS architecture manages supply chain risk and reputational exposure without resolving the distributional problem at the root of coffee's sustainability failures.
+
+---
+
+## 1. Why Lifecycle Assessment
+
+Coffee's sustainability is often assessed through company-level ESG ratings or voluntary certification labels. Both approaches have structural limits. ESG ratings evaluate performance at the firm level using opaque, aggregated methodologies that can obscure product-level impact variation. Certification labels (Fairtrade, Rainforest Alliance, 4C) assess compliance with scheme-specific standards but do not provide quantitative lifecycle data or transparent comparability across schemes.
+
+Lifecycle assessment offers something different: a process-based, stage-by-stage quantification of environmental impacts per functional unit, from agricultural inputs through to end-of-life disposal. This transparency makes it possible to identify exactly where emissions are concentrated, how different farming practices alter that distribution, and where interventions would produce the largest reductions.
+
+The chosen functional unit for this analysis is 1 kg of green coffee beans. Per-cup consumption data (110 ml lungo, sourced from the Nestlé-Nespresso LCA by Quantis, 2024) is included as a supplementary lens on European consumer-stage impacts, though it is not directly comparable to upstream figures. The system boundary follows a cradle-to-grave model: cultivation through end-of-life waste.
+
+---
+
+## 2. Environmental Analysis
+
+### 2.1 GHG Emissions by Lifecycle Stage
+
+The emissions data below are drawn from Hasan, Roy and Abassi (2024), with transport figures from Nab and Maslin (2020). All figures are in kg CO2-equivalent per kg of green coffee under conventional practices.
+
+```{python}
+#| label: fig-ghg-stages
+#| fig-cap: "GHG emissions by lifecycle stage, conventional coffee (Hasan, Roy & Abassi, 2024)"
+#| echo: false
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
+import numpy as np
+
+C_CULT = "#2E7D32"; C_PROC = "#E65100"; C_DIST = "#1565C0"; ACCENT = "#37474F"
+
+stages = [
+    ("Fertiliser use",   1.2, 1.5, C_CULT),
+    ("Fuel combustion",  1.5, 2.0, C_CULT),
+    ("Pulping",          0.4, 0.6, C_PROC),
+    ("Drying",           2.1, 2.8, C_PROC),
+    ("Roasting",         3.5, 4.3, C_PROC),
+    ("Grinding",         0.8, 1.1, C_PROC),
+    ("Packaging",        1.0, 1.5, C_DIST),
+    ("Transport (sea)",  0.9, 1.1, C_DIST),
+    ("Transport (air)", 10.0,12.0, C_DIST),
+]
+labels  = [s[0] for s in stages]
+lo      = np.array([s[1] for s in stages])
+hi      = np.array([s[2] for s in stages])
+mid     = (lo + hi) / 2
+err     = hi - mid
+colours = [s[3] for s in stages]
+
+fig, ax = plt.subplots(figsize=(11, 5.5))
+ax.set_facecolor("#F5F5F5")
+ax.barh(labels, mid, xerr=err, color=colours, alpha=0.85,
+        error_kw=dict(ecolor=ACCENT, capsize=5, elinewidth=1.4),
+        height=0.6, zorder=3)
+for i, (m, h) in enumerate(zip(mid, hi)):
+    ax.text(h + 0.15, i, f"{lo[i]}–{hi[i]}", va='center', fontsize=8.5,
+            color=ACCENT, fontweight='bold')
+ax.set_xlabel("kg CO₂-eq per kg green coffee", fontsize=10)
+ax.axvline(0, color=ACCENT, linewidth=0.8)
+ax.grid(axis='x', alpha=0.3, zorder=0)
+ax.set_xlim(-0.3, 14)
+patches = [mpatches.Patch(color=c, label=l) for c, l in
+           [(C_CULT,'Cultivation'),(C_PROC,'Processing'),(C_DIST,'Distribution/Packaging')]]
+ax.legend(handles=patches, fontsize=9)
+plt.tight_layout()
+plt.savefig('coffee_ghg_by_stage.png', dpi=150, bbox_inches='tight')
+plt.show()
+```
+
+Roasting (3.5–4.3 kg CO2-eq) and drying (2.1–2.8 kg CO2-eq) dominate the processing stage, driven by fossil fuel dependency in industrial drying systems and natural gas use in roasting. This finding challenges a consumer-level assumption: buying certified coffee addresses cultivation-stage impacts but leaves processing emissions largely unchanged, since certification schemes do not typically govern energy sources at roasting facilities.
+
+The transport mode comparison is instructive. Sea freight produces 0.9–1.1 kg CO2-eq/kg; air freight exceeds 10 kg CO2-eq/kg — an order-of-magnitude difference that makes transport mode one of the highest-leverage interventions available in the distribution stage.
+
+### 2.2 Conventional vs. Sustainable Practices
+
+```{python}
+#| label: fig-conv-sust
+#| fig-cap: "Key environmental metrics: conventional vs. sustainable/organic coffee"
+#| echo: false
+import matplotlib.pyplot as plt
+import numpy as np
+
+C_CONV = "#C62828"; C_SUST = "#2E7D32"; ACCENT = "#37474F"
+
+conv_mid = [5.45, 9.25, 21000, 1.00]
+conv_lo  = [4.8,  8.5,  21000, 0.9]
+conv_hi  = [6.1,  10.0, 21000, 1.1]
+conv_err = [(b-a)/2 for a,b in zip(conv_lo, conv_hi)]
+sust_mid = [3.15, 5.00, 11000, 2.15]
+sust_lo  = [2.5,  4.0,  10000, 1.8]
+sust_hi  = [3.8,  6.0,  12000, 2.5]
+sust_err = [(b-a)/2 for a,b in zip(sust_lo, sust_hi)]
+titles   = ["GHG — Cultivation\n(kg CO₂-eq/kg)",
+            "Processing Energy\n(MJ/kg)",
+            "Water Footprint\n(litres/kg)",
+            "Transport CO₂\n(kg CO₂-eq/kg, sea)"]
+
+fig, axes = plt.subplots(1, 4, figsize=(14, 5))
+fig.patch.set_facecolor('white')
+for i, ax in enumerate(axes):
+    ax.set_facecolor("#F5F5F5")
+    ax.bar([0, 1], [conv_mid[i], sust_mid[i]], width=0.5,
+           color=[C_CONV, C_SUST], alpha=0.85,
+           yerr=[conv_err[i], sust_err[i]],
+           error_kw=dict(ecolor=ACCENT, capsize=6, elinewidth=1.4), zorder=3)
+    for xi, yi, yei in zip([0,1],[conv_mid[i],sust_mid[i]],[conv_err[i],sust_err[i]]):
+        ax.text(xi, yi + yei + max(conv_mid[i],sust_mid[i])*0.03,
+                f"{yi:,.0f}", ha='center', fontsize=9, fontweight='bold', color=ACCENT)
+    ax.set_xticks([0, 1])
+    ax.set_xticklabels(['Conventional', 'Sustainable'], fontsize=9)
+    ax.set_title(titles[i], fontsize=9.5, fontweight='bold', color=ACCENT, pad=8)
+    ax.grid(axis='y', alpha=0.3); ax.set_ylim(0, max(conv_mid[i],sust_mid[i]) * 1.4)
+    if i < 3:
+        pct = int((1 - sust_mid[i]/conv_mid[i]) * 100)
+        ax.text(0.5, max(conv_mid[i],sust_mid[i])*1.18,
+                f"~{pct}% reduction", ha='center', fontsize=8.5,
+                color=C_SUST, fontstyle='italic', transform=ax.transData)
+plt.tight_layout()
+plt.savefig('coffee_conv_vs_sust.png', dpi=150, bbox_inches='tight')
+plt.show()
+```
+
+Sustainable and organic practices reduce GHG emissions by approximately 42% at the cultivation stage, processing energy by 46%, and water footprint by 48%. These are not marginal improvements — they represent a fundamentally different production system. The case for investment in sustainable farming practices is strong on environmental grounds. The distributional problem, examined in Section 3, is that the decision to adopt these practices rests with farmers who capture only a small fraction of the value that sustainable certification commands downstream.
+
+---
+
+## 3. The Economics of Coffee: A Value Chain Equity Problem
+
+### 3.1 Who captures value?
+
+```{python}
+#| label: fig-value-chain
+#| fig-cap: "Distribution of retail coffee value across supply chain actors (ICO, 2023)"
+#| echo: false
+import matplotlib.pyplot as plt
+
+C_SUST = "#2E7D32"; C_CONV = "#E65100"; ACCENT = "#37474F"
+
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 5),
+                                gridspec_kw={'width_ratios': [1, 1.2]})
+fig.patch.set_facecolor('white')
+
+actors = ["Farmers\n(smallholders)", "Exporters &\nTraders",
+          "Processors &\nRoasters", "Retailers &\nBrands", "Other"]
+shares = [10, 10, 35, 35, 10]
+cols   = [C_SUST, "#78909C", C_CONV, "#B71C1C", "#90A4AE"]
+wedges, texts, autotexts = ax1.pie(
+    shares, labels=actors, colors=cols, autopct='%1.0f%%', startangle=90,
+    pctdistance=0.75, wedgeprops=dict(width=0.55, edgecolor='white', linewidth=2),
+    textprops=dict(fontsize=9, color=ACCENT))
+for at in autotexts:
+    at.set_fontsize(9); at.set_fontweight('bold'); at.set_color('white')
+wedges[0].set_edgecolor(C_SUST); wedges[0].set_linewidth(3)
+ax1.set_title("Share of Retail Value (%)", fontsize=10.5, fontweight='bold',
+              color=ACCENT, pad=8)
+
+ax2.set_facecolor("#F5F5F5")
+stages  = ["Retail\n(€100)", "Retailers &\nBrands (-35%)",
+           "Processors &\nRoasters (-35%)", "Traders (-10%)", "Farmers\nreceive (~10%)"]
+cumvals = [100, 65, 30, 20, 10]
+bcols   = ["#78909C","#B71C1C",C_CONV,"#78909C",C_SUST]
+bars    = ax2.bar(range(5), cumvals, color=bcols, alpha=0.85, width=0.55, zorder=3)
+for bar, val in zip(bars, cumvals):
+    ax2.text(bar.get_x() + bar.get_width()/2, val + 1.5, f"€{val}",
+             ha='center', fontsize=10, fontweight='bold', color=ACCENT)
+ax2.set_xticks(range(5)); ax2.set_xticklabels(stages, fontsize=8.5)
+ax2.set_ylabel("Value remaining (€ per €100 retail)", fontsize=9, color=ACCENT)
+ax2.set_title("What Remains After Each Stage\n(per €100 retail price)",
+              fontsize=10, fontweight='bold', color=ACCENT, pad=8)
+ax2.set_ylim(0, 120); ax2.grid(axis='y', alpha=0.3)
+ax2.annotate("Farmer receives ~10%", xy=(4, 10), xytext=(3.1, 50),
+             fontsize=9, color=C_SUST, fontweight='bold',
+             arrowprops=dict(arrowstyle='->', color=C_SUST, lw=1.5))
+plt.tight_layout()
+plt.savefig('coffee_value_chain_equity.png', dpi=150, bbox_inches='tight')
+plt.show()
+```
+
+The global coffee market was valued at over $130 billion in 2023 (ICO, 2023). Farmers — the 12.5 million smallholders who grow the crop — receive approximately 10% of the retail value that crop eventually commands. Roasters and retailers capture roughly 70%. Certification premiums — where they exist — operate within this structure, adding a modest increment to farmgate prices without altering the underlying distribution.
+
+The structural consequence is visible in the data: in eight of the ten largest producing countries, farmgate prices periodically fall below the cost of production (ICO, 2023; Nestlé, 2024). When that happens, the farmer bears the loss. When prices rise, the gains accrue disproportionately downstream. Certification schemes do not change this structure; they improve practice within it.
+
+---
+
+## 4. Company Scorecard: Claims vs. Verifiable Outcomes
+
+The three largest coffee companies — Nestlé, Starbucks, and JDE Peet's — collectively account for a substantial share of global roasted coffee volume and are the most visible proponents of certified sustainable sourcing. The scorecard below compares their stated commitments against independently verifiable outcomes from 2023–2024 reporting.
+
+```{python}
+#| label: fig-scorecard
+#| fig-cap: "Company sustainability scorecard: Nestlé, Starbucks, JDE Peet's (2023-24)"
+#| echo: false
+import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
+
+DARK  = "#1A1A2E"; ACCENT = "#2E5FA3"; MID = "#455A64"
+GREEN = "#2E7D32"; AMBER  = "#F57F17"; RED = "#C62828"
+
+rows = [
+    ("Nestlé", "100% Nescafé coffee sustainably\nsourced by 2025",
+     "% via Nescafé Plan", "88.9% (2024)",
+     "On track — but no price floor", AMBER),
+    ("Nestlé", "20% GHG reduction by 2025\nvs. 2018 baseline",
+     "Net GHG reduction", "20.7% — achieved (incl. 3.31 Mt removals)",
+     "Met — includes carbon removals", AMBER),
+    ("Nestlé", "Minimum price / living income\ncommitment for farmers",
+     "Binding price floor", "None — exited Fairtrade 2020",
+     "No commitment", RED),
+    ("Nestlé", "Packaging waste reduction",
+     "Total factory waste", "1.839 Mt (+17.5% since 2023)",
+     "No reduction target; waste rising", RED),
+    ("Starbucks", "100% ethically sourced via\nC.A.F.E. Practices",
+     "% C.A.F.E. verified", "99.75% (FY24)",
+     "Met — C.A.F.E. is proprietary; no min. price", AMBER),
+    ("Starbucks", "50% absolute GHG reduction\nby 2030 vs. 2019",
+     "% change vs. 2019", "+3% (FY24) — wrong direction",
+     "Missed trajectory", RED),
+    ("Starbucks", "100M climate-tolerant trees\nto farmers by 2025",
+     "Trees distributed (cumul.)", "56.8M of 100M (FY24)",
+     "Behind — likely to miss", AMBER),
+    ("Starbucks", "50% waste-to-landfill\nreduction by 2030",
+     "% change in waste vs. 2019", "+6% (FY24) — increasing",
+     "Missed direction", RED),
+    ("JDE Peet's", "100% responsibly sourced\ngreen coffee by 2025",
+     "% responsibly sourced", "92.4% (2024)",
+     "On track — includes 4C (lowest-bar scheme)", AMBER),
+    ("JDE Peet's", "SBTi: Scope 1+2 -42%\nby 2030 vs. 2020",
+     "% Scope 1+2 reduction", "-21% (2023) — on track",
+     "On track — strongest GHG trajectory", GREEN),
+    ("JDE Peet's", "Minimum price / living income\ncommitment for farmers",
+     "Binding price floor", "None — Rainforest Alliance & 4C used",
+     "No commitment", RED),
+    ("JDE Peet's", "100% recyclable/reusable/\ncompostable packaging by 2025",
+     "% qualifying packaging", "85% (2024)",
+     "Behind — 85% vs. 100% target", AMBER),
+]
+
+fig, ax = plt.subplots(figsize=(18, 8.5))
+fig.patch.set_facecolor('white')
+ax.axis('off')
+
+cols_x  = [0.01, 0.10, 0.32, 0.46, 0.60, 0.79]
+cols_w  = [0.08, 0.21, 0.13, 0.13, 0.18, 0.20]
+headers = ["Company", "Commitment", "Metric", "Latest Data", "Actual Status", "Assessment"]
+
+for cx, cl, cw in zip(cols_x, headers, cols_w):
+    ax.add_patch(plt.Rectangle((cx, 0.93), cw - 0.005, 0.06,
+                                facecolor=DARK, transform=ax.transAxes, zorder=2))
+    ax.text(cx + (cw-0.005)/2, 0.96, cl, ha='center', va='center',
+            fontsize=9, fontweight='bold', color='white',
+            transform=ax.transAxes, zorder=3)
+
+row_h    = 0.073
+y_start  = 0.895
+co_colors = {"Nestlé":"#E3F2FD","Starbucks":"#FFF8E1","JDE Peet's":"#E8F5E9"}
+prev_co  = None
+
+for i, (co, cm, mt, ac, vd, rag) in enumerate(rows):
+    y  = y_start - i * row_h
+    bg = co_colors.get(co, "#F5F5F5")
+    ax.add_patch(plt.Rectangle((0.005, y - row_h*0.85), 0.99, row_h*0.90,
+                                facecolor=bg, alpha=0.45,
+                                transform=ax.transAxes, zorder=1))
+    ax.add_patch(plt.Rectangle((0.005, y - row_h*0.85), 0.007, row_h*0.90,
+                                facecolor=rag, transform=ax.transAxes, zorder=2))
+    vals = [co if co != prev_co else "", cm, mt, ac, vd]
+    fss  = [9, 7.5, 7.5, 8, 7.5]
+    fws  = ['bold','normal','normal','bold','normal']
+    fcs  = [DARK, MID, MID, DARK, MID]
+    for cx, cw, txt, fs, fw, fc in zip(cols_x, cols_w, vals, fss, fws, fcs):
+        ax.text(cx + 0.004, y - row_h*0.38, txt,
+                ha='left', va='center', fontsize=fs, fontweight=fw,
+                color=fc, transform=ax.transAxes, zorder=3)
+    prev_co = co
+
+legend_patches = [
+    mpatches.Patch(color=GREEN, label='On track / achieved'),
+    mpatches.Patch(color=AMBER, label='Partial / caveated'),
+    mpatches.Patch(color=RED,   label='Missed / no commitment'),
+]
+ax.legend(handles=legend_patches, loc='lower right', fontsize=9,
+          framealpha=0.9, bbox_to_anchor=(1.0, -0.01))
+ax.set_title(
+    "Company Sustainability Scorecard: Nestlé, Starbucks, JDE Peet's\n"
+    "Sources: Nestlé CSV Report 2024; Starbucks FY24 Global Impact Report Data Tables; "
+    "JDE Peet's FY2023 Annual Report; Tracenable (2024); Karma Wallet (2024)",
+    fontsize=10, fontweight='bold', color=DARK, pad=10)
+plt.tight_layout()
+plt.savefig('coffee_company_scorecard.png', dpi=150, bbox_inches='tight')
+plt.show()
+```
+
+Three patterns emerge across all three companies. First, "responsibly sourced" is defined by industry-managed certification schemes — C.A.F.E. Practices (Starbucks-owned), Rainforest Alliance, and 4C — none of which set minimum prices for farmers. Second, absolute emissions and waste are either rising or moving in the wrong direction despite expanding certified coverage. Third, no company has made a binding commitment to farmer living income or minimum purchase prices.
+
+JDE Peet's demonstrates the strongest GHG trajectory and is the only company on track with its core Scope 1 and 2 reduction targets. Starbucks' absolute emissions are above its 2019 baseline despite a 2030 target of 50% reduction — a gap that would require unprecedented annual reductions to close. Nestlé's factory waste increased 17.5% in two years with no reduction target set for this metric.
+
+---
+
+## 5. Why Certification Schemes Cannot Solve This
+
+Voluntary certification schemes represent the coffee sector's primary market-based response to its sustainability failures. Fairtrade, Rainforest Alliance, Organic, and 4C are the most widely used, covering progressively broader shares of global supply. The evidence presented in this paper suggests that the structural constraint of VCS is not their design quality — it is what they are not designed to do.
+
+VCS operate at the level of farming practice: they certify whether shade-grown methods are used, whether agrochemicals are applied responsibly, whether workers have access to training. These are genuine and measurable improvements. Hasan et al. (2024) confirm that certified farms perform better across nearly all environmental impact categories compared to conventional equivalents. The Rubio-Jovel (2022) analysis similarly finds that certified farmers report marginally better incomes and training opportunities than non-certified peers.
+
+The structural problem is that these improvements occur within a price architecture that VCS do not govern. With the exception of Fairtrade — which sets a minimum floor price and a verified premium paid directly to producer cooperatives — no major certification scheme commits the buyer to a minimum purchase price. The buyer pays the market price (or a discretionary premium) for certified coffee and absorbs the reputational benefit of the certification label. The farmer absorbs the cost of meeting certification requirements: infrastructure investment, documentation practices, cooperative membership, and ongoing compliance — costs that can be prohibitive without external support, and that provide no income guarantee if market prices fall below production cost (Hasan et al., 2024).
+
+The Coffee Brew Index and the Coffee Barometer (2023) both document a consistent gap between corporate sustainability claims and measurable systemic progress. Major companies set ambitious 2030 targets while absolute emissions, waste volumes, and farmgate price instability persist. The growing sophistication of sustainability reporting — more detailed disclosures, more SDG references, more programme descriptions — has not been accompanied by commensurate improvement in the outcomes those reports are intended to address.
+
+This pattern has a name in sustainability governance literature: it is the displacement of structural intervention by risk management. Companies invest in certification coverage, farmer training programmes, and reporting infrastructure to manage regulatory exposure, reputational risk, and supply chain continuity. These investments are not insincere — they produce real improvements at the margin. But their architecture is designed to be compatible with continued growth in purchasing volume, which drives absolute impacts upward even as intensity metrics improve. Starbucks' 3% absolute emissions increase above its 2019 baseline, against a 2030 target of 50% reduction, while 99.75% of its coffee is C.A.F.E. certified, is the most direct illustration of this dynamic.
+
+Fairtrade's exit from Nestlé's KitKat supply chain in 2020 — the one scheme that did set a price floor and a verified premium, costing farmers in Côte d'Ivoire £2 million in annual premiums — and its replacement with Rainforest Alliance (no price floor, no verified premium) illustrates where the sector's structural orientation lies. The certifications that persist are those compatible with the buyer's pricing power. The one that was not compatible with it was removed.
+
+Closing the living income gap documented by the KIT Institute, the farmgate share problem identified by the ICO, and the persistent labor rights violations noted by the ILO would require interventions that operate at the price level: minimum purchase price commitments, mandatory living income procurement policies, or regulatory price floors enforced at the import stage. The EU Deforestation Regulation represents a step toward regulatory intervention in supply chain standards, though its mechanism targets land use rather than income distribution. CSRD's double materiality framework will eventually require companies to disclose impacts on farmer livelihoods in quantified terms, creating accountability pressure for the outcome dimension that self-reported certification coverage currently avoids.
+
+---
+
+## 6. SDG Alignment: Systemic Gap
+
+```{python}
+#| label: fig-sdg
+#| fig-cap: "SDG alignment in the coffee sector: documented violations vs. evidenced progress"
+#| echo: false
+import matplotlib.pyplot as plt
+import numpy as np
+
+ACCENT = "#37474F"
+sdgs = ["SDG 1\nNo Poverty","SDG 2\nZero Hunger","SDG 3\nGood Health",
+        "SDG 5\nGender Equality","SDG 6\nClean Water","SDG 8\nDecent Work",
+        "SDG 9\nInfrastructure","SDG 10\nReduced Inequalities",
+        "SDG 12\nResponsible Consump.","SDG 13\nClimate Action",
+        "SDG 15\nLife on Land","SDG 17\nPartnerships"]
+violation = [-1,-1,-1,-1,-1,-1, 0,-1,-1,-1,-1,-1]
+progress  = [ 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0]
+matrix    = np.array([violation, progress], dtype=float)
+
+fig, ax = plt.subplots(figsize=(14, 3.5))
+fig.patch.set_facecolor('white')
+im = ax.imshow(matrix, cmap=plt.cm.RdYlGn, vmin=-1, vmax=1, aspect='auto')
+ax.set_xticks(range(len(sdgs)))
+ax.set_xticklabels(sdgs, fontsize=8.5, ha='center')
+ax.set_yticks([0, 1])
+ax.set_yticklabels(['Violations\nDocumented','Progress\nEvidenced'],
+                   fontsize=10, fontweight='bold')
+ax.set_title("SDG Alignment in the Coffee Sector (Rubio-Jovel, 2022; Coffee Barometer, 2023; ICO, 2023)",
+             fontsize=10.5, fontweight='bold', color=ACCENT, pad=8)
+cbar = plt.colorbar(im, ax=ax, orientation='vertical', fraction=0.02, pad=0.01)
+cbar.set_ticks([-1, 0, 1])
+cbar.set_ticklabels(['Violated','Mixed','Progress'], fontsize=9)
+plt.tight_layout()
+plt.savefig('coffee_sdg_heatmap.png', dpi=150, bbox_inches='tight')
+plt.show()
+```
+
+The SDG alignment matrix surfaces the systemic character of coffee's sustainability gap. Violations are documented across 11 of 12 relevant SDGs; evidenced progress exists in only 4, and in each case that progress is partial and contested. SDG 17 (Partnerships) is the most significant absence: the governance gap between Global North consumption and Global South production — the structural asymmetry at the core of this analysis — is precisely what a genuine partnership framework would need to address.
+
+---
+
+## 7. EU Consumption and Demand-Side Responsibility
+
+Germany's per capita coffee consumption of 164 litres annually (ICO, 2022–2023) places it among the world's highest-consuming markets. European consumption patterns amplify the impacts identified in this analysis: single-serve pods, takeaway culture, and plastic-lined disposable cups contribute disproportionately to the waste and emissions concentrated in the consumption stage.
+
+The EU Deforestation Regulation, effective from 2025, requires proof of deforestation-free supply chains for key commodities including coffee. This represents a meaningful regulatory intervention in supply chain standards but targets land use rather than income distribution. Its principal risk — documented by the Coffee Barometer (2023) — is that compliance pressure may cause large buyers to withdraw from high-risk smallholder regions, marginalising the farmers most in need of market access.
+
+The ICO Circular Economy Report (2022–2023) identifies a practical roadmap for demand-side intervention: regenerative agriculture incentives, waste valorisation (spent grounds into bioenergy or compost), packaging redesign under R9 circular economy principles, localised roasting and distribution to reduce transport emissions, and consumer education campaigns targeting high-impact behaviours such as pod use and dairy choice. These interventions are available and technically feasible. Their implementation requires the kind of regulatory and pricing commitment that voluntary action has not produced.
+
+---
+
+## 8. Conclusions
+
+Coffee is a case study in the limits of market-led sustainability. The environmental evidence is clear: sustainable farming practices reduce cultivation-stage GHG emissions by 42%, water use by 48%, and processing energy by 46%. The interventions exist. The economics explain why they are not adopted at scale: farmers who bear the cost of sustainable certification receive approximately 10% of the retail value their crop commands, with no guarantee that certification premiums will cover their investment.
+
+The company scorecard reveals a consistent pattern across the sector's three largest players. Certified sourcing coverage is expanding. Absolute emissions and waste volumes are rising or stalled. No binding minimum price or living income commitment exists in any company's sustainability architecture. Starbucks' FY24 GHG emissions are 3% above the 2019 baseline it committed to halving by 2030. The gap between reporting sophistication and structural outcome is the central finding.
+
+Voluntary certification schemes improve farming practices within a price structure they are not designed to change. The one scheme that did intervene at the price level — Fairtrade — was exited by Nestlé in 2020 and replaced with a proprietary programme that does not constrain purchase prices. The pattern suggests that the sustainability architecture preferred by the sector's largest buyers is one they can control, and that the interventions most likely to alter the distributional problem — minimum price commitments, mandatory living income procurement, and EU-level price floor regulation — are precisely those absent from current corporate and regulatory frameworks.
+
+---
+
+## References
+
+Chapagain, A.K. and Hoekstra, A.Y. (2007). "The Water Footprint of Coffee and Tea Consumption in the Netherlands." *Ecological Economics* 64(1): 109–118. https://doi.org/10.1016/j.ecolecon.2007.02.022
+
+Coffee Barometer (2023). *Coffee Barometer 2023.* https://coffeebarometer.org
+
+Hasan, Y., Roy, P. and Abassi, B. (2024). "Comparative Life Cycle Assessment (LCA) in the Agri-Food Industry, Focusing on Organic and Conventional Coffee." *Sustainability* 16(24): 10819. https://www.mdpi.com/2071-1050/16/24/10819
+
+ICO — International Coffee Organization (2022–2023). *ICO Coffee Circular Economy Report.* https://hdl.handle.net/10568/131997
+
+ICO — International Coffee Organization (2023). *Coffee Development Report 2022–23.* https://ico.org/coffee-development-report-2/
+
+JDE Peet's (2024). *Full-Year Results 2023.* https://www.jdepeets.com/news-container/jde-peets-reports-full-year-results-2023-2832441/
+
+Karma Wallet (2024). "Starbucks Sustainability: The Good & The Bad." https://karmawallet.io/blog/2024/07/starbucks-sustainability-the-good-the-bad/
+
+Klim (2024). "Overcoming Challenges in Insetting Projects." https://www.klim.eco/en/blog/herausforderungen-in-insetting-projekten-ueberwinden
+
+Nab, H. and Maslin, M. (2020). *How Bad Are Bananas? The Carbon Footprint of Everything.* London: Profile Books.
+
+Nestlé (2024). *Creating Shared Value and Sustainability Report 2023.* https://www.nestle.com/sites/default/files/2024-02/creating-shared-value-sustainability-report-2023-en.pdf
+
+Nestlé (2025). *Sustainability Performance Data 2024.* Nestlé S.A.
+
+Nestlé Nespresso (2023). *EU LCA Infographic.* https://nestle-nespresso.com/sites/site.prod.nestle-nespresso.com/files/NN_EU_LCA_Infographic_Jan%202023_1.pdf
+
+Rubio-Jovel, R. (2022). "Voluntary Sustainability Standards in Coffee: Progress, Limitations and Trade Impacts." *International Journal of Development Policy and Practice* 6(4): 82–99.
+
+Starbucks (2025). *Fiscal 2024 Global Impact Report.* https://about.starbucks.com/uploads/2025/05/Starbucks-Fiscal-2024-Global-Impact-Report.pdf
+
+Starbucks (2025). *Fiscal 2024 Global Impact Report — Data Tables.* https://about.starbucks.com/uploads/2025/05/Starbucks-Fiscal-2024-Global-Impact-Report-Data-Tables.pdf
+
+Tracenable (2024). *Starbucks GHG Emissions Data.* https://tracenable.com/company/starbucks/ghg-emissions
