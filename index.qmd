@@ -31,7 +31,7 @@ Economist · Data Scientist · ESG Analyst · Based in Germany
 ::: {.g-col-12 .g-col-md-4}
 ::: {.domain-card}
 ### ESG Analytics
-Climate scenario modelling, net-zero simulation,
+Climate scenario modelling, ESG Research and Analysis,
 supply chain risk, and sustainability data pipelines.
 :::
 :::
