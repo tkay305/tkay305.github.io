@@ -17,12 +17,14 @@ An Independent ESG Verification of Nestlé's 2025 Commitments.
 <span class="tag tag-esg">ESG</span> <span class="tag tag-method">Analysis · Python</span>
 :::
 ::: {.g-col-12 .g-col-md-6}
-[**JIT Supply Chain Analytics**](jit-supply-chain-analytics.qmd){.project-card}
-Just-in-time supply chain performance analysis and operational risk indicators.
-<span class="tag tag-esg">ESG</span> <span class="tag tag-method">Time Series · Python</span>
+[**Engineering Accountability: Audi AG's Post-Dieselgate CSR Transformation (2015–2024)**](audi_engineering_accountability.qmd){.project-card}
+After systematic deception at an industrial scale,
+has Audi built a genuinely transformed ethical architecture,
+or reconstructed its reputation within the same structural conditions that enabled the scandal.
+<span class="tag tag-research">Research</span>
+<span class="tag tag-method">Analysis · ESG Research</span>
 :::
 :::
-
 ---
 
 ### Research & Econometrics

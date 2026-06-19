@@ -1,0 +1,291 @@
+---
+title: "Engineering Accountability"
+subtitle: "Audi AG's Post-Dieselgate CSR Transformation, 2015–2024"
+author: "Natasha Kabuka"
+date: "2025"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-title: "Contents"
+    theme: cosmo
+    code-fold: true
+    fig-align: center
+    page-layout: full
+categories: [ESG, Corporate Governance, Automotive, Business Ethics, Post-Scandal]
+---
+
+## Abstract
+
+In September 2015, Volkswagen Group's admission of systematic emissions fraud — quickly confirmed to include Audi's 3.0-litre V6 TDI engines — exposed one of the most consequential governance failures in postwar corporate history. This report examines what Audi AG built in the decade that followed, drawing on a longitudinal analysis of Audi and Volkswagen Group sustainability and governance disclosures from 2015 to 2024, supplemented by independent media reporting, academic analysis, and third-party evaluations. The central question is whether Audi's post-Dieselgate reforms represent genuine structural transformation or primarily compliance-driven reputation repair.
+
+The analysis applies three categories of ethical leadership tools — normative instruments, structural mechanisms, and capability-building programmes — across ten domains of Audi's ESG and CSR architecture. It also maps Audi's international leadership culture against Erin Meyer's Culture Map framework, examining how governance norms translate across joint ventures in China and emerging partnerships in North America.
+
+The conclusion is that Audi's response to Dieselgate is **real but partial**: structurally more robust, with a demonstrably improved audit architecture, clearer governance steering models, and genuine incentive alignment through programmes such as the Ideas Program and expanded training investment. Culturally, however, the evidence is more ambiguous. Reports have compressed ethical detail over time rather than expanding it, ethical dilemma handling remains largely undisclosed, and the deeper engineering culture conditions that made systemic misconduct possible — prioritisation of performance targets over ethical boundaries, compliance treated as governance theater — are addressed rhetorically more than structurally. Audi's post-scandal trajectory is a case study in what organisations can and cannot repair through formal governance mechanisms alone.
+
+---
+
+## 1. Introduction: The Scandal That Defines the Question
+
+### 1.1 What happened
+
+Dieselgate began as an emissions-cheating scheme in which Volkswagen Group diesel vehicles were fitted with software designed to detect regulatory test conditions and alter engine behaviour accordingly, allowing vehicles to pass emissions tests in controlled environments while emitting far higher levels of nitrogen oxides in normal driving. The scandal became public in the United States in September 2015, when the Environmental Protection Agency issued a Notice of Violation against Volkswagen after identifying the defeat device in 2.0-litre diesel vehicles. The probe widened rapidly to include Audi and Porsche models equipped with 3.0-litre V6 TDI engines. In November 2015, Audi acknowledged that its V6 diesel engines used illegal or improperly disclosed software functions in the U.S. market, placing Audi-branded models at the centre of the scandal rather than its periphery (Reuters, 2017).
+
+The legal and financial consequences were severe and protracted. German prosecutors imposed an €800 million fine on Audi in 2018 for regulatory violations tied to its diesel engines and supervisory failures — part of a broader effort to establish Audi's specific accountability within the wider Volkswagen Group investigation. The most consequential personal outcome came in 2023, when the Munich regional court found former Audi chief executive Rupert Stadler guilty of fraud in connection with the emissions scandal and handed him a suspended prison sentence and a €1.1 million fine; two co-defendants from Audi-related engine work also received suspended sentences and fines (DW, 2023). The convictions made clear that Dieselgate was not only a technical compliance failure but a governance and accountability failure reaching the most senior levels of management.
+
+### 1.2 Why it matters for this report
+
+Dieselgate is not merely the backdrop to this analysis. It is the event that determines whether anything that followed it means what Audi says it means. An organisation that tightens its audit architecture after being caught cheating on audits has done something meaningful — but only if the reasons the audits failed in the first place have been addressed. An organisation that frames its recovery in terms of transparency has made a commitment — but only if that transparency extends to the conditions that made the original deception possible, not only to the remediation measures taken afterwards.
+
+The decade between 2015 and 2024 is therefore examined here as a test of whether Audi's reformed ethical architecture is a substantive remedy or a sophisticated compliance response. The honest answer, supported by the evidence, is that it is both — and the distinction between the two is where this report's analytical value lies.
+
+---
+
+## 2. The Pre-Scandal Architecture: Conditions for Failure
+
+### 2.1 What the ethical structure looked like before 2015
+
+Audi's pre-Dieselgate ethical architecture was not absent — it contained codes of conduct, supplier standards, sustainability commitments, and governance processes that were representative of the era. What it lacked were the conditions necessary to prevent systematic deception by engineers acting within a high-performance target culture.
+
+Several structural conditions made Dieselgate possible, and understanding them is necessary to evaluate whether the post-scandal reforms address causes or symptoms.
+
+**Performance culture over ethical boundary-setting.** The engineering culture that produced the defeat device was one in which hitting targets — emissions performance, fuel economy, power output — was the primary measure of success. Compliance was treated as a constraint to be managed rather than a value to be upheld. There is no evidence in pre-2015 reporting of mechanisms designed to make it safe for engineers to flag unachievable targets as ethical problems rather than technical challenges.
+
+**Compliance as governance theater.** Pre-2015 codes of conduct and compliance systems existed, but the Dieselgate outcome reveals that they were insufficiently embedded in the decision-making processes where the defeat device was designed and deployed. Rules existed on paper; the culture operated by different logic.
+
+**Limited external transparency and accountability.** Pre-2015 Audi sustainability reports existed but were less detailed on governance architecture and leadership accountability than post-2015 disclosures. Stakeholder engagement was managed rather than dialogical. The absence of genuine external scrutiny reduced the organisational cost of misconduct.
+
+**Siloed engineering decision-making.** The defeat device was not an accident but a sustained technical choice. That a decision of this kind could be made, implemented, and maintained across production cycles without interruption by governance structures indicates that ethical oversight was structurally absent from the engineering decision chain — not merely inadequate.
+
+### 2.2 What this implies for the post-scandal assessment
+
+The structural conditions for Dieselgate were specific: performance culture, compliance theater, limited external accountability, and siloed technical decision-making. A genuine post-scandal transformation would need to address each of them. The following sections examine the evidence that Audi did — and did not — do so.
+
+---
+
+## 3. What Audi Built: The Post-2015 Architecture
+
+### 3.1 Normative tools — values, rules, and principles
+
+Following Dieselgate, Audi introduced what it described as "Golden Rules" — a set of behavioural principles aimed at reinstating integrity as a non-negotiable expectation across the organisation. These sit within a broader framework that includes a revised Code of Conduct, supplier ethical standards, and the explicit embedding of sustainability as a corporate principle in management language and governance documentation.
+
+From a business ethics perspective, these instruments are primarily **deontological** in character: they establish clear duties, define what is impermissible, and create accountability through rule-following. Earlier reports (2016–2019) framed sustainability not only as a reporting category but as "firmly anchored in Audi's corporate strategy and management systems" — a normative claim, not merely a descriptive one.
+
+The limitation is also characteristic of deontological ethics: rules define boundaries but do not cultivate moral imagination. They tell employees what not to do; they do not develop the capacity to reason through novel ethical situations for which no rule exists. Post-Dieselgate, Audi's normative architecture expanded in coverage and visibility. Whether it deepened in moral seriousness is a harder question.
+
+### 3.2 Structural tools — governance, audits, and steering models
+
+Audi's most demonstrably improved post-scandal domain is structural governance. Earlier reports (2016–2019) describe a multi-level sustainability steering architecture in which sustainability commitments cascade from corporate strategy through operational targets into production, product development, and HR systems. Internal audits, external audits, supplier audits, compliance reviews, and human rights due-diligence processes are all embedded in this architecture.
+
+The audit function deserves specific attention. In the context of a scandal caused by misrepresentation in regulatory assessments, the quality of the audit architecture is the most direct test of whether systemic deception has been made harder. Post-Dieselgate Audi audits function across three roles simultaneously:
+
+- **Structural ethical tools** — monitoring and assurance, embedding what is measured as morally salient
+- **Communication tools** — signaling credibility and transparency to external stakeholders
+- **Normative reinforcement** — making accountability visible and routine
+
+This is a genuine structural improvement. The limitation, noted in academic analysis of post-Dieselgate sustainability reporting, is that audit processes can improve accountability for what is measured while leaving unmeasured the cultural conditions that enabled the original failure (Journals of Sagepub, 2021).
+
+### 3.3 Capability-building tools — training, academies, and culture
+
+Audi's capability-building response to Dieselgate included substantial investment in training. Post-scandal disclosures reference millions of training hours and an expanded training budget, with the Sustainability Academy functioning as an ethical leadership development instrument oriented toward competence-building rather than rule-compliance.
+
+The Sustainability Academy is interpretable as a **virtue ethics tool**: its purpose is to develop moral judgment and shared values, not merely to enforce behavioural rules. Leadership development programmes in the same period explicitly linked leadership expectations, corporate values, and sustainability transformation — requiring leaders to act as role models and integrate sustainability into decision-making.
+
+The critical gap is that the Sustainability Academy becomes less visible in later reports (2020–2024), not because it disappeared but because reporting compressed. This creates analytical opacity about whether the capability-building investment was sustained or quietly deprioritised as the immediate reputational crisis receded.
+
+### 3.4 Incentive alignment — the Ideas Program and economic reinforcement
+
+The Audi Ideas Program represents the post-scandal architecture's most distinctive ethical leadership mechanism because it aligns economic incentives with ethical and operational improvement simultaneously. Employee suggestions are implemented, efficiency savings are tracked, and bonuses are paid for accepted ideas. In 2020 alone, over 110 million euros in savings were attributed to employee ideas, with financial rewards distributed accordingly (Audi Media Center, 2020).
+
+From an ethical leadership perspective, this qualifies as a **behavioral reinforcement mechanism**: it makes ethical improvement economically rational for individual employees, not merely morally expected. Combined with the virtue-ethics orientation of the Sustainability Academy and the deontological grounding of the Code of Conduct, it indicates that Audi's post-scandal architecture genuinely combines normative, structural, and incentive-based tools — the combination identified in ethical leadership theory as most likely to produce durable behavioral change.
+
+---
+
+## 4. Ethical Leadership Frameworks Applied
+
+### 4.1 Stakeholder theory
+
+Audi's post-Dieselgate sustainability architecture aligns strongly with stakeholder-oriented ethics. Supply chain initiatives, human rights due diligence, external research partnerships, and community investment all reflect recognition of multi-actor value creation and acceptance of responsibility beyond contractual obligations. Joint ventures in China (FAW-Volkswagen, SAIC-Volkswagen) involve shared governance structures that operationalise stakeholder interdependency at the organisational level.
+
+The limitation is persistent: stakeholder engagement remains largely managed and instrumentalised — conducted through audits, KPIs, and certification schemes — rather than dialogical or co-determined. The difference matters because managed stakeholder engagement optimises for corporate risk reduction; genuine stakeholder partnership optimises for shared value. Audi demonstrates the former more consistently than the latter.
+
+### 4.2 Virtue ethics
+
+The emphasis on role-model leadership, integrity training, culture alignment, and the Sustainability Academy reflects a virtue-ethics orientation — an attempt to cultivate ethical character rather than only enforce rules. Earlier reports make this explicit: leadership expectations included acting as role models and integrating sustainability into decision-making as a matter of professional identity, not only procedural compliance.
+
+The limitation is that virtue ethics remains largely implicit in Audi's communications. Virtues are promoted behaviourally, but rarely reflected upon, debated, or made the subject of organisational learning. The absence of ethical dilemma disclosure — reports emphasise systems and targets but rarely describe ethical conflicts or trade-offs — limits the organisation's capacity to learn from moral ambiguity.
+
+### 4.3 Deontological ethics
+
+Compliance systems, codes of conduct, supplier standards, and human rights obligations constitute the deontological layer of Audi's ethical architecture. These provide clear boundaries, risk mitigation, and legal protection. They also represent the most developed dimension of the post-scandal governance response.
+
+The risk, ironically, is that deontological ethics has come to dominate the architecture to the point of crowding out moral imagination. When compliance is the primary ethical register, the question employees learn to ask is "is this permitted?" rather than "is this right?" — and the original defeat device decision suggests that engineers asked the former question (in a system designed to avoid regulatory detection) rather than the latter.
+
+### 4.4 Leadership style: the dual-mode pattern
+
+Audi's leadership demonstrates a consistent dual pattern across the reporting period:
+
+- **Transformational narrative**: vision-oriented communication emphasising future mobility, responsibility, and purpose
+- **Transactional execution logic**: KPIs, milestones, compliance checkpoints, and performance measurement
+
+Sustainable transformation is most robustly supported when transformational leadership is backed by enabling structural conditions. Where the two modes conflict — where performance targets require trade-offs with ethical commitments — the post-scandal evidence does not clearly establish which mode prevails. This is the central cultural ambiguity the report cannot resolve from disclosure data alone.
+
+---
+
+## 5. International Dimension: Culture Map Analysis
+
+### 5.1 Germany HQ — low-context, hierarchical, precision-oriented
+
+Audi's German headquarters operates within a cultural context characterised by explicit, structured communication, engineering precision, process discipline, and consensus-oriented but hierarchically structured decision-making. These cultural norms are reflected in the formal governance architecture: structured reporting cycles, cascading strategy implementation, and codified standards.
+
+Applied to the post-Dieselgate context, this cultural profile cuts both ways. On one hand, the German engineering culture's commitment to precision and process enables the kind of systematic governance architecture Audi has rebuilt. On the other hand, it is the same cultural profile — specifically its tendency to trust in systems over moral judgment, and to treat compliance as a solved problem once processes are in place — that created the conditions for Dieselgate.
+
+### 5.2 China — joint ventures, relationship trust, and localization
+
+Audi in China operates through multiple joint ventures — FAW-Volkswagen (including the majority-stake Audi FAW NEV Company producing electric PPE-based models) and SAIC-Volkswagen — with a dedicated Audi China headquarters in Beijing coordinating brand, digital, and strategy functions. Audi's China operations account for over 649,000 vehicle deliveries in 2024, making China the brand's largest individual market.
+
+Applying the Culture Map framework, Audi's China operations require navigation of several key dimensional tensions:
+
+| Dimension | Audi HQ Norm | China JV Context |
+|---|---|---|
+| Communication | Low-context, explicit | High-context; local partners mediate via WeChat, local UX |
+| Hierarchy | Consensus + process | Shared decision authority in JV governance |
+| Trust | Task-based (competence) | Relationship-based; 35+ year JV history |
+| Cultural adaptation | Historically ethnocentric | Shifting: AUDI sub-brand, China-for-China platforms |
+
+The China-exclusive "AUDI" brand — using capital letters, dropping the four-ring logo, targeting younger consumers with locally adapted design and digital features — represents an institutionally significant shift from ethnocentric brand projection toward genuine cultural adaptation.
+
+### 5.3 North America — emerging adaptation
+
+The Volkswagen Group joint venture with Rivian, oriented toward software-defined vehicle architectures for the North American technology environment, signals an emerging cultural adaptation imperative in the U.S. market. Unlike the China JVs, this partnership is technology-driven rather than manufacturing-driven, reflecting a different form of cultural learning: adapting to Silicon Valley-adjacent software development culture rather than to Chinese consumer preferences.
+
+Audi's consideration of a dedicated U.S. production facility would deepen this localization trajectory further — moving from product and software adaptation toward integrated manufacturing presence and local human capital strategy.
+
+### 5.4 Assessment: from ethnocentric to interculturally responsive
+
+Audi's leadership culture has shifted meaningfully from a purely HQ-driven ethnocentric model toward intercultural responsiveness, particularly in China. The shift is institutionalised — in joint venture governance structures, in product and brand decisions, and in the Audi China regional headquarters model — rather than symbolic. The limitations are the absence of public cross-cultural leadership frameworks for JV team communication, limited disclosure of intercultural HR practices, and no visible coaching infrastructure for North American leadership adaptation.
+
+---
+
+## 6. Sustainability KPIs and Social Ethics
+
+### 6.1 Environmental KPIs — the stronger dimension
+
+Audi's environmental KPI reporting is its most developed dimension across the 2015–2024 period. Earlier reports (2016–2019) provide granular disclosure — energy consumption per vehicle, CO₂ emissions in production, water use per vehicle, and recycling rates — that later consolidates into aggregated narratives in 2024. The ambition is clear and measurable: net-zero production, renewable energy integration, circular economy initiatives (closed-loop aluminium, component reuse), and biodiversity commitments at production sites.
+
+### 6.2 Social KPIs — the weaker dimension
+
+Social-ethical KPIs are consistently less detailed and less visible than environmental ones across the reporting period. Disclosure on diversity, training outcomes, and employee engagement metrics existed more explicitly in earlier reports and has been compressed in later ones. Social metrics that exist — headcount diversity ratios, training hours, engagement indices — measure inputs and participation rather than ethical outcomes (fairness quality, inclusion depth, wage equity).
+
+This asymmetry is analytically significant in the post-Dieselgate context. The defeat device scheme required people — engineers, managers, executives — to make decisions that violated ethical boundaries. A post-scandal architecture that is more robust on environmental systems than on social ethics and human behaviour is addressing the regulatory surface of the failure rather than its human interior.
+
+---
+
+## 7. Verdict: Structural Repair, Cultural Ambiguity
+
+### 7.1 What the evidence establishes
+
+A decade after Dieselgate, Audi has demonstrably built a more robust governance architecture than it operated before 2015. The evidence for this is concrete:
+
+The **audit architecture** is substantively deeper — internal, external, and supplier audits are embedded across the governance system, not siloed within compliance functions. The **steering model** is explicit — sustainability cascades from corporate strategy through operational targets to products, people, and processes in a way that was less structured pre-2015. The **Ideas Program** aligns economic incentives with operational improvement, creating a behavioral reinforcement mechanism that is more durable than exhortation alone. The **Sustainability Academy and training investment** represent a genuine capability-building effort, even if its post-2020 visibility in reporting has decreased. The **Golden Rules and revised Code of Conduct** establish clearer normative expectations than the pre-scandal framework.
+
+These are real structural improvements. The organisation that designed and deployed the defeat device did not have an equivalent governance architecture. Whether that architecture would have prevented Dieselgate is unknowable; that it makes an equivalent deception harder to sustain is a reasonable conclusion.
+
+### 7.2 What the evidence does not establish
+
+What the evidence cannot confirm is whether the cultural conditions that made Dieselgate possible have been structurally addressed.
+
+The academic analysis of post-Dieselgate sustainability reporting notes that carmakers often neutralised the scandal rhetorically — emphasising responsibility, learning, and reform while limiting the depth of self-incrimination or cultural critique (Journals of Sagepub, 2021). Audi's reporting shows a version of this: reports became more sophisticated in their governance language while simultaneously compressing the ethical detail that appeared in earlier disclosures. Between 2016–2019 and 2020–2024, training detail, steering logic explanation, and leadership responsibility articulation all became less visible — not because these activities stopped, but because reporting streamlined. The effect is analytical opacity at precisely the point — cultural depth — where post-scandal accountability most needs to be demonstrable.
+
+The Reuters reporting that Audi shareholders continued pushing for fuller disclosure years after the scandal is a useful external indicator: transparency claims were not universally believed by those with the most direct interest in the truth.
+
+Most significantly, the Theory U and IDGs lens from the transformation analysis (Q10) reveals the structural limit of Audi's response. Theory U emphasises collective sensing and inner transformation — the capacity of an organisation to change not just its processes but the assumptions, mental models, and cultural reflexes from which those processes emerge. IDGs (Inner Development Goals) focus on the individual inner qualities — curiosity, perspective-taking, moral courage — that enable leaders to act ethically under pressure rather than default to performance-target logic.
+
+Audi's post-scandal architecture is structurally sophisticated but inner-transformation-light. Audits, KPIs, Golden Rules, and steering models change what is measured and what is permitted; they do not automatically change the engineering culture's relationship to ethical judgment, dissent, and boundary-setting under competitive pressure. The defeat device was not a governance failure in the narrow sense — the governance structures that existed could have caught it. It was a failure of moral imagination: no one with sufficient authority appears to have asked, clearly enough and with sufficient consequence, whether what they were doing was right rather than merely achievable.
+
+### 7.3 The "real but partial" conclusion
+
+The most defensible verdict, supported by the full evidence base, is that Audi's post-Dieselgate transformation is **real but partial**.
+
+Real: the structural governance improvements are genuine, the incentive mechanisms are more robust, and the training investment represents a serious attempt at capability-building. An equivalent deception would be harder to execute and sustain in the current architecture.
+
+Partial: the cultural conditions — performance-target primacy, compliance-as-theater, limited space for ethical dissent, absence of moral imagination in engineering decision-making — are addressed primarily through normative language and structural additions rather than through the inner transformation that would change the culture's fundamental reflexes. Reports have become more sophisticated without becoming more transparent. The social ethics dimension remains weaker than the environmental one. Ethical dilemma handling is not disclosed. Leadership courage under pressure is not developed explicitly.
+
+The gap between structural robustness and cultural depth is, in the end, the lesson Dieselgate most clearly teaches — and the test Audi has most consistently deferred.
+
+---
+
+## 8. Forward-Looking Proposals
+
+The following proposals are grounded in Audi's existing structures and represent realistic extensions rather than radical departures. They are compiled from the analytical evidence base across all ten domains examined.
+
+**Proposal 1 — Ethical innovation track**
+Introduce a formal ethical entrepreneurship track within existing innovation programmes, evaluated by multi-stakeholder panels and explicitly oriented toward social impact and intergenerational value. Frame the Ideas Program through ethical lenses — stakeholder theory, justice, responsibility — not only efficiency metrics.
+
+**Proposal 2 — Ethical climate audits**
+Extend audit architecture from compliance and environmental performance to include periodic ethical climate assessments: does the organisation feel safe for ethical dissent? Are performance targets experienced as overriding ethical concerns? Publish anonymised findings as a transparency and learning mechanism.
+
+**Proposal 3 — Re-activate and disclose the Sustainability Academy**
+Publicly reposition the Sustainability Academy as an ethical leadership development hub. Publish curriculum themes and participant scope. The compression of training visibility in post-2020 reports creates the impression of de-prioritisation; restoring visibility would restore credibility on the capability-building dimension.
+
+**Proposal 4 — Explicit ethical leadership KPIs**
+Introduce and disclose leadership evaluation metrics that include sustainability competence, ethical judgment, and culture contribution — not only operational performance. Link explicitly to promotion and remuneration criteria.
+
+**Proposal 5 — Cross-cultural leadership playbooks**
+Develop leadership frameworks for Germany–China JV teams that codify communication norms, negotiation protocols, and performance review criteria across cultural contexts. Create Regional Innovation Councils in China and the U.S. that feed local learning back into global strategy.
+
+**Proposal 6 — Inner development integration**
+Introduce IDG-based leadership reflection into existing development programmes. Create Theory U-style labs for major transformation projects, enabling collective sensemaking rather than top-down strategy deployment. Protected spaces for leaders to surface ethical dilemmas, test moral judgment, and practice dissent.
+
+**Proposal 7 — Ethical case disclosure**
+Introduce a periodic publication of anonymised ethical dilemmas from across the business — supply chain conflicts, transformation trade-offs, cultural tensions — alongside how they were resolved and what was learned. This would be the single most credible signal that Audi's transparency commitment extends beyond governance architecture into the moral interior of the organisation.
+
+---
+
+## 9. Conclusion
+
+Dieselgate tested a proposition: that the governance systems, professional cultures, and leadership structures of a major industrial corporation would prevent systematic deception in pursuit of performance targets. Audi failed that test comprehensively in 2015.
+
+The decade since has produced a governance architecture that is genuinely more robust — structurally, normatively, and in terms of incentive alignment. That is a real achievement, and it should not be understated.
+
+What it is not is a resolved cultural transformation. The engineering culture that produced the defeat device — its relationship to performance targets, its treatment of compliance, its capacity for ethical dissent — is not a problem that audits and steering models can solve alone. It requires the kind of inner transformation that Audi's own training language gestures toward but its reporting architecture does not yet make visible.
+
+The most honest summary of where Audi stands in 2024 is that it has built a house with stronger walls and better locks — and has not yet fully examined what it was about the people inside the house that made them willing to cheat.
+
+---
+
+## References
+
+Audi AG. (2016). *Sustainability Report 2016.* https://www.audi.com/content/dam/gbp2/company/sustainability/reports/sustainability-report-2016.pdf
+
+Audi AG. (2017). *Sustainability Report 2017.* https://www.audi.com/content/dam/gbp2/company/sustainability/reports/sustainability-report-2017.pdf
+
+Audi AG. (2019). *Sustainability Report 2019.* https://www.audi.com/content/dam/gbp2/company/sustainability/reports/sustainability-report-2019.pdf
+
+Audi AG. (2024). *Sustainability Report 2024.* https://www.audi.com/en/company/sustainability/sustainability-report/
+
+Audi AG. (n.d.). *Code of Conduct.* https://www.audi.com/en/company/compliance/code-of-conduct/
+
+Audi Media Center. (2020). *Audi employees were inventive again in 2020.* https://www.audi-mediacenter.com/en/press-releases/audi-employees-were-inventive-again-in-2020-13634/download
+
+Audi Media Center. (n.d.). *Audi Ideas Program.* https://www.audi-mediacenter.com/en/audi-ideas-program-14094
+
+Deutsche Welle. (2023). *Ex-Audi boss given suspended sentence in Dieselgate emissions scandal.* https://www.dw.com/en/ex-audi-boss-given-suspended-sentence-in-dieselgate-emissions-scandal/a-66040769
+
+FAW Group & Audi AG. (n.d.). *FAW-Volkswagen Audi Joint Venture Overview.* https://www.faw-vw.com
+
+Journals of Sagepub. (2021). *Post-Dieselgate sustainability reporting and rhetorical neutralisation in the automotive sector.* https://journals.sagepub.com/doi/full/10.1177/10860266211043561
+
+Meyer, E. (2014). *The Culture Map.* PublicAffairs. https://erinmeyer.com/books/the-culture-map/
+
+Reuters. (2017). *Audi pledges full Dieselgate transparency.* https://www.reuters.com/article/business/audi-pledges-full-dieselgate-transparency-ceo-idUSKCN18E0VP/
+
+SAIC Motor Corporation. (n.d.). *SAIC Volkswagen Corporate Overview.* https://www.saicmotor.com
+
+Volkswagen AG. (2023). *Governance, Risk & Compliance.* https://www.volkswagen-group.com/en/governance
+
+Volkswagen AG. (2024). *Annual Report 2024.* https://www.volkswagen-group.com/en/annual-report
+
+Volkswagen Group China. (n.d.). *Joint Ventures and Localization Strategy.* https://www.volkswagen-group.cn
+
+Volkswagen Group of America. (2023). *Volkswagen Group and Rivian Strategic Partnership.* https://media.vw.com
