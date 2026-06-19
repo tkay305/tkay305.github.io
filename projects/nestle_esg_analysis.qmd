@@ -1,0 +1,445 @@
+---
+title: "Sustainability Reporting vs. Structural Reality"
+subtitle: "An Independent ESG Verification of Nestlé's 2025 Commitments"
+author: "Natasha Kabuka"
+date: "2025"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-title: "Contents"
+    theme: cosmo
+    code-fold: true
+    fig-align: center
+    css: styles.css
+    page-layout: full
+categories: [ESG, Supply Chain, Sustainability Reporting, Critical Analysis]
+image: nestle_scorecard.png
+---
+
+## Abstract
+
+This project applies an independent ESG verification methodology to Nestlé's publicly stated sustainability commitments for 2025, examining the gap between self-reported progress and independently verifiable outcomes. Using Nestlé's own Creating Shared Value and sustainability reports (2022–2025) as the primary data source, and cross-referencing against third-party benchmarks, NGO investigations, and peer-reviewed supply chain governance literature, the analysis proceeds in three layers: a quantitative KPI gap assessment, a SMART metric quality audit, and a structural critique of Nestlé's sustainability architecture. The central finding is that while Nestlé achieves genuine operational improvements in several target areas, its sustainability programmes are primarily designed to manage supply chain and reputational risk rather than to address the distributional problem of commodity pricing and farmer bargaining power. This conclusion is supported by the company's exit from Fairtrade certification in 2020, independent evaluation findings on the persistence of living income gaps, and a sustained decline in Nestlé's KnowTheChain forced labour governance score from 55/100 in 2020 to 26/100 in 2026 — a period of peak ESG reporting activity.
+
+---
+
+## 1. Introduction
+
+The period between 2020 and 2025 saw Nestlé publish some of its most ambitious sustainability commitments: a 20% reduction in greenhouse gas emissions by 2025, 100% deforestation-free supply chains, a significant reduction in virgin plastic use, and multiple programmes targeting farmer livelihoods in its cocoa and coffee supply chains. The company also invested substantially in reporting infrastructure — expanding its Creating Shared Value disclosures, commissioning independent programme evaluations, and publicly tracking progress against stated targets.
+
+This level of reporting ambition creates a specific analytical opportunity. When a company discloses extensively, it becomes possible to examine not just what it says, but whether what it says is consistent with what independent sources find. This project takes that opportunity with Nestlé as a case study in the growing gap between sustainability as communication and sustainability as structural change.
+
+The analysis is organised around three questions:
+
+1. **Did Nestlé meet its 2025 targets?** A quantitative assessment of performance against stated commitments.
+2. **Were the targets well-designed?** A quality audit examining whether each metric is specific, independently verifiable, and oriented toward outcomes rather than process.
+3. **What do the programmes not address?** A structural critique examining the distributional logic underlying Nestlé's sustainability architecture, with evidence from independent benchmarks, NGO investigations, and supply chain governance research.
+
+The project draws on Nestlé's public reports, Public Eye's 2024 investigation of the Nescafé Plan, KIT Institute's independent evaluation of the Income Accelerator Programme, Oxfam's *Behind the Brands* scorecard, and three cycles of the KnowTheChain Food and Beverage Benchmark (2020, 2023, 2026). All data sources are cited in the bibliography.
+
+---
+
+## 2. KPI Scorecard: Target vs. Actual
+
+The following analysis tracks eight headline commitments from Nestlé's 2025 sustainability targets, using data drawn directly from the company's Creating Shared Value reports for 2022, 2023, 2024 and 2025.
+
+### 2.1 Performance at a Glance
+
+```{python}
+#| label: fig-scorecard
+#| fig-cap: "Nestlé 2025 ESG Commitments — RAG Scorecard"
+#| echo: false
+
+import pandas as pd
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+
+scorecard = pd.DataFrame([
+    {
+        "Metric": "GHG Reduction vs 2018 Baseline",
+        "Target": "20% by 2025",
+        "2025 Actual": "20.7%",
+        "Status": "ACHIEVED",
+        "RAG": "green",
+    },
+    {
+        "Metric": "Deforestation-Free Supply Chains",
+        "Target": "100% by 2025",
+        "2025 Actual": "96.7%",
+        "Status": "NEARLY MISSED",
+        "RAG": "amber",
+    },
+    {
+        "Metric": "Regenerative Agriculture",
+        "Target": "20% by 2025",
+        "2025 Actual": "27.6%",
+        "Status": "ACHIEVED (early)",
+        "RAG": "green",
+    },
+    {
+        "Metric": "Key Ingredients Responsibly Sourced",
+        "Target": "100% by 2030",
+        "2025 Actual": "49.8%",
+        "Status": "ON TRACK",
+        "RAG": "blue",
+    },
+    {
+        "Metric": "Water Use Reduction (cumul. 2021–2023)",
+        "Target": "6M m³ cumulative",
+        "2025 Actual": "7.68M m³",
+        "Status": "ACHIEVED",
+        "RAG": "green",
+    },
+    {
+        "Metric": "Plastic Packaging for Recycling",
+        "Target": "95% by 2025",
+        "2025 Actual": "87.5%",
+        "Status": "MISSED",
+        "RAG": "red",
+    },
+    {
+        "Metric": "Virgin Plastic Reduction vs 2018",
+        "Target": "33% reduction by 2025",
+        "2025 Actual": "28% reduction",
+        "Status": "NEARLY MISSED",
+        "RAG": "amber",
+    },
+    {
+        "Metric": "Total Waste Generated",
+        "Target": "No target set",
+        "2025 Actual": "1.839 Mt (+17.5% since 2023)",
+        "Status": "NO TARGET",
+        "RAG": "red",
+    },
+])
+
+rag_map = {"green": "#d5f5e3", "amber": "#fdebd0", "red": "#fadbd8", "blue": "#d6eaf8"}
+row_colors = [[rag_map[r]] * 4 for r in scorecard["RAG"]]
+
+fig, ax = plt.subplots(figsize=(13, 4.5))
+ax.axis('off')
+
+col_labels = ["Metric", "Target", "2025 Actual", "Status"]
+tbl = ax.table(
+    cellText=scorecard[col_labels].values.tolist(),
+    colLabels=col_labels,
+    cellLoc='left',
+    loc='center',
+    cellColours=row_colors,
+)
+tbl.auto_set_font_size(False)
+tbl.set_fontsize(9)
+tbl.scale(1, 2.0)
+for (r, c), cell in tbl.get_celld().items():
+    cell.set_edgecolor('#cccccc')
+    if r == 0:
+        cell.set_facecolor('#2c3e50')
+        cell.set_text_props(color='white', fontweight='bold')
+
+plt.tight_layout()
+plt.savefig('nestle_scorecard.png', dpi=150, bbox_inches='tight')
+plt.show()
+```
+
+### 2.2 Target Trajectories
+
+```{python}
+#| label: fig-trajectories
+#| fig-cap: "Nestlé ESG metric trajectories across all reporting years"
+#| echo: false
+#| fig-width: 14
+#| fig-height: 13
+
+import matplotlib.pyplot as plt
+
+metrics = {
+    "GHG Reduction vs 2018 (%)": {
+        "target": 20.0, "unit": "%",
+        "color": "#2ecc71",
+        "data": {2022: 6.42, 2023: 13.58, 2024: 20.38, 2025: 20.70}
+    },
+    "Deforestation-Free Chains (%)": {
+        "target": 100.0, "unit": "%",
+        "color": "#f39c12",
+        "data": {2021: 97.2, 2022: 99.1, 2023: 93.4, 2024: 93.5, 2025: 96.7}
+    },
+    "Regenerative Agriculture (%)": {
+        "target": 20.0, "unit": "%",
+        "color": "#2ecc71",
+        "data": {2022: 6.8, 2023: 15.2, 2024: 21.3, 2025: 27.6}
+    },
+    "Responsibly Sourced (%)": {
+        "target": 100.0, "unit": "%",
+        "color": "#3498db",
+        "data": {2021: 16.3, 2022: 22.0, 2023: 36.2, 2024: 44.5, 2025: 49.8}
+    },
+    "Plastic for Recycling (%)": {
+        "target": 95.0, "unit": "%",
+        "color": "#e74c3c",
+        "data": {2020: 74.8, 2021: 74.9, 2022: 81.9, 2023: 83.5, 2024: 86.4, 2025: 87.5}
+    },
+    "Virgin Plastic Reduction (%)": {
+        "target": 33.0, "unit": "%",
+        "color": "#f39c12",
+        "data": {2020: 4.0, 2021: 8.1, 2022: 10.5, 2023: 14.9, 2024: 21.3, 2025: 28.0}
+    },
+    "Waste Generated (Mt)": {
+        "target": None, "unit": "Mt",
+        "color": "#e74c3c",
+        "data": {2023: 1.565, 2024: 1.770, 2025: 1.839}
+    },
+}
+
+fig, axes = plt.subplots(3, 3, figsize=(15, 12))
+fig.suptitle("Nestlé ESG Target Trajectories (2020–2025)", fontsize=14, fontweight='bold', y=0.99)
+axes_flat = axes.flatten()
+
+for i, (name, info) in enumerate(metrics.items()):
+    ax = axes_flat[i]
+    years = sorted(info["data"].keys())
+    vals  = [info["data"][y] for y in years]
+    ax.plot(years, vals, marker='o', color=info["color"], linewidth=2.2, markersize=6, zorder=3)
+    ax.fill_between(years, vals, alpha=0.12, color=info["color"])
+    if info["target"] is not None:
+        ax.axhline(info["target"], color='#c0392b', linewidth=1.3,
+                   linestyle='--', label=f'Target: {info["target"]}{info["unit"]}', zorder=2)
+        ax.legend(fontsize=7.5, loc='upper left', framealpha=0.7)
+    ax.set_title(name, fontsize=9, fontweight='bold', pad=4)
+    ax.set_ylabel(info["unit"], fontsize=8)
+    ax.set_xticks(years)
+    ax.set_xticklabels([str(y) for y in years], rotation=45, fontsize=7.5)
+    ax.grid(axis='y', alpha=0.3)
+    ax.set_facecolor('#fafafa')
+    ax.tick_params(labelsize=7.5)
+
+# Water — cumulative in final subplot
+ax_w = axes_flat[7]
+annual = {2021: 2.30, 2022: 2.38, 2023: 3.00}
+cumulative = []
+running = 0
+for y in sorted(annual.keys()):
+    running += annual[y]
+    cumulative.append(running)
+ax_w.bar(sorted(annual.keys()), cumulative, color='#2ecc71', width=0.5, alpha=0.8, zorder=3)
+ax_w.axhline(6.0, color='#c0392b', linewidth=1.3, linestyle='--', label='Target: 6M m³', zorder=2)
+ax_w.set_title("Water Reduction — Cumulative\n2021–2023 (M m³)", fontsize=9, fontweight='bold', pad=4)
+ax_w.set_ylabel("M m³", fontsize=8)
+ax_w.legend(fontsize=7.5)
+ax_w.grid(axis='y', alpha=0.3)
+ax_w.set_facecolor('#fafafa')
+
+axes_flat[-1].set_visible(False)
+plt.tight_layout(rect=[0, 0, 1, 0.97])
+plt.savefig('nestle_tracker.png', dpi=150, bbox_inches='tight')
+plt.show()
+```
+
+### 2.3 Notable findings
+
+**GHG reduction:** The headline 20.7% reduction against the 2018 baseline meets the SBTi milestone. However, the reported figure is a *net* reduction, incorporating 3.31 million metric tonnes of carbon removals in 2025. Gross Scope 1, 2, and 3 emissions declined by 18.05 MtCO2e — a substantial improvement, but short of the headline figure before removals are applied. The inclusion of removals in an SBTi milestone warrants transparency.
+
+**Deforestation-free supply chains:** The cocoa figure deserves specific attention. Cocoa-specific deforestation assessments showed 42.3% coverage in 2023, rising to 91.7% in 2025 — an unusually large jump in a single reporting cycle. Nestlé attributes this to improved traceability methodologies. The metric definition also expanded in 2023 to include cocoa and coffee, making pre-2023 and post-2023 figures non-comparable.
+
+**Water reduction:** The original 2021–2023 cumulative target of 6 million m³ was met, with a total of 7.68 million m³ reduced over the period. After 2023, Nestlé retired this target and replaced it with annual factory-level reduction targets. The transition makes longitudinal tracking difficult and warrants scrutiny as a reporting practice.
+
+**Waste generation:** No reduction target was set for total factory waste, which increased by 17.5% between 2023 and 2025, reaching 1.839 million metric tonnes. The absence of a target in an area of deteriorating performance is itself an analytical finding.
+
+---
+
+## 3. Metric Quality Audit
+
+A KPI is only as meaningful as its design. The following assessment applies a modified SMART framework to each target, evaluating whether metrics are specific, independently verifiable, and oriented toward outcomes rather than process.
+
+| Metric | Key Quality Issue |
+|---|---|
+| GHG Reduction | 'Net' includes removals/offsets; gross and net figures should be disclosed separately |
+| Deforestation-Free | Definition expanded in 2023; pre- and post-2023 data non-comparable without restatement |
+| Regenerative Agriculture | 'Level 1' is an entry-level transition category with broad inclusion criteria |
+| Responsibly Sourced | Nestlé's own proprietary standard, not independently audited to a third-party framework |
+| Water Reduction | Target framework changed post-2023; cumulative and annual figures cannot be compared |
+| Plastic for Recycling | 'Designed for recycling' measures design intent, not actual recycling rates |
+| Virgin Plastic Reduction | Metric is clear and verifiable; gap attributed to recycled polymer supply constraints |
+| Women in Senior Roles | Original target (30% of top 200+ by 2022) met, but 'top 200+' is an undefined population; metric shifted to management-wide % in 2023 without clear restatement |
+
+The most pervasive quality issue is the use of proprietary standards and self-defined categories ('responsibly sourced,' 'Level 1 regenerative agriculture') where the thresholds are set by Nestlé itself. Under CSRD's double materiality framework, such definitions will increasingly require external assurance and standardised methodologies.
+
+---
+
+## 4. Structural Critique: Sustainability as Risk Management
+
+### 4.1 The core argument
+
+Nestlé's sustainability programmes generate genuine operational improvements — higher yields, better agricultural practices, improved traceability, and measurable income gains for participating farmers. Dismissing these contributions would be analytically inaccurate. The more important question is not whether these programmes produce benefits, but what structural problem they are designed to solve, and for whom.
+
+The evidence, drawn from Nestlé's own communications and independent evaluations, consistently points toward the same answer: these programmes are primarily designed to manage supply chain risk and reputational exposure — not to alter the distribution of value between Nestlé and the farmers who produce its raw materials. Nestlé's sustainability architecture addresses operational risk (supply chain disruption, regulatory exposure, reputational damage) through investments in farmer capability and certified practice, without challenging the pricing dynamics that generate these risks in the first place.
+
+A defensible formulation, well-supported by the sources in this analysis: *Nestlé's sustainability architecture primarily manages supply-chain and reputational risk through training, traceability, and conditional incentives, while leaving the core distributional problem of commodity pricing and farmer bargaining power largely unresolved.*
+
+### 4.2 The Nescafé Plan and the price omission
+
+The Nescafé Plan, launched in 2010, is Nestlé's flagship sustainability programme for its largest coffee brand. It offers training, certified plantlets, and agronomy support to farmers across key sourcing regions, and Nestlé presents it as evidence of its commitment to responsible sourcing and farmer livelihood improvement.
+
+A 2024 investigation by Public Eye, which conducted on-the-ground research in Brazil and Mexico, identified a critical omission at the centre of the programme's design. The Nescafé Plan is built on 4C certification — an industry-co-developed standard with requirements that often amount to little more than compliance with existing legal provisions, and which carries no minimum price guarantee for farmers. As Public Eye concluded directly: the Nescafé Plan ignores one key factor — the price paid to farmers. Participation in the programme does not mean farmers receive more money for their coffee. In Soconusco, Mexico, Nestlé's quasi-monopoly purchasing position allowed it to maintain farmgate prices at levels that farmers reported as barely covering production costs. Its parallel strategy of sourcing heavily from Vietnam and Brazil — where lower-cost intensive monoculture enables competitive pricing — structurally suppresses prices in regions where more sustainable production methods are used (Public Eye, 2024).
+
+This is not an incidental design failure. It is the logical outcome of a sustainability architecture built around supply chain continuity, certification optics, and cost efficiency, rather than one oriented toward redistributing value toward primary producers.
+
+### 4.3 The Cocoa Income Accelerator: genuine gains, unresolved gap
+
+In cocoa, Nestlé's Income Accelerator Programme (IAP) represents a more ambitious intervention. Launched in 2020 and independently evaluated by the KIT Institute, the programme offers participating households conditional cash transfers of up to CHF 500 per year in its initial phase, alongside agronomy training, agroforestry support, and women's financial empowerment mechanisms.
+
+The KIT Institute's 2024 evaluation found meaningful results: participating households in Côte d'Ivoire earned 15% more net income than comparable non-participating households, with a 20-percentage-point yield advantage during the difficult 2023/24 season. School enrolment among children of participants rose from 81% to 88%. These are genuine improvements in household resilience and should not be minimised.
+
+However, the same evaluation found that the living income gap — the distance between what farming families earn and a living income benchmark — remained open. Participating households were still approximately $2,780 below the estimated living wage benchmark even after the programme's income gains (KIT Institute, cited in Just Food, 2024). Income diversification, identified as essential for long-term resilience, showed no significant improvement. The programme's structure — conditional cash transfers, productivity incentives, and training — does not alter the farmgate price Nestlé pays for cocoa. The income gains are real but achieved by increasing output and efficiency within a price structure that Nestlé continues to set.
+
+At 2025, the IAP reached approximately 45,000 farming families. Nestlé's Cocoa Plan encompasses over 187,000 farming households across 11 origin countries. The programme's coverage, even at its 2030 target of 160,000 families, will represent a fraction of the broader supply base.
+
+### 4.4 The arithmetic of redistribution
+
+The distributional logic becomes clearer when examined in terms of the actual value flows involved.
+
+FAO market analysis estimates that cocoa farmers receive approximately **11% of final retail value** for cocoa-derived products. Nestlé reported a group-level gross profit margin of approximately **46%** in 2024 (Nestlé Full Year Results Investor Presentation, 2024). Using this as an order-of-magnitude proxy for downstream value capture:
+
+> If a chocolate product sells for 100 units of value, farmers receive roughly 11 units. If Nestlé redirected just 10% of its gross margin — approximately 4.6 units of every 100 in sales — back through the farmgate price, the effect on farmer income would be larger than the entire annual cash transfer offered by the Income Accelerator Programme.
+
+The policy question is therefore not whether Nestlé is doing something, but whether it is changing the price architecture or subsidising compliance and resilience within an unchanged pricing structure. On the public record, Nestlé's cocoa commitments are primarily the latter: training, conditional incentives, traceability, and pilot-scale income support (Nestlé Cocoa Plan Progress Report, 2024; FAO, 2024).
+
+This framing does not require Nestlé to absorb the full cost of structural change unilaterally — the supply chain has multiple participants, and the value distribution problem is sector-wide. But it does establish that the financial capacity for a structural price intervention exists, and that the choice not to implement one is a strategic decision, not a resource constraint.
+
+### 4.5 The Fairtrade exit as a structural signal
+
+The clearest single evidence point for this argument is Nestlé's 2020 decision to drop Fairtrade certification for KitKat in the UK and Ireland, replacing it with Rainforest Alliance certification aligned with the Nestlé Cocoa Plan.
+
+Fairtrade operated a verified minimum floor price and a fixed premium of $240 per metric tonne paid directly to producer cooperatives on top of the market price — the highest premium of any independent certification scheme for cocoa (Fairtrade Foundation, 2020). This mechanism is structurally different from agronomy training or yield improvement: it intervenes at the price level, creating a floor beneath which Nestlé cannot buy regardless of market conditions. The premium funded community infrastructure — schools, water pumps, healthcare — chosen by farming cooperatives themselves.
+
+Rainforest Alliance certification, which Nestlé adopted for all its confectionery including KitKat, guarantees no minimum price and no fixed premium. The Fairtrade Foundation described the decision as "profoundly disappointing." The Ivorian Fair Trade Network noted that 27,000 farmers in Côte d'Ivoire and Malawi would lose both price protection and the £2 million in annual premiums that had funded community services (Co-operative News, 2020). Nestlé justified the change as rationalisation of certification across its global portfolio.
+
+The substitution pattern is significant: a third-party price mechanism with binding commitments was replaced with a proprietary programme (Cocoa Plan) and a certification standard (Rainforest Alliance) with no price floor — both of which Nestlé has substantially more influence over. The sustainability narrative became more complex and ambitious; the structural intervention in pricing weakened.
+
+---
+
+## 5. Historical Pattern and Peer Context
+
+### 5.1 Thirteen years of action plans
+
+The analytical challenge in assessing Nestlé's sustainability performance is not identifying individual failures — the company acknowledges many of them — but understanding why the same structural problems recur across decades of stated commitment.
+
+In 2011, Nestlé commissioned the Fair Labor Association to assess its cocoa supply chain in Côte d'Ivoire. The assessment found that four-fifths of the company's Ivory Coast cocoa came through channels with no labour information, and discovered numerous cases of child and forced labour (FLA, cited in Oxfam *Behind the Brands*, 2013). Nestlé responded by developing an action plan and launching the Nestlé Cocoa Plan.
+
+Thirteen years later, the KIT Institute's independent evaluation found that participating households remained $2,780 below the living income benchmark (KIT Institute, 2024). The country is the same. The acknowledgement of a problem is the same. The gap between programme ambition and structural outcome is the same.
+
+### 5.2 The pricing power dynamic beyond cocoa
+
+Oxfam's 2013 *Behind the Brands* scorecard documented Chinese dairy farmers supplying Nestlé's Shuangcheng operations reporting systematic price manipulation at collection stations, with prices paid reportedly below government-guided levels and no recourse available, as Nestlé held the monopoly milk collection contract in the region. Public Eye documented an analogous dynamic in Mexico's coffee sector in 2024 — the same structural condition of monopsony purchasing power operating across different commodities, geographies, and decades.
+
+### 5.3 The 2013 scorecard's verdict on fair pricing
+
+The Oxfam *Behind the Brands* 2013 assessment noted that while companies including Nestlé had committed to investing in small-scale producer productivity, "companies have also not yet committed to guaranteeing a fair price for farmers." That observation was made before Nestlé's 2020 exit from Fairtrade certification. In 2025, no such commitment exists in Nestlé's published sustainability architecture.
+
+---
+
+## 6. Peer Benchmarking: The KnowTheChain Trajectory
+
+### 6.1 A sustained decline
+
+The KnowTheChain Food and Beverage Benchmark provides the most direct independent measure of how Nestlé's supply chain labour governance performs relative to peers over time. The three-cycle trajectory is unambiguous:
+
+| Year | Nestlé Score | Sector Average | Gap to Leaders |
+|---|---|---|---|
+| 2020 | 55 / 100 | n/a | At sector frontier |
+| 2023 | 36 / 100 | ~15 / 100 | Declining |
+| 2026 | 26 / 100 | 15 / 100 | Half of top performers |
+
+*Source: KnowTheChain Food and Beverage Benchmark 2020, 2023, 2026, via Business and Human Rights Resource Centre.*
+
+Nestlé has lost more than half its KnowTheChain score across six years — moving from a position at the sector frontier to ninth place, scoring roughly half what Woolworths (56/100) and Coles (55/100) achieve. This decline occurred during the same period in which Nestlé published its most ambitious KPI targets, launched the Income Accelerator Programme, and expanded its Cocoa Plan to over 187,000 families. The inverse relationship between internal reporting trajectory and independently assessed governance performance is the structural critique's strongest empirical foundation.
+
+### 6.2 What the 2026 benchmark shows
+
+At 26/100 in 2026, Nestlé sits above a sector average so low (15/100) that exceeding it does not constitute creditable performance. The more relevant comparison is the distance to achievable performance: Woolworths and Coles score more than twice Nestlé's result, and Unilever — which shares Nestlé's exposure to cocoa and agricultural commodity risk — has increased its score to 47/100.
+
+Three areas show genuine process strength: Nestlé is one of only two companies disclosing below-tier sourcing data for high-risk commodities, one of five implementing the Employer Pays Principle proactively, and one of three engaging stakeholders on responsible recruitment. These differentiators are meaningful in a low-performing sector.
+
+Against them: Nestlé simultaneously disclosed *less* detail on identified forced labour risks in 2026 than in 2023 — a regression on outcome transparency concurrent with increasing sophistication of process disclosure. More visibility into sourcing geography, less transparency on what was found there.
+
+### 6.3 The 2020 baseline as the critical reference point
+
+The 2020 score of 55/100 is the most important number in this benchmark analysis. It establishes that Nestlé has, within recent memory, demonstrated the institutional capacity to perform at a level twice its current result. The decline is not attributable to structural constraints on what a company of Nestlé's supply chain complexity can achieve — those constraints existed in 2020 as much as in 2026. It reflects choices about where to invest governance attention and what to disclose.
+
+---
+
+## 7. Conclusions
+
+### 7.1 Summary of findings
+
+Across three layers of analysis, a consistent pattern emerges. Nestlé achieves genuine operational progress in several target areas — GHG reduction, regenerative agriculture, water use efficiency, and measurable income gains for participants in its cocoa programmes. These results are real and should not be dismissed.
+
+At the same time, the independent evidence points persistently in a different direction: a KnowTheChain governance score that has halved over six years; a living income gap that remains open despite programmes specifically designed to close it; a Fairtrade exit that removed the one binding price floor from Nestlé's confectionery supply chain; and a structural farming poverty in cocoa and coffee that the company's own commissioned assessments have documented repeatedly since 2011 without resolution.
+
+The divergence between self-reported KPI progress and independently assessed governance performance is not incidental. It reflects a coherent strategic logic: Nestlé's sustainability architecture is optimised to manage supply chain continuity, regulatory exposure, and reputational risk — not to redistribute value toward primary producers. The two objectives are not always in conflict, but when they are, the record consistently shows which one takes precedence.
+
+### 7.2 What structural change would actually require
+
+Closing the gaps identified in this analysis would require interventions that operate at the price level rather than around it. Three mechanisms have demonstrated structural potential in comparable contexts:
+
+**Binding price floor commitments.** The Fairtrade model — a third-party verified minimum price plus a fixed premium paid directly to producer cooperatives — provides the most established template. Nestlé's 2020 exit from this model for KitKat demonstrates that it is feasible; the question is whether it is profitable enough to maintain.
+
+**Mandatory living income procurement standards.** Several leading retailers have begun incorporating living income benchmarks into supplier contracts, making price adequacy a procurement condition rather than a voluntary programme. Applied to Nestlé's own supplier relationships, this would extend the Income Accelerator's income objectives into the purchase price structure itself.
+
+**Outcome-oriented CSRD disclosure.** The EU's Corporate Sustainability Reporting Directive requires double materiality assessment and will increasingly demand disclosure of actual outcomes — including farmer income levels and living income gaps — rather than process metrics. When CSRD-aligned reporting requires Nestlé to disclose the proportion of its supply chain farmers below living income, the pressure to address that gap through structural means, rather than pilot programmes, will intensify.
+
+### 7.3 Closing reflection
+
+The most instructive finding in this project is not that Nestlé performs poorly in absolute terms — in many dimensions, it performs better than most peers in a poorly performing sector. It is that a company with the resources, reporting infrastructure, and supply chain relationships to achieve genuine structural change consistently chooses interventions designed to manage the appearance of that change instead. The 55→36→26 KnowTheChain trajectory, declining during Nestlé's most active sustainability communication period, is the clearest single illustration of that choice.
+
+Sustainability reporting is increasingly sophisticated. The question this project raises is whether sophistication of reporting is becoming a substitute for, rather than an indicator of, substantive change.
+
+---
+
+## Bibliography
+
+**Company sources**
+
+Nestlé. (2023). *Creating Shared Value and Sustainability Report 2022.* Nestlé S.A.
+
+Nestlé. (2024). *Creating Shared Value and Sustainability Report 2023.* Nestlé S.A. https://www.nestle.com/sites/default/files/2024-02/creating-shared-value-sustainability-report-2023-en.pdf
+
+Nestlé. (2025a). *Creating Shared Value and Sustainability Report 2024.* Nestlé S.A.
+
+Nestlé. (2025b). *Sustainability Performance Data 2025.* Nestlé S.A.
+
+Nestlé. (2025c). *Full Year Results Investor Presentation 2024.* Nestlé S.A. https://www.nestle.com/sites/default/files/2025-02/full-year-results-investor-presentation-2024.pdf
+
+Nestlé Cocoa Plan. (2025). *Nestlé Cocoa Plan Progress Report 2024.* https://www.nestlecocoaplan.com/sites/default/files/2025-07/Nestlé%20Cocoa%20Plan%20Progress%20Report%202024.pdf
+
+Nestlé UK & Ireland. (2021). *Why did KitKat move to Rainforest Alliance?* https://www.nestle.co.uk/en-gb/ask-nestle/products-brands/answers/kitkat-moves-rainforest-alliance
+
+**Independent evaluations and NGO reports**
+
+Public Eye. (2024). *Instant Sustainability: Why the Nescafé Plan Fails to Benefit Farmers.* Public Eye, Zurich. ISBN 978-3-907383-14-8. https://www.publiceye.ch/fileadmin/doc/Agrarrohstoffe/Rapport_cafe/PE_Report-Kaffee_3-24_E_def.pdf
+
+Oxfam International. (2013). *Behind the Brands: Food Justice and the 'Big 10' Food and Beverage Companies.* Oxfam Briefing Paper 166. https://www.oxfam.org/en/research/behind-brands
+
+KIT Institute. (2024). *Nestlé Income Accelerator Program Progress Report: Impact on Cocoa Farm Incomes and Resilience.* KIT Royal Tropical Institute, Amsterdam.
+
+Fairtrade Foundation. (2020). *Statement on Nestlé KitKat Fairtrade Exit.* Fairtrade Foundation.
+
+Co-operative News. (2020, June). *Nestlé ceases sourcing Fairtrade cocoa and sugar for KitKats.* https://www.thenews.coop/nestle-ceases-sourcing-fairtrade-cocoa-and-sugar-for-kitkats/
+
+**Benchmarks and databases**
+
+KnowTheChain. (2020). *Food and Beverage Benchmark 2020.* KnowTheChain / Business and Human Rights Resource Centre.
+
+KnowTheChain. (2023). *Food and Beverage Benchmark 2023.* KnowTheChain / Business and Human Rights Resource Centre.
+
+KnowTheChain. (2026). *Food and Beverage Benchmark 2026.* KnowTheChain / Business and Human Rights Resource Centre. https://www.business-humanrights.org/en/from-us/knowthechain/food-and-beverage-benchmark/
+
+Business and Human Rights Resource Centre. (2025). *Nestlé Company Profile and Issue Tracker.* https://www.business-humanrights.org/en/companies/nestle/
+
+**Market and academic sources**
+
+Food and Agriculture Organization of the United Nations (FAO). (2024). *Farmgate price share and value distribution in cocoa supply chains.* FAO Investment Support. https://www.fao.org/support-to-investment/news/detail/es/c/1681079/
+
+Just Food. (2024, May 1). *Nestlé cocoa income accelerator boosts pay but has not closed living wage gap, says report.* https://www.just-food.com/news/nestle-cocoa-income-accelerator-boosts-pay-but-hasnt-closed-living-wage-gap-says-report/
+
+Ethical Consumer. (2020). *KitKat cuts ties with Fairtrade.* https://www.ethicalconsumer.org/node/76/kitkat-cuts-ties-fairtrade
