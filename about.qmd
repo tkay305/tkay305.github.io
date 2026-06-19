@@ -10,7 +10,7 @@ toc: false
 
 I'm an economist and data scientist based in Germany, with a BSc in
 Economics from University of Bristol. My work sits at the intersection of
-quantitative methods and real-world impact — from estimating
+quantitative methods and real-world impact: from estimating
 causal effects of institutional quality on economic development, to
 simulating net-zero pathways for local government.
 
