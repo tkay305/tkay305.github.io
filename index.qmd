@@ -66,13 +66,12 @@ Human capital significant at p<0.01 across all specs.
 <span class="tag tag-method">2SLS · Python · Stata</span>
 :::
 ::: {.g-col-12 .g-col-md-6}
-[**Net Zero Municipal Simulation**](projects/net-zero-sim.qmd){.project-card}
+[**Nestle ESG Analysis**](nestle_esg_analysis.qmd){.project-card}
 
-Monte Carlo scenario modelling of climate target pathways
-for a German municipality.
+An Independent ESG Verification of Nestlé's 2025 Commitments.
 
 <span class="tag tag-esg">ESG</span>
-<span class="tag tag-method">Simulation · Python</span>
+<span class="tag tag-method"> Analysis · Python</span>
 :::
 ::: {.g-col-12 .g-col-md-6}
 [**Predictive Modelling for Agriculture**](projects/agriculture.qmd){.project-card}
