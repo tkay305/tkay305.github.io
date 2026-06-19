@@ -12,9 +12,9 @@ Click any card to read the full methodology and results.
 
 ::: {.grid}
 ::: {.g-col-12 .g-col-md-6}
-[**Net Zero Municipal Simulation**](net-zero-sim.qmd){.project-card}
-Monte Carlo simulation of net-zero pathways for a Bavarian municipality.
-<span class="tag tag-esg">ESG</span> <span class="tag tag-method">Simulation · Python</span>
+[**Nestle ESG Analysis**](nestle_esg_analysis.qmd){.project-card}
+An Independent ESG Verification of Nestlé's 2025 Commitments.
+<span class="tag tag-esg">ESG</span> <span class="tag tag-method">Analysis · Python</span>
 :::
 ::: {.g-col-12 .g-col-md-6}
 [**JIT Supply Chain Analytics**](jit-supply-chain-analytics.qmd){.project-card}
