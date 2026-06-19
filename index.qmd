@@ -74,6 +74,14 @@ An Independent ESG Verification of Nestlé's 2025 Commitments.
 <span class="tag tag-method"> Analysis · Python</span>
 :::
 ::: {.g-col-12 .g-col-md-6}
+[**Equity Analysis in Coffee Sustainability**](coffee_sustainability.qmd){.project-card}
+
+This paper applies a lifecycle assessment (LCA) framework to evaluate coffee production and consumption through three sustainability pillars: environmental, economic, and social.
+
+<span class="tag tag-esg">ESG</span>
+<span class="tag tag-method"> Analysis · Python</span>
+:::
+::: {.g-col-12 .g-col-md-6}
 [**Predictive Modelling for Agriculture**](projects/agriculture.qmd){.project-card}
 
 ML pipeline predicting agricultural outcomes from
