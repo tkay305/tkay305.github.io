@@ -66,20 +66,20 @@ Human capital significant at p<0.01 across all specs.
 <span class="tag tag-method">2SLS · Python · Stata</span>
 :::
 ::: {.g-col-12 .g-col-md-6}
-[**Nestle ESG Analysis**](nestle_esg_analysis.qmd){.project-card}
+[**Nestle ESG Analysis**](projects/nestle_esg_analysis.qmd){.project-card}
 
 An Independent ESG Verification of Nestlé's 2025 Commitments.
 
 <span class="tag tag-esg">ESG</span>
-<span class="tag tag-method"> Analysis · Python</span>
+<span class="tag tag-method">Analysis · Python</span>
 :::
 ::: {.g-col-12 .g-col-md-6}
-[**Equity Analysis in Coffee Sustainability**](coffee_sustainability.qmd){.project-card}
+[**Equity Analysis in Coffee Sustainability**](projects/coffee_sustainability.qmd){.project-card}
 
 This paper applies a lifecycle assessment (LCA) framework to evaluate coffee production and consumption through three sustainability pillars: environmental, economic, and social.
 
 <span class="tag tag-esg">ESG</span>
-<span class="tag tag-method"> Analysis · Python</span>
+<span class="tag tag-method">Analysis · Python</span>
 :::
 ::: {.g-col-12 .g-col-md-6}
 [**Predictive Modelling for Agriculture**](projects/agriculture.qmd){.project-card}
