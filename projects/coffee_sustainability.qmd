@@ -11,6 +11,7 @@ format:
     theme: cosmo
     code-fold: true
     fig-align: center
+    embed-resources: true
     page-layout: full
 categories: [LCA, ESG, Supply Chain, Sustainability, Coffee, Value Chain]
 image: coffee_value_chain_equity.png
@@ -44,8 +45,6 @@ The emissions data below are drawn from Hasan, Roy and Abassi (2024), with trans
 #| label: fig-ghg-stages
 #| fig-cap: "GHG emissions by lifecycle stage, conventional coffee (Hasan, Roy & Abassi, 2024)"
 #| echo: false
-import matplotlib
-matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import numpy as np
@@ -86,7 +85,6 @@ patches = [mpatches.Patch(color=c, label=l) for c, l in
            [(C_CULT,'Cultivation'),(C_PROC,'Processing'),(C_DIST,'Distribution/Packaging')]]
 ax.legend(handles=patches, fontsize=9)
 plt.tight_layout()
-plt.savefig('coffee_ghg_by_stage.png', dpi=150, bbox_inches='tight')
 plt.show()
 ```
 
@@ -139,7 +137,6 @@ for i, ax in enumerate(axes):
                 f"~{pct}% reduction", ha='center', fontsize=8.5,
                 color=C_SUST, fontstyle='italic', transform=ax.transData)
 plt.tight_layout()
-plt.savefig('coffee_conv_vs_sust.png', dpi=150, bbox_inches='tight')
 plt.show()
 ```
 
@@ -195,7 +192,6 @@ ax2.annotate("Farmer receives ~10%", xy=(4, 10), xytext=(3.1, 50),
              fontsize=9, color=C_SUST, fontweight='bold',
              arrowprops=dict(arrowstyle='->', color=C_SUST, lw=1.5))
 plt.tight_layout()
-plt.savefig('coffee_value_chain_equity.png', dpi=150, bbox_inches='tight')
 plt.show()
 ```
 
@@ -309,7 +305,6 @@ ax.set_title(
     "JDE Peet's FY2023 Annual Report; Tracenable (2024); Karma Wallet (2024)",
     fontsize=10, fontweight='bold', color=DARK, pad=10)
 plt.tight_layout()
-plt.savefig('coffee_company_scorecard.png', dpi=150, bbox_inches='tight')
 plt.show()
 ```
 
@@ -370,7 +365,6 @@ cbar = plt.colorbar(im, ax=ax, orientation='vertical', fraction=0.02, pad=0.01)
 cbar.set_ticks([-1, 0, 1])
 cbar.set_ticklabels(['Violated','Mixed','Progress'], fontsize=9)
 plt.tight_layout()
-plt.savefig('coffee_sdg_heatmap.png', dpi=150, bbox_inches='tight')
 plt.show()
 ```
 

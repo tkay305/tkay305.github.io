@@ -11,7 +11,7 @@ format:
     theme: cosmo
     code-fold: true
     fig-align: center
-    css: styles.css
+    embed-resources: true
     page-layout: full
 categories: [ESG, Supply Chain, Sustainability Reporting, Critical Analysis]
 image: nestle_scorecard.png
@@ -51,8 +51,6 @@ The following analysis tracks eight headline commitments from Nestlé's 2025 sus
 #| echo: false
 
 import pandas as pd
-import matplotlib
-matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 scorecard = pd.DataFrame([
@@ -138,7 +136,6 @@ for (r, c), cell in tbl.get_celld().items():
         cell.set_text_props(color='white', fontweight='bold')
 
 plt.tight_layout()
-plt.savefig('nestle_scorecard.png', dpi=150, bbox_inches='tight')
 plt.show()
 ```
 
@@ -231,7 +228,6 @@ ax_w.set_facecolor('#fafafa')
 
 axes_flat[-1].set_visible(False)
 plt.tight_layout(rect=[0, 0, 1, 0.97])
-plt.savefig('nestle_tracker.png', dpi=150, bbox_inches='tight')
 plt.show()
 ```
 
