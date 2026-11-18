@@ -82,7 +82,7 @@ This paper applies a lifecycle assessment (LCA) framework to evaluate coffee pro
 <span class="tag tag-method">Analysis · Python</span>
 :::
 ::: {.g-col-12 .g-col-md-6}
-[**Predictive Modelling for Agriculture**](projects/agriculture.qmd){.project-card}
+[**Predictive Modelling for Agriculture**](projects/predictive-modeling.qmd){.project-card}
 
 ML pipeline predicting agricultural outcomes from
 environmental and soil features.
@@ -91,7 +91,7 @@ environmental and soil features.
 <span class="tag tag-method">Random Forest · XGBoost · Python</span>
 :::
 ::: {.g-col-12 .g-col-md-6}
-[**Hypothesis Testing: Men vs Women's Football**](projects/hypothesis-soccer.qmd){.project-card}
+[**Hypothesis Testing: Men vs Women's Football**](projects/hypothesis-soccer.ipynb){.project-card}
 
 Frequentist inference on scoring differences
 in international football matches.

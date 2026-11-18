@@ -42,7 +42,7 @@ LCA methodology, value chain inequity, and the limits of voluntary certification
 <span class="tag tag-research">Research</span> <span class="tag tag-method">2SLS · Python · Stata</span>
 :::
 ::: {.g-col-12 .g-col-md-6}
-[**Hypothesis Testing: Men vs Women's Football**](hypothesis-soccer.qmd){.project-card}
+[**Hypothesis Testing: Men vs Women's Football**](hypothesis-soccer.ipynb){.project-card}
 Frequentist inference on international scoring differences.
 <span class="tag tag-research">Statistics</span> <span class="tag tag-method">t-test · Python</span>
 :::
@@ -69,8 +69,15 @@ Sales trend analysis and forecasting pipeline.
 <span class="tag tag-ds">Data Science</span> <span class="tag tag-method">EDA · Forecasting · Python</span>
 :::
 ::: {.g-col-12 .g-col-md-6}
-[**ML Clustering: Penguin Species**](clustering-ml.qmd){.project-card}
+[**ML Clustering: Penguin Species**](clustering-ml.ipynb){.project-card}
 Unsupervised species classification using K-means and PCA.
 <span class="tag tag-ds">Data Science</span> <span class="tag tag-method">K-means · PCA · Python</span>
 :::
+:::
+::: {.g-col-12 .g-col-md-6}
+[**JIT Supply Chain Analytics**](jit-supply-chain-analytics.qmd){.project-card}
+
+Just-in-time supply chain performance analysis.
+
+<span class="tag tag-ds">Data Science</span> <span class="tag tag-method">Python</span>
 :::
